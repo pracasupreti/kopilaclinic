@@ -1,14 +1,9 @@
-export default function Footer() {
+export default function header() {
   return (
-    <footer className="bg-gray-800 text-white py-4">
+    <header className="bg-blue-600 text-white py-4">
       <div className="container mx-auto text-center">
-        <p className="text-sm">
-          &copy; {new Date().getFullYear()} My Website. All rights reserved.
-        </p>
-        <p className="text-xs mt-2">
-          Built with Next.js and Tailwind CSS
-        </p>
+        <h1 className="text-2xl font-bold">My Website</h1>
       </div>
-    </footer>
+    </header>
   );
 }
