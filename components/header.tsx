@@ -17,7 +17,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
   };
   
   return (
-    <header className="bg-white-800  p-4 font-sans text-lg font-medium border-b-2 border-pink-500 shadow-md">
+    <header className="bg-green-50  p-6 font-sans text-lg font-medium border-b-2 border-pink-500 shadow-md">
       <nav className="mt-2">
         <ul className="flex space-x-4 list-none gap-2 items-center justify-between">
             <Link href="/">
