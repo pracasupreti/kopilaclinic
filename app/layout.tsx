@@ -11,7 +11,7 @@ export default function layout({ children }: { children: React.ReactNode }) {
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body className='bg-white text-gray-800 font-sans antialiased m-0 p-0'>
-        <Header />
+        <Header />        
         {children}
         <Footer />
       </body>
