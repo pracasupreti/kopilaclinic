@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -32,3 +33,24 @@ export default function RootLayout({
     </html>
   );
 }
+=======
+import Header from "@/components/header";
+import Footer from "@/components/footer";
+import "./globals.css"
+
+export default function RootLayout ( { children } : { children: React.ReactNode } ) {
+    return (
+        <html lang="en">
+            <head>
+                <title>Kopila Clinic</title>
+                <meta name="description" content="Kopila Clinic - Your Health, Our Priority" />
+            </head>
+            <body className="flex flex-col min-h-screen">
+                <Header />
+                {children}
+                <Footer />
+            </body>
+        </html>
+    );
+}
+>>>>>>> Stashed changes
