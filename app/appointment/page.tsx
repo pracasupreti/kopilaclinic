@@ -19,12 +19,19 @@ export default function AppointmentsPage() {
   })
 
   const services = [
-    "Fertility Consultation",
-    "IUI Treatment",
-    "Antenatal Care",
-    "Gynecological Checkup",
-    "Pregnancy Planning",
-    "Reproductive Health",
+    "Ovulation induction",
+    "Intrauterine Insemination (IUI)",
+    "In Vitro Fertilization (IVF)",
+    "Antenatal Checkup",
+    "Polycystic Ovary Syndrome (PCOD)",
+    "Endometriosis Treatment",
+    "Uterine Fibroids",
+    "Adenomyosis",
+    "Pelvic Inflammatory Disease (PID)",
+    "Menstrual Irregularities",
+    "Ovarian Cysts",
+    "Vaginitis",
+    "other",
   ]
 
   const timeSlots = [
