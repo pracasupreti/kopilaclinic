@@ -12,7 +12,7 @@ export default function AppointmentsPage() {
     lastName: "",
     email: "",
     phone: "",
-    dateOfBirth: "",
+    date: "",
     service: "",
     time: "",
     message: "",
@@ -82,7 +82,7 @@ export default function AppointmentsPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
           <div className="bg-gradient-to-r from-pink-500 to-pink-600 text-white p-6 flex items-center space-x-4 rounded-md">
             <div className="bg-white bg-opacity-20 rounded-full p-3">
-              <Phone className="h-6 w-6 text-white" />
+              <Phone className="h-6 w-6 text-green-500" />
             </div>
             <div>
               <h3 className="text-lg font-semibold">Call Us Directly</h3>
@@ -92,7 +92,7 @@ export default function AppointmentsPage() {
 
           <div className="bg-gradient-to-r from-green-500 to-green-600 text-white p-6 flex items-center space-x-4 rounded-md">
             <div className="bg-white bg-opacity-20 rounded-full p-3">
-              <Clock className="h-6 w-6 text-white" />
+              <Clock className="h-6 w-6 text-pink-500" />
             </div>
             <div>
               <h3 className="text-lg font-semibold">Clinic Hours</h3>
@@ -157,18 +157,6 @@ export default function AppointmentsPage() {
               </div>
             </div>
 
-            <div>
-              <label htmlFor="dateOfBirth" className="text-gray-700">Date of Birth *</label>
-              <input
-                id="dateOfBirth"
-                type="date"
-                value={formData.dateOfBirth}
-                onChange={(e) => handleInputChange("dateOfBirth", e.target.value)}
-                required
-                className="mt-1 p-3 border border-gray-300 focus:border-pink-500 focus:ring-pink-500 w-full"
-              />
-            </div>
-
             {/* Appointment Details */}
             <div className="border-t pt-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-4">Appointment Details</h3>
@@ -189,8 +177,50 @@ export default function AppointmentsPage() {
                     ))}
                   </select>
                 </div>
-
                 <div>
+                  <label className="text-gray-700">Counselling Type *</label>
+                  <select
+                    onChange={(e) => handleInputChange("city", e.target.value)}
+                    className="mt-1 p-3 border border-gray-300 focus:border-pink-500 focus:ring-pink-500 w-full"
+                  >
+                    <option value="">Select counselling type</option>
+                    <option value="In clinic">In clinic</option>
+                    <option value="Online">Online</option>
+                  </select>
+                  </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+               <div className="mt-6">
+                  <label className="text-gray-700">City</label>
+                  <select
+                    onChange={(e) => handleInputChange("counselling", e.target.value)}
+                    className="mt-1 p-3 border border-gray-300 focus:border-pink-500 focus:ring-pink-500 w-full"
+                  >
+                    <option value="">Select City</option>
+                    <option value="Damak">Damak</option>
+                    <option value="Birtamode">Birtamode</option>
+                    <option value="Urlabari">Urlabari</option>
+                    <option value="Itahari">Itahari</option>
+                    <option value="Dharan">Dharan</option>
+                    <option value="Inaruwa">Inaruwa</option>
+                    <option value="Other">Other</option>
+                  </select>
+                  </div>
+                
+              <div className="mt-6">
+                <label className="text-gray-700">Preferred Date *</label>
+              <input
+                id="date"
+                type="date"
+                value={formData.date}
+                onChange={(e) => handleInputChange("date", e.target.value)}
+                required
+                className="mt-1 p-3 border border-gray-300 focus:border-pink-500 focus:ring-pink-500 w-full"
+              />
+              </div>
+
+                <div className="mt-6">
                   <label className="text-gray-700">Preferred Time *</label>
                   <select
                     onChange={(e) => handleInputChange("time", e.target.value)}
@@ -205,20 +235,24 @@ export default function AppointmentsPage() {
                     ))}
                   </select>
                 </div>
-              </div>
 
-              <div className="mt-6">
-                <label className="text-gray-700">Preferred Date *</label>
-                <div className="mt-1">
-                  <button
-                    type="button"
-                    className="w-full p-3 border border-gray-300 focus:border-pink-500 focus:ring-pink-500 text-left"
-                    onClick={() => setDate(new Date())} // Add your date picker logic here
+               <div className="mt-6">
+                  <label className="text-gray-700">How did you know about us? </label>
+                  <select
+                    onChange={(e) => handleInputChange("counselling", e.target.value)}
+                    className="mt-1 p-3 border border-gray-300 focus:border-pink-500 focus:ring-pink-500 w-full"
                   >
-                    <CalendarIcon className="mr-2 h-4 w-4" />
-                    {date ? format(date, "PPP") : "Pick a date"}
-                  </button>
-                </div>
+                    <option value=""></option>
+                    <option value="FM Radio">FM Radio</option>
+                    <option value="Social Media">Social Media</option>
+                    <option value="Website">Website</option>
+                    <option value="Google Searh">Google Searh</option>
+                    <option value="Wall Poster">Wall Poster</option>
+                    <option value="Hoarding Board">Hoarding Board</option>
+                    <option value="Blog">Blog</option>
+                    <option value="Other Medium">Other Medium</option>
+                  </select>
+                  </div>
               </div>
 
               <div className="mt-6">
