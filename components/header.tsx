@@ -2,7 +2,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes,FaArrowRight } from 'react-icons/fa';
 import { useState, useEffect } from 'react';
 
 export default function Header() {
@@ -38,8 +38,11 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
           <li><Link href="/contact" className="text-pink-500 hover:text-green-400 cursor-pointer font-bold" onClick={closeMenu}>Contact Us</Link></li>
           </div>
           <li>
-          <button className="bg-green-600 relative overflow-hidden text-white px-4 py-2 rounded-full bg-gradient-to-r from-pink-400 to-pink-600 bg-[length:0%_100%] bg-left bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_100%]">
-         <Link href="/appointment" className="relative z-10 font-bold" onClick={closeMenu}>Book An Appointment</Link>
+          <button className="flex items-center space-x-6 bg-green-600 relative overflow-hidden text-white px-4 py-2 rounded-full bg-gradient-to-r from-pink-400 to-pink-600 bg-[length:0%_100%] bg-left bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_100%]">
+         <Link href="/appointment" className="relative z-10 font-bold mr-12" onClick={closeMenu}>Book An Appointment</Link>
+            <span className="absolute right-0 top-1/2 transform -translate-y-1/2 text-white bg-pink-600 rounded-full p-2 mr-4 transition-transform duration-300 ease-in-out hover:translate-x-2 hover:scale-110 hover:bg-green-500">
+              <FaArrowRight size={20} />
+            </span>
          </button>
           </li>
           </div>
