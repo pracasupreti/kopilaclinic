@@ -5,7 +5,8 @@ import Link from "next/link";
 import "./globals.css";
 import { ArrowRight,  Star, Baby, Heart, Stethoscope, Phone, Clock  } from "lucide-react";
 import { MdMedicalServices, } from "react-icons/md";
-import { FaArrowRight, FaBaby, FaPlayCircle } from "react-icons/fa";
+import { FaArrowRight, FaBaby, FaPlayCircle, FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
+import FeatureCard from "@/components/ui/FeatureCard";
 
 
 export default function page() {
@@ -316,6 +317,116 @@ export default function page() {
           <svg className="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
             <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.63.4 3.2.98 4.6l-1.05 3.84 3.91-1.03c1.37.75 2.97 1.13 4.54 1.13 5.46 0 9.91-4.45 9.91-9.91s-4.45-9.91-9.91-9.91zm.04 18c-1.34 0-2.6-.33-3.73-.9l-.26-.15-2.73.72.74-2.65-.17-.28c-.68-1.12-1.04-2.42-1.04-3.79 0-4.39 3.58-7.96 7.96-7.96s7.96 3.58 7.96 7.96c0 4.39-3.58 7.96-7.96 7.96zm4.18-5.32c-.22-.11-.92-.45-1.06-.5-.15-.05-.26-.07-.37.07-.11.15-.43.5-.53.6c-.1.11-.2.12-.37.07-.15-.05-.62-.23-1.18-.73-.44-.39-.74-.87-.82-1.02-.08-.15 0-.14.1-.25.1-.11.22-.27.33-.4.11-.14.15-.24.23-.37.08-.12.04-.23-.02-.37-.06-.11-.37-.9-.51-1.23-.15-.32-.29-.27-.37-.27-.08 0-.17-.01-.26-.01-.1-.01-.26.04-.39.19-.13.15-.5.49-.5.59-.01.11-.01.21.08.36.09.15.14.23.27.39.46.66.86 1.25 1.48 1.76.6.51 1.11.75 1.5.94.38.19.6.16.82.1.22-.06.7-.29.8-.36.1-.08.22-.14.33-.11.11.03.7.32.79.37.09.06.15.07.26.07-.01-.01-.01-.07-.02-.2zm-4.18-5.32z" />
           </svg>
+        </a>
+      </div>
+    </section>
+    { /* Choose Us Section */}
+    <section className="relative bg-healofy-gray-bg py-16 md:py-24 overflow-hidden">
+      {/* Background Elements (Stars, Plus signs) */}
+      <div className="absolute top-8 left-8 w-6 h-6 bg-healofy-blue-light rounded-full opacity-60"></div>
+      <div className="absolute bottom-16 right-16 w-8 h-8 bg-healofy-blue-light rounded-full opacity-60"></div>
+      <div className="absolute top-1/3 right-1/4 w-10 h-10 bg-healofy-blue-light rounded-full opacity-40 transform rotate-45"></div>
+      <div className="absolute bottom-1/4 left-1/3 w-12 h-12 bg-healofy-blue-light rounded-full opacity-40 transform -rotate-30"></div>
+
+      {/* Larger '+' shapes (approximated using SVG) */}
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-24 h-24 text-gray-200 opacity-70">
+        <svg className="w-full h-full" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M13 11V3h-2v8H3v2h8v8h2v-8h8v-2h-8z"/>
+        </svg>
+      </div>
+      <div className="absolute top-1/4 left-1/4 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 text-gray-200 opacity-50">
+        <svg className="w-full h-full" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M13 11V3h-2v8H3v2h8v8h2v-8h8v-2h-8z"/>
+        </svg>
+      </div>
+       <div className="absolute top-[8%] right-[5%] w-10 h-10 bg-blue-200 rounded-full opacity-60"></div>
+
+
+      <div className="relative z-10 container mx-auto px-4">
+        {/* Section Header */}
+        <div className="text-center mb-12">
+          <span className="text-sm md:text-base mb-2 font-medium uppercase tracking-wide text-gray-500">
+            + WHY CHOOSE US
+          </span>
+          <h2 className="text-3xl md:text-5xl font-bold text-healofy-pink mt-2">
+            Best Fertility Clinic
+          </h2>
+          <p className="text-gray-700 mt-4 text-base md:text-lg max-w-2xl mx-auto">
+            We are committed to sustainability, eco-friendly initiatives.
+          </p>
+        </div>
+
+        {/* Main Content Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center justify-items-center">
+          {/* Left Column (Expert Care, Proven Track Record, Decade Of Dedication) */}
+          <div className="order-1 md:order-1 flex flex-col space-y-8 lg:space-y-12 items-end">
+            <FeatureCard
+              title="Expert Care:"
+              description="With 7+ experienced doctors, we provide compassionate and specialized care for every patient."
+              alignment="left"
+            />
+            <FeatureCard
+              title="Proven Track Record:"
+              description="Over 500+ successful deliveries reflect our commitment to excellence in maternal health."
+              alignment="left"
+            />
+            <FeatureCard
+              title="Decade Of Dedication:"
+              description="Backed by 10+ years of experience, we deliver reliable and trusted healthcare services."
+              alignment="left"
+            />
+          </div>
+
+          {/* Center Image */}
+          <div className="order-2 md:order-2 flex justify-center items-center p-4">
+            <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-xl border-8 border-white">
+              <Image
+                src="/images/baby-happy.jpg" // IMPORTANT: Replace with your actual baby image path (e.g., in public/images)
+                alt="Happy Baby"
+                layout="fill"
+                objectFit="cover"
+                quality={90}
+                className="rounded-full"
+              />
+            </div>
+          </div>
+
+          {/* Right Column (Comprehensive Support, State-Of-The-Art Facilities, Patient-Centered Approach) */}
+          <div className="order-3 md:order-3 flex flex-col space-y-8 lg:space-y-12 items-start">
+            <FeatureCard
+              title="Comprehensive Support:"
+              description="With 2K+ counseling sessions, we guide you every step of the way on your journey to parenthood."
+              alignment="right"
+            />
+            <FeatureCard
+              title="State-Of-The-Art Facilities:"
+              description="Equipped with advanced technology to ensure the highest standard of treatment and care."
+              alignment="right"
+            />
+            <FeatureCard
+              title="Patient-Centered Approach:"
+              description="We focus on individualized care, prioritizing your comfort, privacy, and well-being."
+              alignment="right"
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* Floating contact buttons (WhatsApp & Phone) - make sure react-icons is installed */}
+      <div className="fixed bottom-8 right-8 z-50 flex flex-col space-y-4">
+        <a
+          href="tel:YOUR_PHONE_NUMBER" // Replace with actual phone number
+          className="w-14 h-14 bg-red-500 rounded-full flex items-center justify-center shadow-lg transition-transform duration-200 hover:scale-110"
+        >
+          <FaPhoneAlt className="w-7 h-7 text-white" />
+        </a>
+        <a
+          href="https://wa.me/YOUR_WHATSAPP_NUMBER" // Replace with actual WhatsApp number
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center shadow-lg transition-transform duration-200 hover:scale-110"
+        >
+          <FaWhatsapp className="w-7 h-7 text-white" />
         </a>
       </div>
     </section>
