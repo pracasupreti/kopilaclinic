@@ -39,7 +39,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
           </div>
           <li>
            <button className="max-w-2xl mx-auto ml-0 mt-6 px-4 py-3 bg-green-500 text-white font-bold rounded-full flex items-center gap-2 bg-gradient-to-r from-pink-400 to-pink-600 bg-[length:0%_100%] bg-left bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_100%]">
-          Book An Appointment
+           <a href="/appointment"> Book An Appointment</a>
           <span className="text-xl bg-white text-blue-500 rounded-full px-2">↗</span>
         </button>
           </li>

@@ -44,7 +44,7 @@ const handleToggle = () => {
 
               <Link href="/appointment">
                 <button className="bg-green-600 relative overflow-hidden text-white px-8 py-3 rounded-full bg-gradient-to-r from-pink-400 to-pink-600 bg-[length:0%_100%] bg-left bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_100%] text-lg flex items-center shadow-lg hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-pink-400 mb-8">
-                  Book An Appointment
+                 <a href="/appointment"> Book An Appointment</a>
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </button>
               </Link>
@@ -130,7 +130,7 @@ const handleToggle = () => {
             <div className="flex justify-center md:justify-end">
               <Link href="/appointment">
                 <button className="bg-green-500 hover:bg-green-600 text-white rounded-full px-8 py-3 flex items-center shadow-lg hover:scale-105 active:scale-95 transition-transform">
-                  Book An Appointment
+                  <a href="/appointment"> Book An Appointment</a>
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </button>
               </Link>
@@ -198,7 +198,7 @@ const handleToggle = () => {
                 </div>
 
         <button className="mt-6 px-4 py-3 bg-green-500 text-white font-bold rounded-full flex items-center gap-2 bg-gradient-to-r from-pink-400 to-pink-600 bg-[length:0%_100%] bg-left bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_100%]">
-          Read More
+        <a href="/about_Us">   Read More</a>
           <span className="text-xl bg-white text-blue-500 rounded-full px-2">↗</span>
         </button>
       </div>
@@ -250,7 +250,7 @@ const handleToggle = () => {
         </p>
 
         <button className="max-w-2xl mx-auto mt-6 px-4 py-3 bg-green-600 text-white font-bold rounded-full flex items-center gap-2 bg-gradient-to-r from-pink-400 to-pink-600 bg-[length:0%_100%] bg-left bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_100%]">
-          View All Services
+          <a href="Services">View All Services</a>
           <span className="text-xl bg-white text-blue-500 rounded-full px-2">↗</span>
         </button>
       </div>
@@ -585,7 +585,7 @@ const handleToggle = () => {
 
           <div className="mt-10 flex lg:justify-start">
             <button className="max-w-2xl mx-auto ml-0 mt-6 px-4 py-3 bg-green-500 text-white font-bold rounded-full flex items-center gap-2 bg-gradient-to-r from-pink-400 to-pink-600 bg-[length:0%_100%] bg-left bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_100%]">
-          Book An Appointment
+          <a href="/appointment">Book An Appointment</a>
           <span className="text-xl bg-white text-blue-500 rounded-full px-2">↗</span>
         </button>
           </div>
