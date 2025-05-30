@@ -15,7 +15,7 @@ const FeatureCard = ({ title, description, alignment = 'left' }) => {
             className="flex-shrink-0"
           />
         )}
-        <h3 className="text-healofy-pink text-lg md:text-xl font-semibold mb-1">
+        <h3 className="text-pink-500 text-lg md:text-xl font-semibold mb-1">
           {title}
         </h3>
         {alignment === 'left' && (
@@ -28,7 +28,7 @@ const FeatureCard = ({ title, description, alignment = 'left' }) => {
           />
         )}
       </div>
-      <p className="text-healofy-dark-gray text-sm mt-1 leading-relaxed">
+      <p className="text-gray-500 text-sm mt-1 leading-relaxed">
         {description}
       </p>
     </div>

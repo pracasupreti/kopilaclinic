@@ -8,7 +8,7 @@ import { MdMedicalServices, } from "react-icons/md";
 import { FaArrowRight, FaBaby, FaPlayCircle, FaPhoneAlt, FaWhatsapp, FaUserMd, FaClinicMedical, FaCalendarAlt, FaClock, FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
 import FeatureCard from "@/components/ui/FeatureCard";
 import AccordionItem from "@/components/ui/AccordionItem";
-
+import BlogPostCard from '@/components/BlogPOstCard';
 
 
 
@@ -395,13 +395,13 @@ export default function page() {
     </section>
 
     {/* What We Do Section */}
-     <section className="relative w-full bg-healofy-light-gray-bg py-16 md:py-24 overflow-hidden">
+     <section className="relative w-full bg-white py-16 md:py-24 overflow-hidden">
       <div className="relative z-10 container mx-auto px-4 flex flex-col lg:flex-row items-center lg:items-start gap-12">
         {/* Left Section: Image */}
         <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
-          <div className="relative w-full max-w-lg aspect-[4/3] rounded-3xl overflow-hidden shadow-xl">
+          <div className="relative w-full max-w-full aspect-[4/3] rounded-3xl overflow-hidden shadow-xl">
             <Image
-              src="/images/golden-frock-baby.jpg" 
+              src="/how-it-work-img.jpg" 
               alt="Happy Baby"
               layout="fill"
               objectFit="cover"
@@ -413,13 +413,13 @@ export default function page() {
 
         {/* Right Section: Content */}
         <div className="w-full lg:w-1/2 text-center lg:text-left pt-8 lg:pt-0">
-          <span className="text-sm md:text-base mb-2 font-medium uppercase tracking-wide text-gray-500">
+          <span className="text-sm md:text-base mb-2 font-medium uppercase tracking-wide text-green-500">
             + WHAT WE DO?
           </span>
-          <h2 className="text-3xl md:text-5xl font-bold text-healofy-green mt-2">
-            Infertility Treatment
+          <h2 className="text-3xl md:text-5xl font-bold text-green-500 mt-2">
+            Infertility <span className="text-pink-500">Treatment </span> 
           </h2>
-          <p className="text-healofy-dark-gray mt-4 text-base md:text-lg leading-relaxed max-w-xl lg:mx-0 mx-auto">
+          <p className="text-gray-500 mt-4 text-base md:text-lg leading-relaxed max-w-xl lg:mx-0 mx-auto">
             Infertility treatment refers to medical interventions and procedures aimed at helping individuals or couples conceive a child when they face challenges in achieving pregnancy naturally.
           </p>
 
@@ -444,23 +444,40 @@ export default function page() {
           </div>
         </div>
       </div>
+    </section>
 
-    
-      <div className="fixed bottom-8 right-8 z-50 flex flex-col space-y-4">
-        <a
-          href="tel:YOUR_PHONE_NUMBER" 
-          className="w-14 h-14 bg-red-500 rounded-full flex items-center justify-center shadow-lg transition-transform duration-200 hover:scale-110"
-        >
-          <FaPhoneAlt className="w-7 h-7 text-white" />
-        </a>
-        <a
-          href="https://wa.me/YOUR_WHATSAPP_NUMBER"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center shadow-lg transition-transform duration-200 hover:scale-110"
-        >
-          <FaWhatsapp className="w-7 h-7 text-white" />
-        </a>
+    {/* Blog Section */}
+     <section className="relative w-full bg-healofy-blog-bg py-16 md:py-24 overflow-hidden">
+
+      <div className="relative z-10 container mx-auto px-4">
+        {/* Section Header */}
+        <div className="text-center mb-12">
+          <span className="text-sm md:text-base mb-2 font-medium uppercase tracking-wide text-green-500">
+            + LATEST UPDATES
+          </span>
+          <h2 className="text-3xl md:text-5xl font-bold text-green-500 mt-2">
+            Our <span className="text-pink-500">Blog</span>
+          </h2>
+          <p className="text-gray-500 mt-4 text-base md:text-lg max-w-2xl mx-auto">
+            Get more information on various topics.
+          </p>
+        </div>
+
+        {/* Blog Post Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 justify-items-center">
+          <BlogPostCard
+            imageUrl="/blog1.jpg" 
+            title="Understanding Ovulation Induction: A Key To Overcoming Infertility"
+            description="Ovulation induction is an essential treatment for women struggling with infertility due to irregular or absent ovulation."
+            link="/blog/ovulation-induction" 
+          />
+          <BlogPostCard
+            imageUrl="/blog2.jpg" 
+            title="Intrauterine Insemination (IUI): A Simple And Effective Fertility Solution"
+            description="Intrauterine insemination (IUI) is a popular and minimally invasive fertility treatment that helps improve the chances of pregnancy."
+            link="/blog/intrauterine-insemination-iui" 
+          />
+        </div>
       </div>
     </section>
 
@@ -514,52 +531,50 @@ export default function page() {
 
         {/* Right Section: Contact Information */}
         <div className="w-full lg:w-1/2 text-center lg:text-left pt-8 lg:pt-0">
-          <span className="text-sm md:text-base mb-2 font-medium uppercase tracking-wide text-healofy-contact-green">
+          <span className="text-sm md:text-base mb-2 font-medium uppercase tracking-wide text-green-500">
             + CONTACT NOW
           </span>
-          <h2 className="text-3xl md:text-5xl font-bold text-healofy-contact-pink mt-2">
-            Consult Now
+          <h2 className="text-3xl md:text-5xl font-bold text-green-500 mt-2">Consult
+            <span className="text-pink-500"> Now</span>
           </h2>
 
           <div className="mt-8 space-y-6">
             <div className="flex items-center justify-center lg:justify-start">
-              <FaMapMarkerAlt className="text-healofy-pink text-2xl mr-4 flex-shrink-0" />
-              <p className="text-healofy-dark-gray text-lg">Jaycess Chowk, Damak-6, Jhapa</p>
+              <FaMapMarkerAlt className="text-blue-500 text-2xl mr-4 flex-shrink-0" />
+              <p className="text-blue-500 text-lg">Jaycess Chowk, Damak-6, Jhapa</p>
             </div>
             <div className="flex items-center justify-center lg:justify-start">
-              <FaPhoneAlt className="text-healofy-pink text-2xl mr-4 flex-shrink-0" />
-              <a href="tel:+9779709055065" className="text-healofy-dark-gray text-lg hover:underline">
+              <FaPhoneAlt className="text-blue-500 text-2xl mr-4 flex-shrink-0" />
+              <a href="tel:+9779709055065" className="text-blue-500 text-lg hover:underline">
                 +977 970 905 5065
               </a>
             </div>
             <div className="flex items-center justify-center lg:justify-start">
-              <FaEnvelope className="text-healofy-pink text-2xl mr-4 flex-shrink-0" />
-              <a href="mailto:info@kopilaclinic.com.np" className="text-healofy-dark-gray text-lg hover:underline">
+              <FaEnvelope className="text-blue-500 text-2xl mr-4 flex-shrink-0" />
+              <a href="mailto:info@kopilaclinic.com.np" className="text-blue-500 text-lg hover:underline">
                 info@kopilaclinic.com.np
               </a>
             </div>
             <div className="flex items-center justify-center lg:justify-start">
-              <FaClock className="text-healofy-pink text-2xl mr-4 flex-shrink-0" />
-              <p className="text-healofy-dark-gray text-lg">Mon to Sat 07:00AM to 07:00PM</p>
+              <FaClock className="text-blue-500 text-2xl mr-4 flex-shrink-0" />
+              <p className="text-blue-500 text-lg">Mon to Sat 07:00AM to 07:00PM</p>
             </div>
           </div>
 
-          <div className="mt-10 flex justify-center lg:justify-start">
-            <a
-              href="/app"
-              className="flex items-center px-8 py-4 bg-healofy-green-button text-white rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-            >
-              Book An Appointment <FaArrowRight className="ml-3 text-xl" />
-            </a>
+          <div className="mt-10 flex lg:justify-start">
+            <button className="max-w-2xl mx-auto ml-0 mt-6 px-4 py-3 bg-green-500 text-white font-bold rounded-full flex items-center gap-2 bg-gradient-to-r from-pink-400 to-pink-600 bg-[length:0%_100%] bg-left bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_100%]">
+          Book An Appointment
+          <span className="text-xl bg-white text-blue-500 rounded-full px-2">↗</span>
+        </button>
           </div>
         </div>
       </div>
 
       {/* Floating contact buttons*/}
-      <div className="fixed bottom-8 right-8 z-50 flex flex-col space-y-4">
+      <div className="fixed bottom-12 right-8 z-50 flex flex-col space-y-8">
         <a
           href="+977 970 905 5065" 
-          className="w-14 h-14 bg-red-500 rounded-full flex items-center justify-center shadow-lg transition-transform duration-200 hover:scale-110"
+          className="w-14 h-14 bg-pink-600 rounded-full flex items-center justify-center shadow-lg transition-transform duration-200 hover:scale-110"
         >
           <FaPhoneAlt className="w-7 h-7 text-white" />
         </a>
@@ -567,7 +582,7 @@ export default function page() {
           href="+977 970 905 5065" 
           target="_blank"
           rel="noopener noreferrer"
-          className="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center shadow-lg transition-transform duration-200 hover:scale-110"
+          className="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center shadow-lg transition-transform duration-200 hover:scale-110 animate-bounce"
         >
           <FaWhatsapp className="w-7 h-7 text-white" />
         </a>
