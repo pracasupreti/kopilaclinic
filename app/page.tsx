@@ -9,7 +9,7 @@ import { FaArrowRight, FaBaby, FaPlayCircle, FaPhoneAlt, FaWhatsapp, FaUserMd, F
 import FeatureCard from "@/components/ui/FeatureCard";
 import AccordionItem from "@/components/ui/AccordionItem";
 import BlogPostCard from '@/components/BlogPOstCard';
-
+import ServiceCard from "@/components/ServiceCard";
 
 
 export default function page() {
@@ -22,7 +22,9 @@ export default function page() {
             {/* Left Content */}
             <div className="relative z-10 flex flex-col justify-center h-full">
               {/* Decorative elements */}
-              <div className="absolute top-12 -left-10 w-20 h-20 bg-blue-200 opacity-30 animate-ping" style={{ clipPath: 'polygon(50% 0%, 60% 40%, 100% 50%, 60% 60%, 50% 100%, 40% 60%, 0% 50%, 40% 40%)' }}></div>
+              <div className="absolute top-12 -left-10 w-20 h-20 opacity-30 ">
+                <img src="icon-star.svg" alt="" />
+              </div>
 
               <h1 className="text-4xl sm:text-5xl md:text-5xl font-extrabold text-pink-700 mb-6 leading-tight drop-shadow-lg">
                 Fertility <span className="text-green-600">and</span> <br/> <span className="text-pink-700">Women's Clinic</span>
@@ -57,7 +59,9 @@ export default function page() {
 
             {/* Right Content - Hero Image */}
             <div className="relative flex justify-center items-center">
-              <div className="absolute top-2 left-24 w-20 h-20 bg-blue-700 opacity-900 animate-ping" style={{ clipPath: 'polygon(50% 0%, 60% 40%, 100% 50%, 60% 60%, 50% 100%, 40% 60%, 0% 50%, 40% 40%)' }}></div>
+              <div className="absolute top-2 left-24 w-16 h-16 animate-ping">
+                <img src="icon-star.svg" alt="" />
+              </div>
               {/* Main Hero Image */}
               <div className="relative w-full max-w-md mx-auto">
                 <img src="/hero-img.png" alt="Mother and child" className="w-full h-auto"  style={{minHeight:'600px'}} />
@@ -204,32 +208,37 @@ export default function page() {
           Dedication of Providing Professional Healthcare Services.
         </p>
 
-        {/* <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {services.map((service, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-all"
-            >
-              <div className="flex justify-center mb-4">
-                <Image
-                  src={service.image}
-                  alt={service.title}
-                  width={40}
-                  height={40}
-                />
-              </div>
-              <h3 className="text-lg font-bold text-pink-600 mb-2">
-                {service.title}
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">{service.description}</p>
-              <button className="text-green-600 font-semibold text-sm flex items-center gap-1">
-                Read More <span className="text-lg">↗</span>
-              </button>
-            </div>
-          ))}
-        </div> */}
-
-        <p className="mt-12 text-sm text-gray-600 max-w-2xl mx-auto">
+   
+      <div className="relative z-10 container mx-auto px-4">
+        {/* Services Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6 justify-items-center">
+          <ServiceCard
+            iconUrl="/icon.svg"
+            title="Ovulation Induction"
+            description="A fertility treatment that uses medications to stimulate the ovaries to produce and release eggs, increasing the chances of conception."
+            link="/Services"
+          />
+          <ServiceCard
+            iconUrl="/icon.svg"
+            title="Intrauterine Insemination (IUI)"
+            description="A fertility procedure where specially prepared sperm is directly placed into the uterus to enhance the likelihood of fertilization."
+            link="/Services" 
+          />
+          <ServiceCard
+            iconUrl="/icon.svg" 
+            title="In Vitro Fertilisation (IVF)"
+            description="A process where eggs and sperm are combined in a laboratory to create embryos, which are then transferred to the uterus for potential pregnancy."
+            link="/Services" 
+          />
+          <ServiceCard
+            iconUrl="/icon.svg"
+            title="Antenatal Check Up"
+            description="Routine medical care provided during pregnancy to monitor the health of the mother and the developing baby."
+            link="/Services"
+          />
+        </div>
+      </div>
+       <p className="mt-12 text-sm text-gray-600 max-w-2xl mx-auto">
           We believe in using the latest technology and techniques to <br/> ensure the best outcomes for our patients.
         </p>
 

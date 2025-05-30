@@ -17,7 +17,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
   };
   
   return (
-    <header className="bg-green-50  p-6 font-sans text-lg font-medium border-b-2 border-pink-500 shadow-md">
+    <header className="bg-green-50  p-6 font-sans text-lg font-medium border-b-1 border-gray-500 shadow-md">
       <nav className="mt-2">
         <ul className="flex space-x-4 list-none gap-2 items-center justify-between">
             <Link href="/">
@@ -38,12 +38,10 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
           <li><Link href="/contact" className="text-pink-500 hover:text-green-400 cursor-pointer font-bold" onClick={closeMenu}>Contact Us</Link></li>
           </div>
           <li>
-          <button className="flex items-center space-x-6 bg-green-600 relative overflow-hidden text-white px-4 py-2 rounded-full bg-gradient-to-r from-pink-400 to-pink-600 bg-[length:0%_100%] bg-left bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_100%]">
-         <Link href="/appointment" className="relative z-10 font-bold mr-12" onClick={closeMenu}>Book An Appointment</Link>
-            <span className="absolute right-0 top-1/2 transform -translate-y-1/2 text-white bg-pink-600 rounded-full p-2 mr-4 transition-transform duration-300 ease-in-out hover:translate-x-2 hover:scale-110 hover:bg-green-500">
-              <FaArrowRight size={20} />
-            </span>
-         </button>
+           <button className="max-w-2xl mx-auto ml-0 mt-6 px-4 py-3 bg-green-500 text-white font-bold rounded-full flex items-center gap-2 bg-gradient-to-r from-pink-400 to-pink-600 bg-[length:0%_100%] bg-left bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_100%]">
+          Book An Appointment
+          <span className="text-xl bg-white text-blue-500 rounded-full px-2">↗</span>
+        </button>
           </li>
           </div>
         </ul>
