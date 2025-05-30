@@ -1,8 +1,12 @@
 import './globals.css'
 import Header from '@/components/header';
 import Footer from '@/components/footer';
+  import { Poppins } from 'next/font/google';
 
 export default function layout({ children }: { children: React.ReactNode }) {
+
+
+
   return (
     <html lang="en">
       <head>

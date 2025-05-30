@@ -1,0 +1,227 @@
+'use client';
+
+// pages/faq.js
+import { useState } from "react";
+
+export default function FAQ() {
+  const [openIndex, setOpenIndex] = useState(0);
+
+  const faqs = [
+    {
+      question: "What Is Ovulation Induction?",
+      answer:
+        "Ovulation induction is a fertility treatment that uses medications to stimulate the ovaries to produce and release eggs, improving the chances of conception.",
+    },
+    {
+      question: "Who Is A Candidate For Ovulation Induction?",
+      answer:
+        "Women who do not ovulate regularly or at all, often due to conditions like PCOS, may be good candidates.",
+    },
+    {
+      question: "What Medications Are Used For Ovulation Induction?",
+      answer:
+        "Common medications include Clomiphene Citrate and Letrozole, which stimulate egg production.",
+    },
+    {
+      question: "What Are The Risks Of Ovulation Induction?",
+      answer:
+        "Risks may include multiple pregnancies, ovarian hyperstimulation syndrome (OHSS), and side effects from medications.",
+    },
+    {
+      question: "How Is Ovulation Monitored During Treatment?",
+      answer:
+        "Monitoring is done through ultrasound and blood tests to track follicle development and hormone levels.",
+    },
+  ];
+  const faqs1=[
+    {
+      question:"What is Intrauterine Insemination (IUI)?",
+      answer:"Intrauterine Insemination (IUI) is a fertility treatment that involves placing washed and prepared sperm directly into a woman’s uterus during ovulation to increase the chances of conception.",
+    },
+    {
+      question:"Who IS A Good Candiate for IUI?",
+      answer:"IUI is ideal for individuals or couples dealing with unexplained infertility, mild male factor infertility, ovulatory disorders, or cervical mucus issues. It is also an option for those using donor sperm.",
+    },
+    {
+      question:"What Is The Success Rate of IUI?",
+      answer:"The success rate of IUI varies between 10-20% per cycle, depending on factors such as the age of the woman, the cause of infertility, and the quality of sperm and eggs.",
+    },
+    {
+      question:"What Are The Risks Associated with IUI?",
+      answer:"Risks of IUI include multiple pregnancies (if fertility drugs are used), mild cramping or discomfort during the procedure, and a very low risk of infection.",
+    },
+    {
+      question:"How Should I Prepare For An IUI Procedure?",
+      answer:"Preparation includes monitoring ovulation cycles, avoiding unprotected intercourse before the procedure, and ensuring a semen sample is collected and properly prepared."
+    },
+  ];
+  const faqs2=[
+    {
+      question:"What Is In Vitro Fertilization(IVF)?",
+      answer:"In Vitro Fertilization (IVF) is a fertility treatment where eggs are fertilized by sperm outside the body in a laboratory and then transferred to the uterus to achieve pregnancy.",
+    },
+    {
+      question:"Who can Benefit From IVF?",
+      answer:"IVF is often recommended for individuals or couples facing issues such as blocked fallopian tubes, severe male factor infertility, endometriosis, unexplained infertility, or those using donor eggs or sperm.",
+      },
+    {
+      question:"What Is The Success Rate of IVF?",
+      answer:"IVF success rates depend on factors such as the age of the woman, the quality of eggs and sperm, and underlying medical conditions. On average, success rates range from 20-40% per cycle.",
+    },
+    {
+      question:"Are There Risks Associated with IVF?",
+      answer:"Risks of IVF include ovarian hyperstimulation syndrome (OHSS), multiple pregnancies, ectopic pregnancy, and a small risk of complications from egg retrieval.",
+    },
+    {
+      question:"How Should I Prepare For An IVF Cycle?",
+      answer:"Preparation for IVF involves undergoing fertility testing, following a prescribed treatment plan, maintaining a healthy lifestyle, and managing stress effectively to improve outcomes.",
+    },
+  ];
+  const faqs3=[
+    {
+      question:"What is An Antenatal Check-Up?",
+      answer:"An antenatal check-up is a routine medical appointment during pregnancy to monitor the health of the mother and developing baby, ensuring early detection and management of potential complications.",
+    },
+    {
+      question:"Why are Antenatal Check-Ups Important?",
+      answer:"Antenatal check-ups help track the growth and development of the baby, monitor maternal health, and identify risks such as gestational diabetes, high blood pressure, or preeclampsia, allowing timely intervention.",
+
+    },
+    {
+      question:"How Often Should I Have Antenatal Check-Ups?",
+      answer:"The frequency of antenatal check-ups varies by stage of pregnancy: monthly visits during the first two trimesters, bi-weekly in the third trimester, and weekly as the due date approaches.",
+    },
+    {
+      question:"What Tests Are Conducted During Antenatal check-Ups?",
+      answer:"Tests during antenatal check-ups may include blood tests, urine analysis, ultrasound scans, glucose tolerance tests, and screenings for infections like HIV or hepatitis.",
+    },
+    {
+      question:"How can I Prepare For My Antenatal Check-Up?",
+      answer:"To prepare for an antenatal check-up, keep a list of questions or concerns, track your weight, and note any symptoms. Ensure you carry any required medical records or test results.",
+    }
+  ];
+
+
+  const sidebarLinks = [
+    "Ovulation Induction",
+    "Intrauterine Insemination (IUI)",
+    "In Vitro Fertilization (IVF)",
+    "Antenatal Check-Up",
+  ];
+
+  const toggleAccordion = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+  return (
+    <main className="bg-white min-h-screen  p-10 flex gap-10 mx-auto container relative ">
+      {/* Sidebar */}
+      <aside className="bg-blue-50 rounded-2xl p-6 w-72 shadow  h-auto sticky top-10 self-start">
+        <ul className="space-y-6 text-pink-700 font-semibold text-lg">
+          {sidebarLinks.map((link, i) => (
+            <li key={i} className="flex justify-between items-center">
+              {link} <span>↗️</span>
+            </li>
+          ))}
+        </ul>
+      </aside>
+      <div className="flex-1">
+        <div className="flex flex-col">
+                <section className="flex-1">
+        <h1 className="text-4xl font-bold text-pink-700 mb-6">
+          Ovulation Induction
+        </h1>
+        {faqs.map((faq, index) => (
+          <div
+            key={index}
+            className="border rounded-xl mb-4 overflow-hidden"
+          >
+            <button
+              onClick={() => toggleAccordion(index)}
+              className="w-full text-left p-4 text-xl font-semibold text-pink-700 flex justify-between items-center"
+            >
+              {faq.question}
+              <div className="bg-green-500 text-white rounded-full w-8 h-8 text-center">{openIndex === index ? "⬇️" : "➡️"}</div>
+            </button>
+            {openIndex === index && (
+              <div className="p-4 text-gray-500">{faq.answer}</div>
+            )}
+          </div>
+        ))}
+      </section>
+            <section className="mt-5">
+                     <h1 className="text-4xl font-bold text-pink-700 mb-6">
+          Intrauterine Insemination (IUI)
+        </h1> 
+        {faqs1.map((faq, index) => (
+          <div
+            key={index}
+            className="border rounded-xl mb-4 overflow-hidden"
+          >
+            <button
+              onClick={() => toggleAccordion(index)}
+              className="w-full text-left p-4 text-xl font-semibold text-pink-700 flex justify-between items-center"
+            >
+              {faq.question}
+              <div className="bg-green-500 text-white rounded-full w-8 h-8 text-center">{openIndex === index ? "⬇️" : "➡️"}</div>
+            </button>
+            {openIndex === index && (
+              <div className="p-4 text-gray-500">{faq.answer}</div>
+            )}
+          </div>
+        ))}
+      </section>
+            <section >
+        <h1 className="text-4xl font-bold text-pink-700 mb-6">
+          In Vitro Fertilization (IUF)
+        </h1>
+
+        {faqs2.map((faq, index) => (
+          <div
+            key={index}
+            className="border rounded-xl mb-4 overflow-hidden"
+          >
+            <button
+              onClick={() => toggleAccordion(index)}
+              className="w-full text-left p-4 text-xl font-semibold text-pink-700 flex justify-between items-center"
+            >
+              {faq.question}
+              <div className="bg-green-500 text-white rounded-full w-8 h-8 text-center">{openIndex === index ? "⬇️" : "➡️"}</div>
+            </button>
+            {openIndex === index && (
+              <div className="p-4 text-gray-500">{faq.answer}</div>
+            )}
+          </div>
+        ))}
+      </section>
+                  <section >
+        <h1 className="text-4xl font-bold text-pink-700 mb-6">
+          Antenatal check-Up
+        </h1>
+
+        {faqs3.map((faq, index) => (
+          <div
+            key={index}
+            className="border rounded-xl mb-4 overflow-hidden"
+          >
+            <button
+              onClick={() => toggleAccordion(index)}
+              className="w-full text-left p-4 text-xl font-semibold text-pink-700 flex justify-between items-center"
+            >
+              {faq.question}
+              <div className="bg-green-500 text-white rounded-full w-8 h-8 text-center">{openIndex === index ? "⬇️" : "➡️"}</div>
+            </button>
+            {openIndex === index && (
+              <div className="p-4 text-gray-500">{faq.answer}</div>
+            )}
+          </div>
+        ))}
+      </section>
+
+        </div>
+
+      </div>
+        
+    </main>
+  );
+}

@@ -5,21 +5,24 @@ import Link from "next/link";
 import "./globals.css";
 import { ArrowRight,  Star, Baby, Heart, Stethoscope, Phone, Clock  } from "lucide-react";
 import { MdMedicalServices, } from "react-icons/md";
-import { FaArrowRight, FaBaby, FaPlayCircle, FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
+import { FaArrowRight, FaBaby, FaPlayCircle, FaPhoneAlt, FaWhatsapp, FaUserMd, FaClinicMedical, FaCalendarAlt, FaClock, FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
 import FeatureCard from "@/components/ui/FeatureCard";
+import AccordionItem from "@/components/ui/AccordionItem";
+
+
 
 
 export default function page() {
   return (
     <div className="min-h-screen bg-green-50 flex flex-col justify-between">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-50 to-gray-100 relative overflow-hidden py-10 md:py-20">
+      <section className="bg-gradient-to-br from-blue-50 to-gray-100 relative overflow-hidden py-10 md:py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div className="relative z-10 flex flex-col justify-center h-full">
               {/* Decorative elements */}
-              <div className="absolute top-12 -left-10 w-20 h-20 bg-blue-200 opacity-30 animate-zoominout" style={{ clipPath: 'polygon(50% 0%, 60% 40%, 100% 50%, 60% 60%, 50% 100%, 40% 60%, 0% 50%, 40% 40%)' }}></div>
+              <div className="absolute top-12 -left-10 w-20 h-20 bg-blue-200 opacity-30 animate-ping" style={{ clipPath: 'polygon(50% 0%, 60% 40%, 100% 50%, 60% 60%, 50% 100%, 40% 60%, 0% 50%, 40% 40%)' }}></div>
 
               <h1 className="text-4xl sm:text-5xl md:text-5xl font-extrabold text-pink-700 mb-6 leading-tight drop-shadow-lg">
                 Fertility <span className="text-green-600">and</span> <br/> <span className="text-pink-700">Women's Clinic</span>
@@ -41,7 +44,7 @@ export default function page() {
               <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4">
                 <div className="flex items-center">
                   <span className="text-pink-500 font-semibold mr-2">Google Rating</span>
-                  <span className="text-2xl font-bold text-gray-900">4.7</span>
+                  <span className="text-xl  text-yellow-300">4.7</span>
                   <div className="flex ml-2">
                     {[1, 2, 3, 4, 5].map((star) => (
                       <Star key={star} className="h-5 w-5 text-yellow-400 fill-current" />
@@ -54,10 +57,10 @@ export default function page() {
 
             {/* Right Content - Hero Image */}
             <div className="relative flex justify-center items-center">
-              <div className="absolute top-2 left-24 w-20 h-20 bg-blue-600 opacity-50 animate-zoomin" style={{ clipPath: 'polygon(50% 0%, 60% 40%, 100% 50%, 60% 60%, 50% 100%, 40% 60%, 0% 50%, 40% 40%)' }}></div>
+              <div className="absolute top-2 left-24 w-20 h-20 bg-blue-700 opacity-900 animate-ping" style={{ clipPath: 'polygon(50% 0%, 60% 40%, 100% 50%, 60% 60%, 50% 100%, 40% 60%, 0% 50%, 40% 40%)' }}></div>
               {/* Main Hero Image */}
               <div className="relative w-full max-w-md mx-auto">
-                <img src="/hero-img.png" alt="Mother and child" className="w-full h-auto"  style={{minHeight:'400px'}} />
+                <img src="/hero-img.png" alt="Mother and child" className="w-full h-auto"  style={{minHeight:'600px'}} />
                 
               <div className="absolute bottom-70 left-10 w-20 h-20 p-2 bg-white rounded-full flex items-center justify-center shadow-lg">
                 <img src="baby-stroller.svg" alt="" />
@@ -87,7 +90,7 @@ export default function page() {
       </section>
 
       {/* Bottom Contact Section */}
-      <section className="bg-gradient-to-r from-pink-500 to-pink-600 text-white py-12">
+      <section className="bg-gradient-to-r from-pink-600 to-pink-700 text-white py-12 md:py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
             {/* Consult A Doctor */}
@@ -126,81 +129,82 @@ export default function page() {
       </section>
 
       {/* About Section */}
-       <section className="flex flex-col md:flex-row items-center justify-between gap-10 px-6 py-16 max-w-7xl mx-auto">
+       <section className="bg-white mb-30 md:mb-32 flex flex-col md:flex-row items-center justify-between gap-16 px-2 py-32 max-w-12xl mx-auto">
       {/* Left Image Section */}
-      <div className="relative w-full md:w-1/2 flex flex-col gap-4">
-        <div className="rounded-2xl overflow-hidden w-2/3 self-start">
+      <div className="relative w-full md:w-1/2 flex justify-center items-center mt-10 md:mt-0 mb-10 md:mb-60">
+        <div className="border-8 border-white rounded-4xl overflow-hidden w-2/3 self-start">
           <Image
             src="/baby1.jpg"
             alt="Baby smiling"
-            width={300}
-            height={200}
+            width={600}
+            height={600}
             className="object-cover w-full h-full"
           />
         </div>
 
-        <div className="rounded-2xl overflow-hidden w-4/5 self-end">
+        <div className="border-8 border-white rounded-4xl overflow-hidden w-4/5 self-end absolute top-36 left-24">
           <Image
             src="/baby2.jpg"
             alt="Happy baby"
-            width={400}
-            height={300}
+            width={700}
+            height={600}
             className="object-cover w-full h-full"
           />
         </div>
 
         {/* Experience Badge */}
-        <div className="absolute top-10 left-24 bg-white w-20 h-20 rounded-full border-[6px] border-blue-500 text-blue-500 font-bold text-[10px] flex items-center justify-center text-center leading-tight animate-pulse shadow-md">
-          <img src="about-experiance-circle.png" alt="" />
-        </div>
+       <div className="absolute top-10 left-120 w-40 h-40 rounded-full ">
+  <img src="about-experience-circle.png" alt="" className="w-full h-full animate-rotate360" />
+</div>
+
       </div>
 
       {/* Right Text Section */}
-      <div className="w-full md:w-1/2 text-center md:text-left">
-        <p className="text-sm text-[#1ec28b] font-semibold mb-2">+ ABOUT US</p>
+      <div className="w-full md:w-1/2 text-center md:text-left gap-4">
+        <p className="text-sm text-green-500 font-semibold mb-2">+ ABOUT US</p>
         <h2 className="text-4xl font-extrabold leading-snug">
           <span className="text-green-600">Fertility Clinic</span>{' '}
-          <span className="text-pink-600">in Damak, Nepal</span>
+          <span className="text-pink-600">in Damak,<br/> Nepal</span>
         </h2>
-        <p className="mt-4 text-gray-600 text-base">
+        <p className="mt-4 text-gray-500 text-base">
           Welcome to Kopila Fertility and womens Clinic, your trusted partner in
           reproductive health and womens wellness in Damak, Nepal.
         </p>
 
-        <div className="mt-6 grid grid-cols-2 gap-4 text-sm">
+        <div className="mt-6 grid grid-cols-2 gap-4 text-sm text-pink-500 font-semibold">
           <div className="flex items-center gap-2">
-            <span className="text-green-600 text-xl">✔</span> Expert Team
+             <span className="bg-green-500 text-white rounded-full px-1 font-size: 12px; font-weight: 300;">✓</span> Expert Team
           </div>
           <div className="flex items-center gap-2">
-            <span className="text-green-600 text-xl">✔</span> Personalized Care
+            <span className="bg-green-500 text-white rounded-full px-1 font-size: 12px; font-weight: 300;">✓</span> Personalized Care
           </div>
           <div className="flex items-center gap-2">
-            <span className="text-green-600 text-xl">✔</span> State-Of-The-Art Facility
+             <span className="bg-green-500 text-white rounded-full px-1 font-size: 12px; font-weight: 300;">✓</span> State-Of-The-Art Facility
           </div>
           <div className="flex items-center gap-2">
-            <span className="text-green-600 text-xl">✔</span> Comprehensive Support
+             <span className="bg-green-500 text-white rounded-full px-1 font-size: 12px; font-weight: 300;">✓</span> Comprehensive Support
           </div>
         </div>
 
-        <button className="mt-6 px-6 py-3 bg-green-600 text-white font-bold rounded-full flex items-center gap-2 hover:bg-green-700 transition">
+        <button className="mt-6 px-4 py-3 bg-green-500 text-white font-bold rounded-full flex items-center gap-2 bg-gradient-to-r from-pink-400 to-pink-600 bg-[length:0%_100%] bg-left bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_100%]">
           Read More
-          <span className="text-xl">↗</span>
+          <span className="text-xl bg-white text-blue-500 rounded-full px-2">↗</span>
         </button>
       </div>
     </section>
 
      {/* Services Section */}
-       {/* <section className="bg-[#f0f8ff] py-16 px-6">
+       <section className="bg-[#f0f8ff] py-2 px-6 ">
       <div className="max-w-7xl mx-auto text-center">
         <p className="text-sm text-[#1ec28b] font-semibold mb-2">+ OUR SERVICES</p>
-        <h2 className="text-4xl font-extrabold text-green-600">
+        <h2 className="text-5xl font-extrabold text-green-500">
           Fertility & Gyne <span className="text-pink-600">Services for You.</span>
         </h2>
-        <p className="text-gray-600 mt-2">
+        <p className="text-gray-500 mt-2">
           Dedication of Providing Professional Healthcare Services.
         </p>
 
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => (
             <div
               key={index}
@@ -223,17 +227,18 @@ export default function page() {
               </button>
             </div>
           ))}
-        </div>
+        </div> */}
 
         <p className="mt-12 text-sm text-gray-600 max-w-2xl mx-auto">
-          We believe in using the latest technology and techniques to ensure the best outcomes for our patients.
+          We believe in using the latest technology and techniques to <br/> ensure the best outcomes for our patients.
         </p>
 
-        <button className="mt-6 px-6 py-3 bg-green-600 text-white font-bold rounded-full flex items-center gap-2 hover:bg-green-700 transition">
-          View All Services <span className="text-xl">↗</span>
+        <button className="max-w-2xl mx-auto mt-6 px-4 py-3 bg-green-600 text-white font-bold rounded-full flex items-center gap-2 bg-gradient-to-r from-pink-400 to-pink-600 bg-[length:0%_100%] bg-left bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_100%]">
+          View All Services
+          <span className="text-xl bg-white text-blue-500 rounded-full px-2">↗</span>
         </button>
       </div>
-    </section> */}
+    </section>
 
     { /* Visit Us Section */ }
     <section className="relative w-full overflow-hidden bg-white min-h-screen">
@@ -242,17 +247,17 @@ export default function page() {
 
       <div className="relative z-10 flex flex-col items-center justify-center pt-20 pb-10 md:pt-32 md:pb-20">
       
-        <div className="relative w-11/12 max-w-6xl mx-auto rounded-3xl overflow-hidden shadow-2xl">
+        <div className="relative w-11/12 max-w-12xl mx-auto rounded-3xl overflow-hidden shadow-2xl">
           <div className="absolute inset-0">
             <Image
-              src="/images/mother-child-bg.jpg" 
+              src="/mother-baby.jpg" 
               alt="Mother and child"
               layout="fill"
               objectFit="cover"
               quality={90}
               className="brightness-[0.7] contrast-[1.1]" 
             />
-            <div className="absolute inset-0 bg-healofy-pink opacity-60"></div>
+            <div className="absolute inset-0 bg-pink-500 opacity-60"></div>
           </div>
 
           <div className="relative z-10 flex flex-col items-center justify-center p-8 md:p-16 text-white text-center min-h-[400px]">
@@ -260,64 +265,43 @@ export default function page() {
               + Visit Clinic
             </span>
             <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
-              Fertility & Gynecologist Specialist
+              Fertility & Gyne Specialist
             </h1>
-            <button className="flex items-center px-6 py-3 bg-white text-healofy-pink rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-              <FaPlayCircle className="mr-2 text-xl" /> Watch Video
+            <button className="flex items-center px-6 py-3 bg-white text-green-500 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+              Watch Video  <FaPlayCircle className="ml-4 text-2xl" />
             </button>
           </div>
         </div>
         <div className="w-11/12 max-w-6xl mx-auto mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center px-4">
           <div className="flex flex-col items-center">
-            <h2 className="text-healofy-pink text-4xl md:text-5xl font-bold mb-2">500+</h2>
-            <p className="text-healofy-pink text-lg md:text-xl font-medium">Successful Delivery</p>
+            <h2 className="text-pink-500 text-4xl md:text-5xl font-bold mb-2">500+</h2>
+            <p className="text-pink-500 text-lg md:text-xl font-medium">Successful Delivery</p>
             <p className="mt-2 text-gray-600 text-sm">
               Celebrating the joy of motherhood with over 500 successful deliveries.
             </p>
           </div>
           <div className="flex flex-col items-center">
-            <h2 className="text-healofy-pink text-4xl md:text-5xl font-bold mb-2">10+</h2>
-            <p className="text-healofy-pink text-lg md:text-xl font-medium">Years Of Experience</p>
+            <h2 className="text-pink-500 text-4xl md:text-5xl font-bold mb-2">10+</h2>
+            <p className="text-pink-500 text-lg md:text-xl font-medium">Years Of Experience</p>
             <p className="mt-2 text-gray-600 text-sm">
               A decade of excellence in fertility and women's healthcare.
             </p>
           </div>
           <div className="flex flex-col items-center">
-            <h2 className="text-healofy-pink text-4xl md:text-5xl font-bold mb-2">2K+</h2>
-            <p className="text-healofy-pink text-lg md:text-xl font-medium">Plus Counselling</p>
+            <h2 className="text-pink-500 text-4xl md:text-5xl font-bold mb-2">2K+</h2>
+            <p className="text-pink-500 text-lg md:text-xl font-medium">Plus Counselling</p>
             <p className="mt-2 text-gray-600 text-sm">
               Providing personalized guidance through over 2,000 counseling sessions.
             </p>
           </div>
           <div className="flex flex-col items-center">
-            <h2 className="text-healofy-pink text-4xl md:text-5xl font-bold mb-2">7+</h2>
-            <p className="text-healofy-pink text-lg md:text-xl font-medium">Experience Doctors</p>
+            <h2 className="text-pink-500 text-4xl md:text-5xl font-bold mb-2">7+</h2>
+            <p className="text-pink-500 text-lg md:text-xl font-medium">Experience Doctors</p>
             <p className="mt-2 text-gray-600 text-sm">
               Trusted care from a team of 7+ highly skilled and experienced doctors.
             </p>
           </div>
         </div>
-      </div>
-
-      <div className="fixed bottom-8 right-8 z-50 flex flex-col space-y-4">
-        <a
-          href="tel:YOUR_PHONE_NUMBER" 
-          className="w-14 h-14 bg-red-500 rounded-full flex items-center justify-center shadow-lg transition-transform duration-200 hover:scale-110"
-        >
-          <svg className="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.037 11.037 0 006.103 6.103l.774-1.548a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
-          </svg>
-        </a>
-        <a
-          href="https://wa.me/YOUR_WHATSAPP_NUMBER" 
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center shadow-lg transition-transform duration-200 hover:scale-110"
-        >
-          <svg className="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.63.4 3.2.98 4.6l-1.05 3.84 3.91-1.03c1.37.75 2.97 1.13 4.54 1.13 5.46 0 9.91-4.45 9.91-9.91s-4.45-9.91-9.91-9.91zm.04 18c-1.34 0-2.6-.33-3.73-.9l-.26-.15-2.73.72.74-2.65-.17-.28c-.68-1.12-1.04-2.42-1.04-3.79 0-4.39 3.58-7.96 7.96-7.96s7.96 3.58 7.96 7.96c0 4.39-3.58 7.96-7.96 7.96zm4.18-5.32c-.22-.11-.92-.45-1.06-.5-.15-.05-.26-.07-.37.07-.11.15-.43.5-.53.6c-.1.11-.2.12-.37.07-.15-.05-.62-.23-1.18-.73-.44-.39-.74-.87-.82-1.02-.08-.15 0-.14.1-.25.1-.11.22-.27.33-.4.11-.14.15-.24.23-.37.08-.12.04-.23-.02-.37-.06-.11-.37-.9-.51-1.23-.15-.32-.29-.27-.37-.27-.08 0-.17-.01-.26-.01-.1-.01-.26.04-.39.19-.13.15-.5.49-.5.59-.01.11-.01.21.08.36.09.15.14.23.27.39.46.66.86 1.25 1.48 1.76.6.51 1.11.75 1.5.94.38.19.6.16.82.1.22-.06.7-.29.8-.36.1-.08.22-.14.33-.11.11.03.7.32.79.37.09.06.15.07.26.07-.01-.01-.01-.07-.02-.2zm-4.18-5.32z" />
-          </svg>
-        </a>
       </div>
     </section>
     { /* Choose Us Section */}
@@ -343,19 +327,19 @@ export default function page() {
       <div className="relative z-10 container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <span className="text-sm md:text-base mb-2 font-medium uppercase tracking-wide text-gray-500">
+          <span className="text-sm md:text-base mb-2 font-medium uppercase tracking-wide text-green-500">
             + WHY CHOOSE US
           </span>
-          <h2 className="text-3xl md:text-5xl font-bold text-healofy-pink mt-2">
-            Best Fertility Clinic
+          <h2 className="text-3xl md:text-5xl font-bold text-green-600 mt-2">
+            Best Fertility <span className="text-pink-500" > Clinic </span>
           </h2>
-          <p className="text-gray-700 mt-4 text-base md:text-lg max-w-2xl mx-auto">
+          <p className="text-gray-500 mt-4 text-base md:text-lg max-w-2xl mx-auto">
             We are committed to sustainability, eco-friendly initiatives.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center justify-items-center">
-          {/* Left Column (Expert Care, Proven Track Record, Decade Of Dedication) */}
+          {/* Left Column*/}
           <div className="order-1 md:order-1 flex flex-col space-y-8 lg:space-y-12 items-end">
             <FeatureCard
               title="Expert Care:"
@@ -376,9 +360,9 @@ export default function page() {
 
           {/* Center Image */}
           <div className="order-2 md:order-2 flex justify-center items-center p-4">
-            <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-xl border-8 border-white">
+            <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-xl">
               <Image
-                src="/images/baby-happy.jpg" 
+                src="/happbaby.png" 
                 alt="Happy Baby"
                 layout="fill"
                 objectFit="cover"
@@ -388,7 +372,7 @@ export default function page() {
             </div>
           </div>
 
-          {/* Right Column (Comprehensive Support, State-Of-The-Art Facilities, Patient-Centered Approach) */}
+          {/* Right Column */}
           <div className="order-3 md:order-3 flex flex-col space-y-8 lg:space-y-12 items-start">
             <FeatureCard
               title="Comprehensive Support:"
@@ -408,8 +392,170 @@ export default function page() {
           </div>
         </div>
       </div>
+    </section>
 
-      {/* Floating contact buttons (WhatsApp & Phone)  */}
+    {/* What We Do Section */}
+     <section className="relative w-full bg-healofy-light-gray-bg py-16 md:py-24 overflow-hidden">
+      <div className="relative z-10 container mx-auto px-4 flex flex-col lg:flex-row items-center lg:items-start gap-12">
+        {/* Left Section: Image */}
+        <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
+          <div className="relative w-full max-w-lg aspect-[4/3] rounded-3xl overflow-hidden shadow-xl">
+            <Image
+              src="/images/golden-frock-baby.jpg" 
+              alt="Happy Baby"
+              layout="fill"
+              objectFit="cover"
+              quality={90}
+              className="rounded-3xl"
+            />
+          </div>
+        </div>
+
+        {/* Right Section: Content */}
+        <div className="w-full lg:w-1/2 text-center lg:text-left pt-8 lg:pt-0">
+          <span className="text-sm md:text-base mb-2 font-medium uppercase tracking-wide text-gray-500">
+            + WHAT WE DO?
+          </span>
+          <h2 className="text-3xl md:text-5xl font-bold text-healofy-green mt-2">
+            Infertility Treatment
+          </h2>
+          <p className="text-healofy-dark-gray mt-4 text-base md:text-lg leading-relaxed max-w-xl lg:mx-0 mx-auto">
+            Infertility treatment refers to medical interventions and procedures aimed at helping individuals or couples conceive a child when they face challenges in achieving pregnancy naturally.
+          </p>
+
+          {/* Accordion/Service List */}
+          <div className="mt-8 space-y-4">
+            <AccordionItem
+              icon={FaCalendarAlt}
+              title="Book An Appointment"
+              description="Schedule your visit easily through a call or online to get started on your care journey."
+              initiallyOpen={true}
+            />
+            <AccordionItem
+              icon={FaClinicMedical}
+              title="Visit Our Clinic"
+              description="Discover our state-of-the-art facilities and meet our expert team for personalized care."
+            />
+            <AccordionItem
+              icon={FaUserMd}
+              title="Consult With Our Doctors"
+              description="Get expert advice and tailored treatment plans from our highly experienced fertility specialists."
+            />
+          </div>
+        </div>
+      </div>
+
+    
+      <div className="fixed bottom-8 right-8 z-50 flex flex-col space-y-4">
+        <a
+          href="tel:YOUR_PHONE_NUMBER" 
+          className="w-14 h-14 bg-red-500 rounded-full flex items-center justify-center shadow-lg transition-transform duration-200 hover:scale-110"
+        >
+          <FaPhoneAlt className="w-7 h-7 text-white" />
+        </a>
+        <a
+          href="https://wa.me/YOUR_WHATSAPP_NUMBER"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center shadow-lg transition-transform duration-200 hover:scale-110"
+        >
+          <FaWhatsapp className="w-7 h-7 text-white" />
+        </a>
+      </div>
+    </section>
+
+    {/* Contact Section */}
+
+    <section className="relative bg-white py-16 md:py-24 overflow-hidden">
+   
+      <div className="absolute top-0 right-0 w-24 h-24 text-gray-200 opacity-50 transform translate-x-1/4 -translate-y-1/4 z-0">
+        <svg className="w-full h-full" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M13 11V3h-2v8H3v2h8v8h2v-8h8v-2h-8z"/>
+        </svg>
+      </div>
+    
+       <div className="absolute bottom-0 left-0 w-20 h-20 text-gray-200 opacity-50 transform -translate-x-1/4 translate-y-1/4 z-0">
+        <svg className="w-full h-full" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M13 11V3h-2v8H3v2h8v8h2v-8h8v-2h-8z"/>
+        </svg>
+      </div>
+
+
+      <div className="relative z-10 container mx-auto px-4 flex flex-col lg:flex-row items-center lg:items-start gap-12">
+        {/* Left Section: Google Map */}
+        <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
+          <div className="relative w-full max-w-xl aspect-[4/3] rounded-lg overflow-hidden shadow-xl border border-gray-200">
+            
+             <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14175.760161471383!2d87.42080344999999!3d26.65751995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f59265f2a1b9b1%3A0x608e08d6c70b2203!2sKopila%20Fertility%20%26%20Womens%20Clinic!5e0!3m2!1sen!2snp!4v1717013444675!5m2!1sen!2snp"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="absolute inset-0"
+            ></iframe>
+            <div className="absolute top-4 left-4 bg-white p-3 rounded-lg shadow-md max-w-[200px]">
+                <p className="font-semibold text-sm text-gray-800">Kopila Fertility & Womens Clinic</p>
+                <p className="text-xs text-gray-600">Jaycess Chowk, Damak, 57217</p>
+                <div className="flex items-center text-xs mt-1">
+                    <span className="text-yellow-500 font-bold">5.0</span>
+                    <span className="ml-1 text-gray-500">(16 reviews)</span>
+                </div>
+                <a href="#" className="text-blue-600 text-xs mt-1 block">View larger map</a>
+                <div className="flex justify-between mt-2 text-gray-500">
+                    <FaMapMarkerAlt className="text-sm" />
+                    <span className="text-sm">Directions</span>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Right Section: Contact Information */}
+        <div className="w-full lg:w-1/2 text-center lg:text-left pt-8 lg:pt-0">
+          <span className="text-sm md:text-base mb-2 font-medium uppercase tracking-wide text-healofy-contact-green">
+            + CONTACT NOW
+          </span>
+          <h2 className="text-3xl md:text-5xl font-bold text-healofy-contact-pink mt-2">
+            Consult Now
+          </h2>
+
+          <div className="mt-8 space-y-6">
+            <div className="flex items-center justify-center lg:justify-start">
+              <FaMapMarkerAlt className="text-healofy-pink text-2xl mr-4 flex-shrink-0" />
+              <p className="text-healofy-dark-gray text-lg">Jaycess Chowk, Damak-6, Jhapa</p>
+            </div>
+            <div className="flex items-center justify-center lg:justify-start">
+              <FaPhoneAlt className="text-healofy-pink text-2xl mr-4 flex-shrink-0" />
+              <a href="tel:+9779709055065" className="text-healofy-dark-gray text-lg hover:underline">
+                +977 970 905 5065
+              </a>
+            </div>
+            <div className="flex items-center justify-center lg:justify-start">
+              <FaEnvelope className="text-healofy-pink text-2xl mr-4 flex-shrink-0" />
+              <a href="mailto:info@kopilaclinic.com.np" className="text-healofy-dark-gray text-lg hover:underline">
+                info@kopilaclinic.com.np
+              </a>
+            </div>
+            <div className="flex items-center justify-center lg:justify-start">
+              <FaClock className="text-healofy-pink text-2xl mr-4 flex-shrink-0" />
+              <p className="text-healofy-dark-gray text-lg">Mon to Sat 07:00AM to 07:00PM</p>
+            </div>
+          </div>
+
+          <div className="mt-10 flex justify-center lg:justify-start">
+            <a
+              href="/app"
+              className="flex items-center px-8 py-4 bg-healofy-green-button text-white rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+            >
+              Book An Appointment <FaArrowRight className="ml-3 text-xl" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* Floating contact buttons*/}
       <div className="fixed bottom-8 right-8 z-50 flex flex-col space-y-4">
         <a
           href="+977 970 905 5065" 

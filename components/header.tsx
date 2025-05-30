@@ -32,7 +32,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
           <div className="flex space-x-4 list-none gap-4 items-center justify-between flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 list-none gap-4 items-center justify-between">
           <li><Link href="/" className="text-pink-500 hover:text-green-400 cursor-pointer font-bold" onClick={closeMenu}>Home</Link></li>
           <li><Link href="/about_Us" className="text-pink-500 hover:text-green-400 cursor-pointer font-bold" onClick={closeMenu}>About Us</Link></li>
-          <li><Link href="/services" className="text-pink-500 hover:text-green-400 cursor-pointer font-bold" onClick={closeMenu}>Services</Link></li>
+          <li><Link href="/Services" className="text-pink-500 hover:text-green-400 cursor-pointer font-bold" onClick={closeMenu}>Services</Link></li>
           <li><Link href="/faqs" className="text-pink-500 hover:text-green-400 cursor-pointer font-bold" onClick={closeMenu}>FAQs</Link></li>
           <li><Link href="/blog" className="text-pink-500 hover:text-green-400 cursor-pointer font-bold" onClick={closeMenu}>Blog</Link></li>
           <li><Link href="/contact" className="text-pink-500 hover:text-green-400 cursor-pointer font-bold" onClick={closeMenu}>Contact Us</Link></li>
