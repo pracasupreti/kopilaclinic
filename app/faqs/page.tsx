@@ -6,7 +6,7 @@ import { useState } from "react";
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState(0);
 
-  const faqs = [
+  const faqs   = [
     {
       question: "What Is Ovulation Induction?",
       answer:
