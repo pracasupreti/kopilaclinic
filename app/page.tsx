@@ -1,18 +1,25 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import "./globals.css";
 import { ArrowRight,  Star, Baby, Heart, Stethoscope, Phone, Clock  } from "lucide-react";
 import { MdMedicalServices, } from "react-icons/md";
-import { FaArrowRight, FaBaby, FaPlayCircle, FaPhoneAlt, FaWhatsapp, FaUserMd, FaClinicMedical, FaCalendarAlt, FaClock, FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
+import { FaArrowRight, FaBaby, FaCheckCircle, FaPlayCircle, FaPhoneAlt, FaWhatsapp, FaUserMd, FaClinicMedical, FaCalendarAlt, FaClock, FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
 import FeatureCard from "@/components/ui/FeatureCard";
 import AccordionItem from "@/components/ui/AccordionItem";
 import BlogPostCard from '@/components/BlogPOstCard';
 import ServiceCard from "@/components/ServiceCard";
 
 
+
 export default function page() {
+
+const [showPlayButton, setShowPlayButton] = useState(false);
+const handleToggle = () => {
+  setShowPlayButton((prev) => !prev);
+};
+
   return (
     <div className="min-h-screen bg-green-50 flex flex-col justify-between">
       {/* Hero Section */}
@@ -59,7 +66,7 @@ export default function page() {
 
             {/* Right Content - Hero Image */}
             <div className="relative flex justify-center items-center">
-              <div className="absolute top-2 left-24 w-16 h-16 animate-ping">
+              <div className="absolute top-2 left-24 w-16 h-16 animate-pop">
                 <img src="icon-star.svg" alt="" />
               </div>
               {/* Main Hero Image */}
@@ -76,7 +83,7 @@ export default function page() {
                 <img src="icon-hero-theeth-3.svg" alt="" />
               </div>
                 {/* Doctor Profile Card */}
-                <div className="absolute bottom-4 left-4 bg-white shadow-xl rounded-lg flex items-center p-2 space-x-3  max-w-full animate-bounce">
+                <div className="absolute bottom-4 left-4 bg-white shadow-xl rounded-lg flex items-center p-2 space-x-3  max-w-full animate-wiggleX">
                   <img
                     src="/DrSita.jpg?height=80&width=60"
                     alt="Dr. Sita Rai"
@@ -158,7 +165,7 @@ export default function page() {
 
         {/* Experience Badge */}
        <div className="absolute top-10 left-120 w-40 h-40 rounded-full ">
-  <img src="about-experience-circle.png" alt="" className="w-full h-full animate-rotate360" />
+  <img src="about-experience-circle.png" alt="" className="w-full h-full animate-spinClockwise" />
 </div>
 
       </div>
@@ -176,19 +183,19 @@ export default function page() {
         </p>
 
         <div className="mt-6 grid grid-cols-2 gap-4 text-sm text-pink-500 font-semibold">
-          <div className="flex items-center gap-2">
-             <span className="bg-green-500 text-white rounded-full px-1 font-size: 12px; font-weight: 300;">✓</span> Expert Team
-          </div>
-          <div className="flex items-center gap-2">
-            <span className="bg-green-500 text-white rounded-full px-1 font-size: 12px; font-weight: 300;">✓</span> Personalized Care
-          </div>
-          <div className="flex items-center gap-2">
-             <span className="bg-green-500 text-white rounded-full px-1 font-size: 12px; font-weight: 300;">✓</span> State-Of-The-Art Facility
-          </div>
-          <div className="flex items-center gap-2">
-             <span className="bg-green-500 text-white rounded-full px-1 font-size: 12px; font-weight: 300;">✓</span> Comprehensive Support
-          </div>
-        </div>
+                  <div className="flex items-center gap-2">
+                     <FaCheckCircle className="text-green-500 text-lg mr-2 flex-shrink-0" />Expert Team
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <FaCheckCircle className="text-green-500 text-lg mr-2 flex-shrink-0" />Personalized Care
+                  </div>
+                  <div className="flex items-center gap-2">
+                     <FaCheckCircle className="text-green-500 text-lg mr-2 flex-shrink-0" />State-Of-The-Art Facility
+                  </div>
+                  <div className="flex items-center gap-2">
+                     <FaCheckCircle className="text-green-500 text-lg mr-2 flex-shrink-0" />Comprehensive Support
+                  </div>
+                </div>
 
         <button className="mt-6 px-4 py-3 bg-green-500 text-white font-bold rounded-full flex items-center gap-2 bg-gradient-to-r from-pink-400 to-pink-600 bg-[length:0%_100%] bg-left bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_100%]">
           Read More
@@ -276,9 +283,15 @@ export default function page() {
             <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
               Fertility & Gyne Specialist
             </h1>
-            <button className="flex items-center px-6 py-3 bg-white text-green-500 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+            <button className="flex items-center px-6 py-3 bg-white text-green-500 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+            onClick={handleToggle}>
               Watch Video  <FaPlayCircle className="ml-4 text-2xl" />
             </button>
+            {showPlayButton && (
+              <div className="mt-6 w-full max-w-2xl mx-auto">
+                <iframe width="853" height="480" src="https://www.youtube.com/embed/8BH7WFmRs-E" title="Pregnancy: A Month-By-Month Guide | 3D Animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            )}
           </div>
         </div>
         <div className="w-11/12 max-w-6xl mx-auto mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center px-4">

@@ -20,7 +20,7 @@ const AboutUsPage = () => {
       
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-24">
           <div className="w-full flex justify-center lg:justify-end">
-            <div className="relative w-full max-w-sm h-96 rounded-xl overflow-hidden shadow-lg border border-gray-100">
+            <div className="relative w-full max-w-full h-96 rounded-xl overflow-hidden shadow-lg border border-gray-100">
               <Image
                 src="/about.jpg" 
                 alt="Happy Baby"
@@ -43,13 +43,13 @@ const AboutUsPage = () => {
             </p>
            <div className="mt-6 grid grid-cols-2 gap-4 text-sm text-pink-500 font-semibold">
           <div className="flex items-center gap-2">
-             <FaCheckCircle className="text-green-500 text-lg mr-2 flex-shrink-0" />Comprehensive Expert Team
+             <FaCheckCircle className="text-green-500 text-lg mr-2 flex-shrink-0" /> Expert Team
           </div>
           <div className="flex items-center gap-2">
-            <FaCheckCircle className="text-green-500 text-lg mr-2 flex-shrink-0" />ComprehensivePersonalized Care
+            <FaCheckCircle className="text-green-500 text-lg mr-2 flex-shrink-0" />Personalized Care
           </div>
           <div className="flex items-center gap-2">
-             <FaCheckCircle className="text-green-500 text-lg mr-2 flex-shrink-0" />Comprehensive State-Of-The-Art Facility
+             <FaCheckCircle className="text-green-500 text-lg mr-2 flex-shrink-0" />State-Of-The-Art Facility
           </div>
           <div className="flex items-center gap-2">
              <FaCheckCircle className="text-green-500 text-lg mr-2 flex-shrink-0" />Comprehensive Support
@@ -61,11 +61,11 @@ const AboutUsPage = () => {
         {/* Message from The Director Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="w-full text-center lg:text-left order-2 lg:order-1">
-            <span className="text-sm md:text-base mb-2 font-medium uppercase tracking-wide text-gray-500">
-              + OUR WORDS
+            <span className="text-sm md:text-base mb-2 font-medium uppercase tracking-wide text-green-500">
+              + Few WORDS
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-healofy-pink mt-2 mb-4">
-              Message from The Director
+            <h2 className="text-3xl md:text-4xl font-bold text-green-500 mt-2 mb-4">
+              Message from <span className='text-pink-500'>The Director</span>
             </h2>
             <p className="text-healofy-dark-gray text-base md:text-lg leading-relaxed mb-4">
               Dear valued patients and community members,
@@ -100,16 +100,9 @@ const AboutUsPage = () => {
           </div>
         </div>
       </div>
-      {/* Floating contact buttons (WhatsApp & Phone) - consistent across sections */}
-      <div className="fixed bottom-8 right-8 z-50 flex flex-col space-y-4">
+      <div className="fixed bottom-8 right-8 z-50 flex flex-col space-y-4 animate-bounce">
         <a
-          href="tel:YOUR_PHONE_NUMBER" // Replace with actual phone number
-          className="w-14 h-14 bg-red-500 rounded-full flex items-center justify-center shadow-lg transition-transform duration-200 hover:scale-110"
-        >
-          <FaPhoneAlt className="w-7 h-7 text-white" />
-        </a>
-        <a
-          href="https://wa.me/YOUR_WHATSAPP_NUMBER" // Replace with actual WhatsApp number
+          href="+977 970 905 5065" 
           target="_blank"
           rel="noopener noreferrer"
           className="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center shadow-lg transition-transform duration-200 hover:scale-110"
