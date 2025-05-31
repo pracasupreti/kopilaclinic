@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
-import { blog_data } from '../Assets/assets';
+import { blog_data } from '../../Assets/assets'; // Update the path since this is inside [id] folder
 
 const Page = ({ params }) => {
   const [data, setData] = useState(null);
