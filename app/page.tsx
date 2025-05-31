@@ -278,7 +278,7 @@ const handleToggle = () => {
 
           <div className="relative z-10 flex flex-col items-center justify-center p-8 md:p-16 text-white text-center min-h-[400px]">
             <span className="text-sm md:text-base mb-2 font-medium uppercase tracking-wide">
-              + Visit Clinic
+              + Visit  Clinic
             </span>
             <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
               Fertility & Gyne Specialist
