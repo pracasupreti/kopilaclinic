@@ -50,3 +50,43 @@
 body {
  font-family:'poppins', sans-serif;
 }
+
+
+@keyframes wiggleX {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(48px);
+  }
+}
+
+.animate-wiggleX {
+  animation: wiggleX 3s ease-in-out infinite;
+}
+
+@keyframes spinClockwise {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spinClockwise {
+  animation: spinClockwise 12s linear infinite;
+}
+
+@keyframes pop {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+.animate-pop {
+  animation: pop 2s linear infinite;
+}
