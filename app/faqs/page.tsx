@@ -1,9 +1,17 @@
 'use client';
 
-// pages/faq.js
-import { useState } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect, useState } from "react";
 
 export default function FAQ() {
+    useEffect(()=>{
+      AOS.init({
+        duration:900,
+        delay:20,
+        once:true
+      });
+    },[]);
   const [openIndex, setOpenIndex] = useState(0);
 
   const faqs = [
@@ -117,10 +125,10 @@ export default function FAQ() {
     <main className="bg-white min-h-screen  p-10 flex gap-10 mx-auto container relative ">
       {/* Sidebar */}
       <aside className="bg-blue-50 rounded-2xl p-6 w-72 shadow  h-auto sticky top-10 self-start">
-        <ul className="space-y-6 text-pink-700 font-semibold text-lg">
+        <ul className="space-y-6 text-pink-600 font-semibold text-lg">
           {sidebarLinks.map((link, i) => (
             <li key={i} className="flex justify-between items-center">
-              {link} <span>↗️</span>
+              {link} <span className="text-blue-400">↗️</span>
             </li>
           ))}
         </ul>
@@ -128,17 +136,18 @@ export default function FAQ() {
       <div className="flex-1">
         <div className="flex flex-col">
                 <section className="flex-1">
-        <h1 className="text-4xl font-bold text-pink-700 mb-6">
+        <h1 className="text-4xl font-bold text-pink-600 mb-6" data-aos="fade-up">
           Ovulation Induction
         </h1>
         {faqs.map((faq, index) => (
           <div
             key={index}
+            data-aos="fade-up"
             className="border rounded-xl mb-4 overflow-hidden"
           >
             <button
               onClick={() => toggleAccordion(index)}
-              className="w-full text-left p-4 text-xl font-semibold text-pink-700 flex justify-between items-center"
+              className="w-full text-left p-4 text-xl font-semibold text-pink-500 flex justify-between items-center"
             >
               {faq.question}
               <div className="bg-green-500 text-white rounded-full w-8 h-8 text-center">{openIndex === index ? "⬇️" : "➡️"}</div>
@@ -150,17 +159,18 @@ export default function FAQ() {
         ))}
       </section>
             <section className="mt-5">
-                     <h1 className="text-4xl font-bold text-pink-700 mb-6">
+                     <h1 className="text-4xl font-bold text-pink-600 mb-6" data-aos="fade-up">
           Intrauterine Insemination (IUI)
         </h1> 
         {faqs1.map((faq, index) => (
           <div
+          data-aos="fade-up"
             key={index}
             className="border rounded-xl mb-4 overflow-hidden"
           >
             <button
               onClick={() => toggleAccordion(index)}
-              className="w-full text-left p-4 text-xl font-semibold text-pink-700 flex justify-between items-center"
+              className="w-full text-left p-4 text-xl font-semibold text-pink-500 flex justify-between items-center"
             >
               {faq.question}
               <div className="bg-green-500 text-white rounded-full w-8 h-8 text-center">{openIndex === index ? "⬇️" : "➡️"}</div>
@@ -171,19 +181,20 @@ export default function FAQ() {
           </div>
         ))}
       </section>
-            <section >
-        <h1 className="text-4xl font-bold text-pink-700 mb-6">
+            <section className="mt-5">
+        <h1 className="text-4xl font-bold text-pink-600 mb-6" data-aos="fade-up">
           In Vitro Fertilization (IUF)
         </h1>
 
         {faqs2.map((faq, index) => (
           <div
             key={index}
+            data-aos="fade-up"
             className="border rounded-xl mb-4 overflow-hidden"
           >
             <button
               onClick={() => toggleAccordion(index)}
-              className="w-full text-left p-4 text-xl font-semibold text-pink-700 flex justify-between items-center"
+              className="w-full text-left p-4 text-xl font-semibold text-pink-500 flex justify-between items-center"
             >
               {faq.question}
               <div className="bg-green-500 text-white rounded-full w-8 h-8 text-center">{openIndex === index ? "⬇️" : "➡️"}</div>
@@ -194,19 +205,20 @@ export default function FAQ() {
           </div>
         ))}
       </section>
-                  <section >
-        <h1 className="text-4xl font-bold text-pink-700 mb-6">
+                  <section className="mt-5">
+        <h1 className="text-4xl font-bold text-pink-600 mb-6" data-aos="fade-up">
           Antenatal check-Up
         </h1>
 
         {faqs3.map((faq, index) => (
           <div
+          data-aos="fade-up"
             key={index}
             className="border rounded-xl mb-4 overflow-hidden"
           >
             <button
               onClick={() => toggleAccordion(index)}
-              className="w-full text-left p-4 text-xl font-semibold text-pink-700 flex justify-between items-center"
+              className="w-full text-left p-4 text-xl font-semibold text-pink-500 flex justify-between items-center"
             >
               {faq.question}
               <div className="bg-green-500 text-white rounded-full w-8 h-8 text-center">{openIndex === index ? "⬇️" : "➡️"}</div>
