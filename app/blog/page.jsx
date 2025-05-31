@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { blog_data } from '../Assets/assets';
+import { blog_data } from '../assets/assets';
 
 export default function BlogPage() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -45,14 +45,14 @@ export default function BlogPage() {
           <Link
             key={post.slug}
             href={`/blog/${post.id}`}
-            className="group block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
+            className="group block bg-white overflow-hidden rounded-lg shadow-md  hover:shadow-lg transition-shadow duration-300 "
           >
-            <div className="relative h-48 overflow-hidden image-anime">
+            <div className="relative overflow-hidden h-48  image-anime">
               <Image
                 src={post.image}
                 alt={post.title}
                 fill
-                className="object-cover transition-transform duration-500 group-hover:scale-110"
+                className="object-cover rounded-[30px] transition-transform duration-500 group-hover:scale-110 "
               />
 
               {/* Light Sweep */}
