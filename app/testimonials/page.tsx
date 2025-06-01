@@ -7,7 +7,6 @@ import { motion, useAnimation, useInView } from "framer-motion";
 import { useRef } from "react";
 
 const testimonials = [
-  // ... (same testimonials array as before)
   {
     name: "Sunita Karki",
     location: "Canada",
