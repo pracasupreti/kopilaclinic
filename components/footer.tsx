@@ -76,7 +76,7 @@ const socialLinks = [
                     <Link href="/contact" className="text-white hover:text-green-600 transition-colors"> 
                       Contact
                     </Link>
-                    <Link href="/privacy" className="text-white hover:text-green-600 transition-colors"> 
+                    <Link href="/faqs" className="text-white hover:text-green-600 transition-colors"> 
                       Privacy Policy
                     </Link>
                   </nav>
