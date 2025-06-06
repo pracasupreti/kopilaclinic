@@ -75,7 +75,7 @@ export default function Services() {
             className="bg-white rounded-3xl shadow-md p-6 hover:shadow-lg transition duration-300 hover:bg-pink-600 group"
           >
             <img
-              src="service.svg"
+              src="icon.svg"
               alt="icon"
               className="h-12 w-12 mb-3"
             />

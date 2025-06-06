@@ -15,7 +15,7 @@ const BlogPostCard = ({ imageUrl, title, description, link = '#' }) => {
         />
       </div>
       <div className="p-6 flex flex-col flex-grow">
-        <h3 className="text-xl font-bold text-pink-500 mb-2 line-clamp-2">
+        <h3 className="text-xl font-bold text-primary mb-2 line-clamp-2">
           {title}
         </h3>
         <p className="text-healofy-gray-500 text-sm mb-4 flex-grow line-clamp-3">
@@ -23,7 +23,7 @@ const BlogPostCard = ({ imageUrl, title, description, link = '#' }) => {
         </p>
         <a
           href={link}
-          className="inline-flex items-center text-green-500 font-semibold hover:underline"
+          className="inline-flex items-center text-secondary font-semibold hover:underline"
         >
           Read More <FaPlayCircle className="ml-2 text-base" />
         </a>
