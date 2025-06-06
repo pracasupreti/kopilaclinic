@@ -47,7 +47,7 @@ const socialLinks = [
                   className="h-16 w-16 ml-70 -mt-30 opacity-20" />
           </div>
 
-                <div className="space-y-4 ml-0 md:ml-8 ">
+                <div className="space-y-4 ml-0 mt-8 md:mt-0 md:ml-8 ">
                   <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
                   <nav className="flex flex-col gap-2">
                     <Link

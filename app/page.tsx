@@ -10,6 +10,7 @@ import FeatureCard from "@/components/ui/FeatureCard";
 import AccordionItem from "@/components/ui/AccordionItem";
 import BlogPostCard from '@/components/BlogPOstCard';
 import ServiceCard from "@/components/ServiceCard";
+import Head from "next/head";
 
 
 
@@ -22,6 +23,19 @@ export default function Page() { // Changed to Page for convention
   };
 
   return (
+    <><Head>
+        <title>Kopila Fertility & Womens Clinic, Damak-6, Jhapa, Nepal</title>
+        <meta name="description" content="Kopila Fertility & Womens Clinic in Damak, Jhapa, Nepal, offers expert gynecological care, fertility treatments, and Womens health services with state-of-the-art facilities and compassionate care."/>
+	      <meta name="keywords" content="jhapa gyne clinic, kopila clinic, damak gyne clinic, women clinic damak, jhapa clinic"/>
+	      <meta name="author" content="PRACAS"/>
+        <meta property="og:url" content="https://kopilaclinic.com.np"/>
+        <meta property="og:title" content="Kopila Fertility & Womens Clinic | Damak, Jhapa, Nepal"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:description" content="Kopila Fertility & Womens Clinic in Damak, Jhapa, Nepal, offers expert gynecological care, fertility treatments, and Womens health services with state-of-the-art facilities and compassionate care."/>
+        <meta property="og:image" content="https://kopilaclinic.com.np/images/og.jpg"/>
+        <meta property="og:image:alt" content="Kopila Fertility & Womens Clinic logo or clinic image"/>
+    
+      </Head>
     <div className="min-h-screen bg-green-50 flex flex-col justify-between w-full max-w-full overflow-x-hidden">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-50 to-gray-100 relative overflow-hidden mt-24 w-full max-w-full px-2 sm:px-4 md:px-6 lg:px-8 xl:px-0">
@@ -599,5 +613,6 @@ export default function Page() { // Changed to Page for convention
         </div>
       </section>
     </div>
+    </>
   );
 }

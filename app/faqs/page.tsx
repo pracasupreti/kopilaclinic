@@ -2,6 +2,7 @@
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Head from 'next/head';
 import { useEffect, useRef, useState } from "react";
 
 export default function FAQ() {
@@ -150,6 +151,19 @@ export default function FAQ() {
   };
 
   return (
+    <><Head>
+        <title>Kopila Fertility & Womens Clinic, Damak-6, Jhapa, Nepal</title>
+        <meta name="description" content="Kopila Fertility & Womens Clinic in Damak, Jhapa, Nepal, offers expert gynecological care, fertility treatments, and Womens health services with state-of-the-art facilities and compassionate care."/>
+	      <meta name="keywords" content="jhapa gyne clinic, kopila clinic, damak gyne clinic, women clinic damak, jhapa clinic"/>
+	      <meta name="author" content="PRACAS"/>
+        <meta property="og:url" content="https://kopilaclinic.com.np"/>
+        <meta property="og:title" content="Kopila Fertility & Womens Clinic | Damak, Jhapa, Nepal"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:description" content="Kopila Fertility & Womens Clinic in Damak, Jhapa, Nepal, offers expert gynecological care, fertility treatments, and Womens health services with state-of-the-art facilities and compassionate care."/>
+        <meta property="og:image" content="https://kopilaclinic.com.np/images/og.jpg"/>
+        <meta property="og:image:alt" content="Kopila Fertility & Womens Clinic logo or clinic image"/>
+    
+      </Head>
     <main
       id="faq-main"
       className="bg-white min-h-screen p-10 flex gap-10 mx-auto container relative opacity-0 aos-init"
@@ -278,10 +292,11 @@ export default function FAQ() {
         </div>
       </div>
     </main>
+    </>
   );
 }
 
-// Add this to your global CSS if not already present for fade-in effect
+{/* // Add this to your global CSS if not already present for fade-in effect
 /*
 [data-aos="fade-in"] {
   opacity: 0;
@@ -291,4 +306,4 @@ export default function FAQ() {
 [data-aos="fade-in"].aos-animate {
   opacity: 1;
 }
-*/
+*/ */}
