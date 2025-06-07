@@ -296,7 +296,7 @@ export default function FAQ() {
   );
 }
 
-{/* // Add this to your global CSS if not already present for fade-in effect
+// Add this to your global CSS if not already present for fade-in effect
 /*
 [data-aos="fade-in"] {
   opacity: 0;
@@ -306,4 +306,4 @@ export default function FAQ() {
 [data-aos="fade-in"].aos-animate {
   opacity: 1;
 }
-*/ */}
+*/ 

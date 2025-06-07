@@ -593,8 +593,8 @@ export default function Page() { // Changed to Page for convention
 
         {/* Floating contact buttons*/}
         <div className="fixed bottom-20 right-4 md:bottom-30 md:right-8 z-50 flex flex-col space-y-8">
-           <span className="absolute inset-0 rounded-full bg-primary opacity-40 animate-ping z-0"></span>
-
+           <span className="absolute rounded-full bg-primary opacity-40 animate-ping z-10 w-12 h-12 md:w-14 md:h-14"></span>
+           <span className="absolute rounded-full bg-primary opacity-40 animate-ping z-4 w-12 h-12 md:w-14 md:h-14"></span>
   {/* Phone button */}
   <a
     href="tel:+9779709055065"
