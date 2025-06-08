@@ -1,30 +1,31 @@
-'use client';
-import QuotedText from '@/components/QuotedText';
-import React, { useEffect, useRef } from 'react';
-import Image from 'next/image';
+"use client";
+import QuotedText from "@/components/QuotedText";
+import React, { useEffect, useRef } from "react";
+import Image from "next/image";
+import BlogExtrasSection from "../../../components/BlogExtraSection";
 
 export default function BlogPost({ post }) {
   const contentRefs = useRef([]);
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
+    if (typeof window !== "undefined") {
       const observer = new IntersectionObserver(
-        entries => {
-          entries.forEach(entry => {
+        (entries) => {
+          entries.forEach((entry) => {
             if (entry.isIntersecting) {
-              entry.target.classList.add('visible');
+              entry.target.classList.add("visible");
             }
           });
         },
         { threshold: 0.1 }
       );
 
-      contentRefs.current.forEach(el => {
+      contentRefs.current.forEach((el) => {
         if (el) observer.observe(el);
       });
 
       return () => {
-        contentRefs.current.forEach(el => {
+        contentRefs.current.forEach((el) => {
           if (el) observer.unobserve(el);
         });
       };
@@ -37,7 +38,7 @@ export default function BlogPost({ post }) {
       <div className="bg-[#EFF8FF] py-16 px-5 md:px-12 lg:px-28 text-center">
         <h1
           className="text-3xl md:text-5xl font-bold text-[#E00C5B] mb-4 fade-in-on-scroll"
-          ref={el => (contentRefs.current[0] = el)}
+          ref={(el) => (contentRefs.current[0] = el)}
         >
           {post.title}
         </h1>
@@ -46,7 +47,10 @@ export default function BlogPost({ post }) {
       {/* Content */}
       <div className="px-5 py-16 lg:px-28  mx-auto space-y-8">
         {/* Blog Image */}
-        <div className="fade-in-on-scroll" ref={el => (contentRefs.current[1] = el)}>
+        <div
+          className="fade-in-on-scroll"
+          ref={(el) => (contentRefs.current[1] = el)}
+        >
           <Image
             src={post.image}
             alt={post.title}
@@ -58,18 +62,38 @@ export default function BlogPost({ post }) {
         </div>
 
         {/* Blog Text */}
-        <div className="fade-in-on-scroll" ref={el => (contentRefs.current[2] = el)}>
+        <div
+          className="fade-in-on-scroll"
+          ref={(el) => (contentRefs.current[2] = el)}
+        >
           {/* <p className="text-lg text-gray-700 leading-relaxed whitespace-pre-line">
             {post.description || post.excerpt}
           </p> */}
-          {post.paragraphs.map((paragraph, index) => (
-            paragraph.isQuoted? <QuotedText text = {paragraph.text} />:
-            <p key={index} className=" text-font-gray leading-7 whitespace-pre-line mb-4 text-base">
-              {paragraph.text}
-            </p>
-          ))}
+          {post.paragraphs.map((paragraph, index) =>
+            paragraph.isQuoted ? (
+              <QuotedText text={paragraph.text} />
+            ) : (
+              <p
+                key={index}
+                className=" text-font-gray leading-7 whitespace-pre-line mb-4 text-base"
+              >
+                {paragraph.text}
+              </p>
+            )
+          )}
+          {/* Bullet List Section */}
+           <h2 className="text-pink-600 text-xl font-bold mb-2">Treatment for PID</h2>
+          {post.bullets && post.bullets.length > 0 && (
+            <ul className="list-disc list-inside text-[#E00C5B] text-base leading-7 ml-5 mt-4 space-y-2">
+              {post.bullets.map((item, idx) => (
+                <li key={idx}>{item}</li>
+              ))}
+            </ul>
+          )}
         </div>
       </div>
+      
+      <BlogExtrasSection post={post} />
     </div>
   );
 }

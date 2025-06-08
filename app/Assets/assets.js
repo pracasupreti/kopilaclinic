@@ -25,6 +25,21 @@ export const blog_data = [
         text: "Antenatal care is crucial for monitoring the health of both the mother and the baby throughout pregnancy. This blog highlights the significance of regular antenatal check-ups, the tests involved, and how they help prevent complications, ensuring a smooth and healthy pregnancy journey.",
       },
     ],
+       
+  conclusion:
+    "In conclusion, Pelvic Inflammatory Disease (PID) is a serious condition that can affect fertility if left untreated. Early diagnosis and prompt treatment with antibiotics are crucial for preventing complications and preserving reproductive health. If you experience pelvic pain, abnormal discharge, or painful intercourse, seek medical advice right away. Practising safe sex and getting regular STI screenings are essential for reducing the risk of PID and maintaining overall reproductive health.",
+
+  
+  tags: ["PelvicInflammatory", "Fertility", "Parantage", "Blockage"],
+
+ 
+  bullets: [
+    "Antibiotics: Oral antibiotics treat PID; IV antibiotics are used for severe cases.",
+    "Pain Management: Over-the-counter pain relievers or stronger medications for severe pain.",
+    "Treatment for Partner(s): Partners must also be tested and treated to prevent reinfection.",
+    "Surgery: May be needed for abscesses or severe reproductive organ damage.",
+    "Fertility Preservation: IVF can be recommended if PID causes tube damage.",
+  ],
     description: `Antenatal checkups involve a series of medical examinations that help ensure a healthy pregnancy:
 
 
@@ -49,7 +64,31 @@ export const blog_data = [
     title: "Understanding Endometriosis: Symptoms & Treatments",
     excerpt:
       "When endometrial tissue grows outside the uterus, causing pain and fertility issues.",
-    paragraphs: [],
+    paragraphs: [
+       {
+        text: "AEndometriosis can significantly affect a woman's fertility and overall well-being. This blog explores the condition, how it causes pain and infertility, and discusses treatment options such as medication, surgery, and fertility treatments to help women manage the condition and increase their chances of pregnancy.",
+      },
+      {text:"Endometriosis can pose challenges to fertility, but with the right treatments, the dream of parenthood is still achievable. ",isQuoted:true},
+
+      {
+        text: "Endometriosis can affect fertility by causing damage to reproductive organs. The growth of endometrial tissue outside the uterus can block or distort the fallopian tubes, preventing eggs from being fertilized or reaching the uterus. It can also lead to the formation of ovarian cysts, which may reduce egg quality, and cause scar tissue or adhesions, disrupting the normal function of the ovaries and uterus. These factors can make it more difficult to conceive, though many women with endometriosis still manage to get pregnant with or without treatment.",
+      },
+    ],
+       
+  conclusion:
+    "In conclusion, Pelvic Inflammatory Disease (PID) is a serious condition that can affect fertility if left untreated. Early diagnosis and prompt treatment with antibiotics are crucial for preventing complications and preserving reproductive health. If you experience pelvic pain, abnormal discharge, or painful intercourse, seek medical advice right away. Practising safe sex and getting regular STI screenings are essential for reducing the risk of PID and maintaining overall reproductive health.",
+
+  
+  tags: ["PelvicInflammatory", "Fertility", "Parantage", "Blockage"],
+
+ 
+  bullets: [
+    "Antibiotics: Oral antibiotics treat PID; IV antibiotics are used for severe cases.",
+    "Pain Management: Over-the-counter pain relievers or stronger medications for severe pain.",
+    "Treatment for Partner(s): Partners must also be tested and treated to prevent reinfection.",
+    "Surgery: May be needed for abscesses or severe reproductive organ damage.",
+    "Fertility Preservation: IVF can be recommended if PID causes tube damage.",
+  ],
     description: `Endometriosis affects 1 in 10 women and involves:
 
     **Common Symptoms:**
@@ -78,7 +117,31 @@ export const blog_data = [
     title: "Pelvic Inflammatory Disease: Risks & Prevention",
     excerpt:
       "Serious infection of female reproductive organs often caused by STIs.",
-    paragraphs: [],
+    paragraphs: [
+       {
+        text: "Pelvic Inflammatory Disease (PID) is an infection of the reproductive organs that can have serious consequences for a woman’s health, particularly her fertility. If left untreated, PID can cause long-term damage to the fallopian tubes, uterus, and ovaries, potentially leading to infertility. Understanding the causes, symptoms, and treatment options for PID is essential in preventing complications and preserving fertility.",
+      },
+      {text:"Early intervention restores health, preserves fertility, and brings the hope of parenthood within reach.",isQuoted:true},
+
+      {
+        text: "PID is typically caused by a bacterial infection that spreads from the cervix or vagina into the upper reproductive organs. The most common bacteria responsible for PID are Chlamydia trachomatis and Neisseria gonorrhoeae, which are sexually transmitted. Other infections, such as bacterial vaginosis, can also increase the risk of PID.",
+      },
+    ],
+    
+  conclusion:
+    "In conclusion, Pelvic Inflammatory Disease (PID) is a serious condition that can affect fertility if left untreated. Early diagnosis and prompt treatment with antibiotics are crucial for preventing complications and preserving reproductive health. If you experience pelvic pain, abnormal discharge, or painful intercourse, seek medical advice right away. Practising safe sex and getting regular STI screenings are essential for reducing the risk of PID and maintaining overall reproductive health.",
+
+  
+  tags: ["PelvicInflammatory", "Fertility", "Parantage", "Blockage"],
+
+ 
+  bullets: [
+    "Antibiotics: Oral antibiotics treat PID; IV antibiotics are used for severe cases.",
+    "Pain Management: Over-the-counter pain relievers or stronger medications for severe pain.",
+    "Treatment for Partner(s): Partners must also be tested and treated to prevent reinfection.",
+    "Surgery: May be needed for abscesses or severe reproductive organ damage.",
+    "Fertility Preservation: IVF can be recommended if PID causes tube damage.",
+  ],
     description: `PID can lead to permanent damage if untreated:
 
     **Primary Causes:**
@@ -107,7 +170,31 @@ export const blog_data = [
     slug: "adenomyosis",
     title: "Adenomyosis: When Uterine Lining Grows Into Muscle",
     excerpt: "Condition causing painful periods and heavy bleeding.",
-    paragraphs: [],
+    paragraphs: [
+         {
+        text: "Pelvic Inflammatory Disease (PID) is an infection of the reproductive organs that can have serious consequences for a woman’s health, particularly her fertility. If left untreated, PID can cause long-term damage to the fallopian tubes, uterus, and ovaries, potentially leading to infertility. Understanding the causes, symptoms, and treatment options for PID is essential in preventing complications and preserving fertility.",
+      },
+      {text:"Early intervention restores health, preserves fertility, and brings the hope of parenthood within reach.",isQuoted:true},
+
+      {
+        text: "PID is typically caused by a bacterial infection that spreads from the cervix or vagina into the upper reproductive organs. The most common bacteria responsible for PID are Chlamydia trachomatis and Neisseria gonorrhoeae, which are sexually transmitted. Other infections, such as bacterial vaginosis, can also increase the risk of PID.",
+      },
+    ],
+       
+  conclusion:
+    "In conclusion, Pelvic Inflammatory Disease (PID) is a serious condition that can affect fertility if left untreated. Early diagnosis and prompt treatment with antibiotics are crucial for preventing complications and preserving reproductive health. If you experience pelvic pain, abnormal discharge, or painful intercourse, seek medical advice right away. Practising safe sex and getting regular STI screenings are essential for reducing the risk of PID and maintaining overall reproductive health.",
+
+  
+  tags: ["PelvicInflammatory", "Fertility", "Parantage", "Blockage"],
+
+ 
+  bullets: [
+    "Antibiotics: Oral antibiotics treat PID; IV antibiotics are used for severe cases.",
+    "Pain Management: Over-the-counter pain relievers or stronger medications for severe pain.",
+    "Treatment for Partner(s): Partners must also be tested and treated to prevent reinfection.",
+    "Surgery: May be needed for abscesses or severe reproductive organ damage.",
+    "Fertility Preservation: IVF can be recommended if PID causes tube damage.",
+  ],
     description: `Adenomyosis occurs when endometrial tissue grows into the uterine muscle:
 
     **Key Characteristics:**
@@ -133,7 +220,31 @@ export const blog_data = [
     slug: "uterine-fibroids",
     title: "Uterine Fibroids: Non-Cancerous Growths Explained",
     excerpt: "Common tumors affecting up to 80% of women by age 50.",
-    paragraphs: [],
+    paragraphs: [
+         {
+        text: "Pelvic Inflammatory Disease (PID) is an infection of the reproductive organs that can have serious consequences for a woman’s health, particularly her fertility. If left untreated, PID can cause long-term damage to the fallopian tubes, uterus, and ovaries, potentially leading to infertility. Understanding the causes, symptoms, and treatment options for PID is essential in preventing complications and preserving fertility.",
+      },
+      {text:"Early intervention restores health, preserves fertility, and brings the hope of parenthood within reach.",isQuoted:true},
+
+      {
+        text: "PID is typically caused by a bacterial infection that spreads from the cervix or vagina into the upper reproductive organs. The most common bacteria responsible for PID are Chlamydia trachomatis and Neisseria gonorrhoeae, which are sexually transmitted. Other infections, such as bacterial vaginosis, can also increase the risk of PID.",
+      },
+    ],
+       
+  conclusion:
+    "In conclusion, Pelvic Inflammatory Disease (PID) is a serious condition that can affect fertility if left untreated. Early diagnosis and prompt treatment with antibiotics are crucial for preventing complications and preserving reproductive health. If you experience pelvic pain, abnormal discharge, or painful intercourse, seek medical advice right away. Practising safe sex and getting regular STI screenings are essential for reducing the risk of PID and maintaining overall reproductive health.",
+
+  
+  tags: ["PelvicInflammatory", "Fertility", "Parantage", "Blockage"],
+
+ 
+  bullets: [
+    "Antibiotics: Oral antibiotics treat PID; IV antibiotics are used for severe cases.",
+    "Pain Management: Over-the-counter pain relievers or stronger medications for severe pain.",
+    "Treatment for Partner(s): Partners must also be tested and treated to prevent reinfection.",
+    "Surgery: May be needed for abscesses or severe reproductive organ damage.",
+    "Fertility Preservation: IVF can be recommended if PID causes tube damage.",
+  ],
     description: `Fibroids vary in size and location:
 
     **Types:**
@@ -161,7 +272,31 @@ export const blog_data = [
     slug: "polycystic-ovary",
     title: "PCOS: Hormonal Imbalance & Fertility Challenges",
     excerpt: "Common endocrine disorder affecting reproductive-aged women.",
-    paragraphs: [],
+    paragraphs: [
+         {
+        text: "Pelvic Inflammatory Disease (PID) is an infection of the reproductive organs that can have serious consequences for a woman’s health, particularly her fertility. If left untreated, PID can cause long-term damage to the fallopian tubes, uterus, and ovaries, potentially leading to infertility. Understanding the causes, symptoms, and treatment options for PID is essential in preventing complications and preserving fertility.",
+      },
+      {text:"Early intervention restores health, preserves fertility, and brings the hope of parenthood within reach.",isQuoted:true},
+
+      {
+        text: "PID is typically caused by a bacterial infection that spreads from the cervix or vagina into the upper reproductive organs. The most common bacteria responsible for PID are Chlamydia trachomatis and Neisseria gonorrhoeae, which are sexually transmitted. Other infections, such as bacterial vaginosis, can also increase the risk of PID.",
+      },
+    ],
+       
+  conclusion:
+    "In conclusion, Pelvic Inflammatory Disease (PID) is a serious condition that can affect fertility if left untreated. Early diagnosis and prompt treatment with antibiotics are crucial for preventing complications and preserving reproductive health. If you experience pelvic pain, abnormal discharge, or painful intercourse, seek medical advice right away. Practising safe sex and getting regular STI screenings are essential for reducing the risk of PID and maintaining overall reproductive health.",
+
+  
+  tags: ["PelvicInflammatory", "Fertility", "Parantage", "Blockage"],
+
+ 
+  bullets: [
+    "Antibiotics: Oral antibiotics treat PID; IV antibiotics are used for severe cases.",
+    "Pain Management: Over-the-counter pain relievers or stronger medications for severe pain.",
+    "Treatment for Partner(s): Partners must also be tested and treated to prevent reinfection.",
+    "Surgery: May be needed for abscesses or severe reproductive organ damage.",
+    "Fertility Preservation: IVF can be recommended if PID causes tube damage.",
+  ],
     description: `PCOS involves three main features:
 
     **Diagnostic Criteria (2/3 Required):**
@@ -188,7 +323,31 @@ export const blog_data = [
     slug: "intrauterine-insemination",
     title: "IUI: A Step-by-Step Guide to the Procedure",
     excerpt: "Less invasive fertility treatment option for selected couples.",
-    paragraphs: [],
+    paragraphs: [
+         {
+        text: "Pelvic Inflammatory Disease (PID) is an infection of the reproductive organs that can have serious consequences for a woman’s health, particularly her fertility. If left untreated, PID can cause long-term damage to the fallopian tubes, uterus, and ovaries, potentially leading to infertility. Understanding the causes, symptoms, and treatment options for PID is essential in preventing complications and preserving fertility.",
+      },
+      {text:"Early intervention restores health, preserves fertility, and brings the hope of parenthood within reach.",isQuoted:true},
+
+      {
+        text: "PID is typically caused by a bacterial infection that spreads from the cervix or vagina into the upper reproductive organs. The most common bacteria responsible for PID are Chlamydia trachomatis and Neisseria gonorrhoeae, which are sexually transmitted. Other infections, such as bacterial vaginosis, can also increase the risk of PID.",
+      },
+    ],
+       
+  conclusion:
+    "In conclusion, Pelvic Inflammatory Disease (PID) is a serious condition that can affect fertility if left untreated. Early diagnosis and prompt treatment with antibiotics are crucial for preventing complications and preserving reproductive health. If you experience pelvic pain, abnormal discharge, or painful intercourse, seek medical advice right away. Practising safe sex and getting regular STI screenings are essential for reducing the risk of PID and maintaining overall reproductive health.",
+
+  
+  tags: ["PelvicInflammatory", "Fertility", "Parantage", "Blockage"],
+
+ 
+  bullets: [
+    "Antibiotics: Oral antibiotics treat PID; IV antibiotics are used for severe cases.",
+    "Pain Management: Over-the-counter pain relievers or stronger medications for severe pain.",
+    "Treatment for Partner(s): Partners must also be tested and treated to prevent reinfection.",
+    "Surgery: May be needed for abscesses or severe reproductive organ damage.",
+    "Fertility Preservation: IVF can be recommended if PID causes tube damage.",
+  ],
     description: `Intrauterine Insemination involves:
 
     **Process Steps:**
@@ -219,7 +378,31 @@ export const blog_data = [
     slug: "in-vitro-fertilization",
     title: "IVF: The Complete Journey from Stimulation to Transfer",
     excerpt: "Advanced assisted reproductive technology for challenging cases.",
-    paragraphs: [],
+    paragraphs: [
+         {
+        text: "Pelvic Inflammatory Disease (PID) is an infection of the reproductive organs that can have serious consequences for a woman’s health, particularly her fertility. If left untreated, PID can cause long-term damage to the fallopian tubes, uterus, and ovaries, potentially leading to infertility. Understanding the causes, symptoms, and treatment options for PID is essential in preventing complications and preserving fertility.",
+      },
+      {text:"Early intervention restores health, preserves fertility, and brings the hope of parenthood within reach.",isQuoted:true},
+
+      {
+        text: "PID is typically caused by a bacterial infection that spreads from the cervix or vagina into the upper reproductive organs. The most common bacteria responsible for PID are Chlamydia trachomatis and Neisseria gonorrhoeae, which are sexually transmitted. Other infections, such as bacterial vaginosis, can also increase the risk of PID.",
+      },
+    ],
+       
+  conclusion:
+    "In conclusion, Pelvic Inflammatory Disease (PID) is a serious condition that can affect fertility if left untreated. Early diagnosis and prompt treatment with antibiotics are crucial for preventing complications and preserving reproductive health. If you experience pelvic pain, abnormal discharge, or painful intercourse, seek medical advice right away. Practising safe sex and getting regular STI screenings are essential for reducing the risk of PID and maintaining overall reproductive health.",
+
+  
+  tags: ["PelvicInflammatory", "Fertility", "Parantage", "Blockage"],
+
+ 
+  bullets: [
+    "Antibiotics: Oral antibiotics treat PID; IV antibiotics are used for severe cases.",
+    "Pain Management: Over-the-counter pain relievers or stronger medications for severe pain.",
+    "Treatment for Partner(s): Partners must also be tested and treated to prevent reinfection.",
+    "Surgery: May be needed for abscesses or severe reproductive organ damage.",
+    "Fertility Preservation: IVF can be recommended if PID causes tube damage.",
+  ],
     description: `IVF involves multiple stages:
 
     **Treatment Phases:**

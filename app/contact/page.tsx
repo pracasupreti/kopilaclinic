@@ -16,11 +16,11 @@ export default function ContactPage() {
           For emergency care or to schedule an appointment & visit our clinic.
         </p>
       </div>
-
+ 
       {/* Main Flex Layout */}
-      <div className="flex flex-col lg:flex-row gap-8">
+      <div className="flex flex-col lg:flex-row gap-9 ">
         {/* Left: Contact Info Cards */}
-        <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 transform md:translate-x-28 md:w-[40%]">
           {/* Card Template */}
           {[
             {
@@ -89,7 +89,7 @@ export default function ContactPage() {
         </div>
 
         {/* Right: Map */}
-        <div className="flex-1 min-h-[400px]">
+        <div className="flex-1 min-h-[400px] border-s-100 border-white ">
           <Map />
         </div>
       </div>
