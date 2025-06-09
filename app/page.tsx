@@ -289,10 +289,10 @@ export default function Page() { // Changed to Page for convention
       {/* Visit Us Section */}
       <section className="relative w-full overflow-hidden bg-white min-h-screen py-16 md:py-24 px-2 sm:px-4 md:px-6 lg:px-8 xl:px-0">
         <div className="relative z-10 flex flex-col items-center justify-center px-0 w-full max-w-full">
-          <div className="relative w-full max-w-6xl mx-auto rounded-3xl overflow-hidden shadow-2xl">
+          <div className="relative w-full max-w-7xl mx-auto rounded-3xl overflow-hidden shadow-2xl">
             <div className="absolute inset-0">
               <Image
-                src="/mother-baby.jpg"
+                src="/visitClinic.jpg"
                 alt="Mother and child"
                 layout="fill"
                 objectFit="cover"
