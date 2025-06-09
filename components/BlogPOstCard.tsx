@@ -2,7 +2,11 @@ import React from 'react';
 import Image from 'next/image';
 import { FaPlayCircle } from 'react-icons/fa'; 
 
-const BlogPostCard = ({ imageUrl, title, description, link = '#' }) => {
+interface BlogPostCardProps {
+  imageUrl:string,title:string,description:string,link:string
+}
+
+const BlogPostCard = ({ imageUrl, title, description, link = '#' } : BlogPostCardProps ) => {
   return (
     <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col h-full">
       <div className="relative w-full aspect-video"> 

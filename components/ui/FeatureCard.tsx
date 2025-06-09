@@ -2,7 +2,13 @@
 import React from 'react';
 import Image from 'next/image';
 
-const FeatureCard = ({ title, description, alignment = 'left' }) => {
+type FeatureCardProps = {
+  title: string;
+  description: string;
+  alignment?: 'left' | 'right';
+};
+
+const FeatureCard: React.FC<FeatureCardProps> = ({ title, description, alignment = 'left' }) => {
   return (
     <div className={`flex flex-col ${alignment === 'left' ? 'items-end text-right' : 'items-start text-left'} max-w-sm mx-auto`}>
       <div className="flex items-center space-x-2">

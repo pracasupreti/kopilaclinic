@@ -3,14 +3,13 @@ import Image from "next/image";
 import React, { useState } from "react";
 import Link from "next/link";
 import "./globals.css"; // Assuming this contains base styles and potentially global utility classes
-import { ArrowRight, Star, Baby, Heart, Stethoscope, Phone, Clock } from "lucide-react";
-import { MdMedicalServices } from "react-icons/md"; // This import is not used in the provided code
-import { FaArrowRight, FaBaby, FaCheckCircle, FaPlayCircle, FaPhoneAlt, FaWhatsapp, FaUserMd, FaClinicMedical, FaCalendarAlt, FaClock, FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
+import { ArrowRight, Star, Phone, Clock } from "lucide-react";
+import { FaCheckCircle, FaPlayCircle, FaPhoneAlt, FaWhatsapp, FaUserMd, FaClinicMedical, FaCalendarAlt, FaClock, FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
 import FeatureCard from "@/components/ui/FeatureCard";
 import AccordionItem from "@/components/ui/AccordionItem";
-import BlogPostCard from '@/components/BlogPOstCard';
 import ServiceCard from "@/components/ServiceCard";
 import Head from "next/head";
+import BlogPostCard from "@/components/BlogPostCard";
 
 
 
@@ -463,15 +462,13 @@ export default function Page() { // Changed to Page for convention
                 initiallyOpen={true}
               />
               <AccordionItem
-                icon={FaClinicMedical}
-                title="Visit Our Clinic"
-                description="Discover our state-of-the-art facilities and meet our expert team for personalized care."
-              />
+                  icon={FaClinicMedical}
+                  title="Visit Our Clinic"
+                  description="Discover our state-of-the-art facilities and meet our expert team for personalized care." initiallyOpen={false}              />
               <AccordionItem
-                icon={FaUserMd}
-                title="Consult With Our Doctors"
-                description="Get expert advice and tailored treatment plans from our highly experienced fertility specialists."
-              />
+                  icon={FaUserMd}
+                  title="Consult With Our Doctors"
+                  description="Get expert advice and tailored treatment plans from our highly experienced fertility specialists." initiallyOpen={false}              />
             </div>
           </div>
         </div>
