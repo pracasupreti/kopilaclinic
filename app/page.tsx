@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import React, { useState } from "react";
 import Link from "next/link";
 import "./globals.css"; // Assuming this contains base styles and potentially global utility classes
