@@ -32,7 +32,10 @@ export default function Header() {
             width={180}
             height={60}
             className="h-16 w-auto"
-          />
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
         </Link>
 
         {/* Mobile Menu Toggle */}

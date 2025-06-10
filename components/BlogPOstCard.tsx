@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
+import Image from "next/image";
 import { FaPlayCircle } from 'react-icons/fa'; 
 
 interface BlogPostCardProps {
@@ -13,10 +13,12 @@ const BlogPostCard = ({ imageUrl, title, description, link = '#' } : BlogPostCar
         <Image
           src={imageUrl}
           alt={title}
-          layout="fill"
-          objectFit="cover"
           quality={80}
-        />
+          fill
+          sizes="100vw"
+          style={{
+            objectFit: "cover"
+          }} />
       </div>
       <div className="p-6 flex flex-col flex-grow">
         <h3 className="text-xl font-bold text-primary mb-2 line-clamp-2">
