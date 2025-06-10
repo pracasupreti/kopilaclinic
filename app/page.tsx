@@ -89,7 +89,7 @@ export default function Page() { // Changed to Page for convention
               </div>
               {/* Main Hero Image */}
               <div className="relative w-full max-w-full md:max-w-full mx-auto aspect-[7/8] -top-12 -left-12 fade-in"> {/* Using aspect ratio for better control */}
-                <Image src="/hero-img.png" 
+                <Image src="/home/hero-img.png" 
                 alt="Mother and child"
                  layout="fill"
                   objectFit="contain" 
@@ -107,7 +107,7 @@ export default function Page() { // Changed to Page for convention
                 {/* Doctor Profile Card */}
                 <div className="absolute bottom-4 left-4 bg-white shadow-xl rounded-lg flex items-center p-2 space-x-3 w-56 animate-wiggleX"> 
                   <Image
-                    src="/DrSita.jpg"
+                    src="/home/DrSita.jpg"
                     alt="Dr. Sita Rai"
                     width={80} // Explicit width
                     height={100} // Explicit height
@@ -172,7 +172,7 @@ export default function Page() { // Changed to Page for convention
         <div className="relative w-full md:w-1/2 flex justify-center md:justify-end items-center mb-90 mr-30 md:-top-40">
           <div className="border-8 border-white rounded-4xl overflow-hidden w-2/3 self-start absolute top-1 left-20">
           <Image
-            src="/baby1.jpg"
+            src="/home/baby1.jpg"
             alt="Baby smiling"
             width={600}
             height={600}
@@ -182,7 +182,7 @@ export default function Page() { // Changed to Page for convention
 
         <div className="border-8 border-white rounded-4xl overflow-hidden w-4/5 self-end absolute top-36 left-24">
           <Image
-            src="/baby2.jpg"
+            src="/home/baby2.jpg"
             alt="Happy baby"
             width={700}
             height={600}
@@ -431,7 +431,7 @@ export default function Page() { // Changed to Page for convention
           <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
             <div className="relative w-full max-w-xl aspect-[4/3] rounded-3xl overflow-hidden shadow-xl">
               <Image
-                src="/how-it-work-img.jpg"
+                src="/home/how-it-work-img.jpg"
                 alt="Happy Baby"
                 layout="fill"
                 objectFit="cover"
