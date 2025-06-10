@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { FaEye } from "react-icons/fa";
 import Head from "next/head";
 

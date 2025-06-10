@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { FaCheckCircle, FaPhoneAlt, FaWhatsapp, FaStar, FaArrowLeft, FaArrowRight, FaPlayCircle } from 'react-icons/fa';
 import ServiceCard from "@/components/ServiceCard";
 import React, { useState } from "react";
