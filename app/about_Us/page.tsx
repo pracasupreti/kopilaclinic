@@ -113,7 +113,6 @@ const AboutUsPage = () => {
                 <Image
                   src="/about.jpg"
                   alt="Happy Baby"
-                  fill
                   quality={90}
                   className="rounded-xl"
                   style={{
@@ -194,7 +193,6 @@ const AboutUsPage = () => {
                 <Image
                   src="/doctor.jpg"
                   alt="Dr. Sita Rai - Director"
-                  fill
                   quality={90}
                   className="rounded-4xl"
                   style={{
@@ -268,7 +266,6 @@ const AboutUsPage = () => {
                 <Image
                   src="/visitClinic.jpg"
                   alt="Mother and child"
-                  fill
                   quality={90}
                   className="brightness-[0.7] contrast-[1.1]"
                   style={{
@@ -383,7 +380,6 @@ const AboutUsPage = () => {
                 <Image
                   src="/iui.jpg"
                   alt="Pregnant woman"
-                  fill
                   quality={90}
                   className="rounded-4xl"
                   style={{
@@ -418,7 +414,6 @@ const AboutUsPage = () => {
                   <Image
                     src="/testimonials.jpg"
                     alt="Mother and child smiling"
-                    fill
                     className="rounded-t-lg md:rounded-l-lg md:rounded-tr-none"
                     style={{
                       objectFit: "cover",

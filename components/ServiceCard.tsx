@@ -9,9 +9,9 @@ interface ServiceCardProps {
 
 const ServiceCard = ({ iconUrl, title, description, link = '#' }: ServiceCardProps ) => {
   return (
-    <div className="bg-white rounded-xl shadow-lg transition duration-300 group p-6 flex flex-col h-full relative overflow-hidden">
+    <div className="bg-white rounded-2xl shadow-lg transition duration-300 group p-6 flex flex-col h-full relative overflow-hidden">
       <div className="absolute left-0 bottom-0 w-full h-0 group-hover:h-full bg-primary z-0 text-white transition-all duration-700 pointer-events-none" style={{transitionProperty:'height,opacity'}} />
-      <div className="relative z-10">
+      <div className="relative z-10 font-relaxed">
         <div className="flex items-center mb-4">
           <Image
             src={iconUrl}
@@ -24,15 +24,15 @@ const ServiceCard = ({ iconUrl, title, description, link = '#' }: ServiceCardPro
               height: "auto"
             }} />
         </div>
-        <h3 className="text-xl font-bold text-primary ml-4">
+        <h3 className="text-xl font-bold text-primary ml-4 mb-4 text-left group-hover:text-white">
           {title}
         </h3>
-        <p className="text-gray-500 text-base mb-6 flex-grow">
+        <p className="text-gray-500 text-base mb-6 flex-grow group-hover:text-white text-left">
           {description}
         </p>
         <Link
           href={link}
-          className="inline-flex items-center text-secondary font-semibold hover:underline"
+          className="inline-flex items-center text-secondary font-semibold group-hover:text-white"
         >
           Read More <FaArrowRight className="ml-2 text-sm" />
         </Link>

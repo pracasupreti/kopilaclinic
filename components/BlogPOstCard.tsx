@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { FaPlayCircle } from 'react-icons/fa'; 
 
 interface BlogPostCardProps {
@@ -14,6 +14,8 @@ const BlogPostCard = ({ imageUrl, title, description, link = '#' } : BlogPostCar
           src={imageUrl}
           alt={title}
           quality={80}
+          height={800}
+          width={800}
           sizes="100vw"
           style={{
             objectFit: "cover"

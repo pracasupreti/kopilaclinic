@@ -1,6 +1,6 @@
 
 import React from 'react';
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 type FeatureCardProps = {
   title: string;
@@ -8,13 +8,13 @@ type FeatureCardProps = {
   alignment?: 'left' | 'right';
 };
 
-const FeatureCard: React.FC<FeatureCardProps> = ({ title, description, alignment = 'left' }) => {
+const FeatureCard = ({ title, description, alignment = 'left' } : FeatureCardProps) => {
   return (
     <div className={`flex flex-col ${alignment === 'left' ? 'items-end text-right' : 'items-start text-left'} max-w-sm mx-auto`}>
       <div className="flex items-center space-x-2">
         {alignment === 'right' && (
           <Image
-            src="icon.svg"
+            src="/icon.svg"
             alt="Flower Icon"
             width={32}
             height={32}
