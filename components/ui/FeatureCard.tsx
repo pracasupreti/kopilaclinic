@@ -14,7 +14,7 @@ const FeatureCard = ({ title, description, alignment = 'left' } : FeatureCardPro
       <div className="flex items-center space-x-2">
         {alignment === 'right' && (
           <Image
-            src="/icon.svg"
+            src="/public/icon.svg"
             alt="Flower Icon"
             width={32}
             height={32}

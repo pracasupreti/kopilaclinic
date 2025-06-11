@@ -48,7 +48,7 @@ export default function Page() { // Changed to Page for convention
               </div>
 
               <div className="absolute space-y-12 justify-center mt-16 slide-down">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-primary mb-4 md:mb-6 leading-relax drop-shadow-lg">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-primary mb-4 md:mb-6 leading-relax drop-shadow-lg">
                 Fertility <span className="text-secondary">and</span> <br className="hidden sm:inline" /> <span className="text-primary">Women's Clinic</span>
               </h1>
 
@@ -107,7 +107,7 @@ export default function Page() { // Changed to Page for convention
                 {/* Doctor Profile Card */}
                 <div className="absolute bottom-4 left-4 bg-white shadow-xl rounded-lg flex items-center p-2 space-x-3 w-56 animate-wiggleX"> 
                   <Image
-                    src="/home/DrSita.jpg"
+                    src="/DrSita.jpg"
                     alt="Dr. Sita Rai"
                     width={80} // Explicit width
                     height={100} // Explicit height
@@ -168,11 +168,12 @@ export default function Page() { // Changed to Page for convention
 
       {/* About Section */}
        <section className="bg-white mb-30 md:mb-32 flex flex-col md:flex-row items-center justify-between gap-16 px-2 py-32 max-w-12xl mx-auto w-full max-w-full">
+     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-24">
      {/* Left Image Section */}
         <div className="relative w-full md:w-1/2 flex justify-center md:justify-end items-center mb-90 mr-30 md:-top-40">
           <div className="border-8 border-white rounded-4xl overflow-hidden w-2/3 self-start absolute top-1 left-20">
           <Image
-            src="/home/baby1.jpg"
+            src="/baby1.jpg"
             alt="Baby smiling"
             width={600}
             height={600}
@@ -182,18 +183,25 @@ export default function Page() { // Changed to Page for convention
 
         <div className="border-8 border-white rounded-4xl overflow-hidden w-4/5 self-end absolute top-36 left-24">
           <Image
-            src="/home/baby2.jpg"
+            src="/baby2.jpg"
             alt="Happy baby"
-            width={700}
+            width={800}
             height={600}
             className="object-cover w-full h-full"
           />
         </div>
 
         {/* Experience Badge */}
-       <div className="absolute top-10 left-70 md:left-120 w-40 h-40 rounded-full ">
-  <img src="about-experience-circle.png" alt="" className="w-full h-full animate-spinClockwise" />
-</div>
+      <div className="absolute top-10 left-70 md:left-120 w-40 h-40 rounded-full ">
+        <Image
+          src="/about-experience-circle.png"
+          alt="Experience Circle"
+          layout="fill"
+          className="w-full h-full animate-spinClockwise"
+          objectFit="contain"
+          priority
+        />
+      </div>
         </div>
 
         {/* Right Text Section */}
@@ -229,6 +237,7 @@ export default function Page() { // Changed to Page for convention
               <span className="text-xl bg-white text-blue-500 rounded-full px-2">↗</span>
             </button>
           </Link>
+        </div>
         </div>
       </section>
 
@@ -445,13 +454,13 @@ export default function Page() { // Changed to Page for convention
           <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
             <div className="relative w-full max-w-xl aspect-[4/3] rounded-3xl overflow-hidden shadow-xl">
               <Image
-                src="/home/how-it-work-img.jpg"
+                src="/how-it-work-img.jpg"
                 alt="Happy Baby"
                 layout="fill"
                 objectFit="cover"
                 quality={90}
                 className="rounded-3xl"
-              />
+              /> 
             </div>
           </div>
 

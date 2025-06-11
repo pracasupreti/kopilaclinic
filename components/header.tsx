@@ -22,21 +22,12 @@ export default function Header() {
   const closeMenu = () => setIsMenuOpen(false);
 
   return (
-    <header className="bg-green-50 shadow-md border-b border-gray-300 px-4 md:px-12 py-3 sticky top-0 z-50">
+    <header className="bg-green-50 shadow-md border-b border-gray-300 px-4 md:px-12 py-7 sticky top-0 z-50">
       <nav className="flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex-shrink-0">
-          <Image
-            src="/logo.svg"
-            alt="Kopila clinic logo"
-            width={180}
-            height={60}
-            className="h-16 w-auto"
-            style={{
-              maxWidth: "100%",
-              height: "auto"
-            }} />
-        </Link>
+       <Link href="/" className="flex shrink-0">
+              <img src="logo.svg" alt="Kopila clinic logo" width={310} height={90} className="h-20 w-auto" />
+            </Link>
 
         {/* Mobile Menu Toggle */}
         <div className="md:hidden">
@@ -51,7 +42,7 @@ export default function Header() {
             isMenuOpen ? "flex" : "hidden"
           } flex-col md:flex md:flex-row md:items-center md:space-x-8 absolute md:static top-20 left-0 w-full md:w-auto bg-white md:bg-transparent z-40 shadow-md md:shadow-none p-4 md:p-0`}
         >
-          <ul className="flex flex-col md:flex-row md:space-x-8 space-y-4 md:space-y-0 text-sm md:text-base font-semibold text-primary">
+          <ul className="flex flex-col md:flex-row md:space-x-12 space-y-4 md:space-y-0 text-sm md:text-base font-semibold text-primary">
             {NAV_PAGES.map((page) => (
               <li key={page.name}>
                 <Link
@@ -79,3 +70,5 @@ export default function Header() {
     </header>
   );
 }
+
+
