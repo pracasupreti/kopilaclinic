@@ -29,6 +29,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary:  #e00c5b;
+  --secondary: #0f9f16;
 }
 @theme{
    --color-font-gray: rgb(82, 114, 130)
@@ -38,6 +40,8 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -90,3 +94,22 @@ body {
 .animate-pop {
   animation: pop 2s linear infinite;
 }
+
+ body.fade-in {
+            animation: fadeInBg 1.2s;
+          }
+          @keyframes fadeInBg {
+            from { background: #fff; }
+            to { background: #f3fbff; }
+          }
+          .slide-down {
+            opacity: 0;
+            transform: translateY(-60px);
+            animation: slideDown 1.2s forwards;
+          }
+          @keyframes slideDown {
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }

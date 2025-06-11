@@ -11,12 +11,12 @@ const AccordionItem = ({ icon: Icon, title, description, initiallyOpen = false }
       <div className="flex items-center justify-between">
         <div className="flex items-center">
           {Icon && <Icon className="text-blue-500 text-2xl mr-4" />} 
-          <h3 className="text-lg md:text-xl font-semibold text-pink-600">{title}</h3>
+          <h3 className="text-lg md:text-xl font-semibold text-primary">{title}</h3>
         </div>
         {isOpen ? (
-          <FaChevronUp className="text-pink-500 transition-transform duration-300 transform rotate-180" />
+          <FaChevronUp className="text-primary transition-transform duration-300 transform rotate-180" />
         ) : (
-          <FaChevronDown className="text-pink-500 transition-transform duration-300" />
+          <FaChevronDown className="text-primary transition-transform duration-300" />
         )}
       </div>
       {isOpen && (
