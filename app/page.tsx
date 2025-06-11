@@ -248,15 +248,15 @@ export default function Page() { // Changed to Page for convention
       {/* Services Section */}
            <section className="bg-[#f0f8ff] py-2 px-6 ">
       <div className="max-w-7xl mx-auto text-center">
-        <p className="text-sm text-secondary font-semibold mb-2 slide-down">+ OUR SERVICES</p>
+        <p className="text-sm text-secondary font-semibold mb-4 slide-down">+ OUR SERVICES</p>
         <h2 className="text-5xl font-extrabold text-secondary slide-down">
           Fertility & Gyne <span className="text-primary">Services for You.</span>
         </h2>
-        <p className="text-gray-500 mt-2 fade-in">
+        <p className="text-gray-500 mt-8 fade-in">
           Dedication of Providing Professional Healthcare Services.
         </p>
 
-          <div className="relative z-10 container mx-auto mt-12">
+          <div className="relative z-10 container mx-auto mt-12 text-left">
             {/* Services Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6 justify-items-center">
               <ServiceCard
