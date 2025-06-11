@@ -167,32 +167,32 @@ export default function Page() { // Changed to Page for convention
 
 
       {/* About Section */}
-       <section className="bg-white mb-30 md:mb-32 flex flex-col md:flex-row items-center justify-between gap-16 px-2 py-32 max-w-12xl mx-auto w-full max-w-full">
-     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-24">
+       <section className="bg-white mb-30 md:mb-32 flex flex-col md:flex-row items-left md:items-center md:justify-between gap-16 px-0 md:px-2 py-32  w-full max-w-full">
+     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-24 mt-24">
      {/* Left Image Section */}
-        <div className="relative w-full md:w-1/2 flex justify-center md:justify-end items-center mb-90 mr-30 md:-top-40">
-          <div className="border-8 border-white rounded-4xl overflow-hidden w-2/3 self-start absolute top-1 left-20">
+        <div className="relative flex justify-center md:justify-end items-center mb-90 mr-30 md:-top-40">
+          <div className="border-8 border-white rounded-4xl overflow-hidden self-start absolute left-4 w-[680px] md:w-[420px]">
           <Image
             src="/baby1.jpg"
             alt="Baby smiling"
-            width={600}
-            height={600}
-            className="object-cover w-full h-full"
+            width={360}
+            height={800}
+            className="object-cover w-full h-full scale-120 origin-center"
           />
         </div>
 
-        <div className="border-8 border-white rounded-4xl overflow-hidden w-4/5 self-end absolute top-36 left-24">
+        <div className="border-8 border-white rounded-4xl overflow-hidden self-end absolute top-86 left-120 md:top-36 md:left-6 w-[220px] md:w-[600px]">
           <Image
             src="/baby2.jpg"
             alt="Happy baby"
-            width={800}
-            height={600}
+            width={600}
+            height={400}
             className="object-cover w-full h-full"
           />
         </div>
 
         {/* Experience Badge */}
-      <div className="absolute top-10 left-70 md:left-120 w-40 h-40 rounded-full ">
+      <div className="absolute top-100 left-20 md:left-90 md:top-10 w-26 h-26 md:w-36 md:h-36 rounded-full ">
         <Image
           src="/about-experience-circle.png"
           alt="Experience Circle"
@@ -202,21 +202,25 @@ export default function Page() { // Changed to Page for convention
           priority
         />
       </div>
+      <div className="top-100 left-20 md:left-120 md:top-10">
+      <Image src="icon-star.svg" alt="star" 
+      height={200} width={200} className="h-12 w-12 opacity-30 "/>
+      </div>
         </div>
 
         {/* Right Text Section */}
-        <div className="w-full md:w-1/2 text-center md:text-left">
+        <div className="text-center text-left md:text-left sm:px-4 sm:mt-26">
           <p className="text-sm text-secondary font-semibold mb-2 slide-down">+ ABOUT US</p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-snug text-secondary slide-down">
             Fertility Clinic{' '}
             <span className="text-primary">in Damak,<br className="hidden sm:inline" /> Nepal</span>
           </h2>
-          <p className="mt-4 text-gray-500 text-base md:text-lg max-w-xl mx-auto md:mx-0 slide-down">
+          <p className="mt-4 text-gray-500 text-base md:text-lg max-w-xl mx-0 md:mx-0 slide-down">
             Welcome to Kopila Fertility and womens Clinic, your trusted partner in
             reproductive health and womens wellness in Damak, Nepal.
           </p>
 
-          <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-6 text-sm text-primary font-semibold">
+          <div className="mt-6 grid grid-cols-1 sm:grid-cols-1 gap-y-4 gap-x-6 text-sm text-primary font-semibold">
             <div className="flex md:justify-start text-left md:text-left">
               <FaCheckCircle className="text-secondary text-lg mr-2 flex-shrink-0" />Expert Team
             </div>
