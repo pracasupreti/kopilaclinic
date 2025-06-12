@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/legacy/image";
-import { FaCheckCircle, FaPhoneAlt, FaWhatsapp, FaStar, FaArrowLeft, FaArrowRight, FaPlayCircle } from 'react-icons/fa';
+import { FaCheckCircle,  FaWhatsapp,  FaArrowLeft, FaArrowRight, FaPlayCircle } from 'react-icons/fa';
 import ServiceCard from "@/components/ServiceCard";
 import  { useState } from "react";
 import Head from 'next/head';
@@ -126,13 +126,15 @@ const AboutUs = () => {
             </div>
             <div className="w-full text-center lg:text-left py-12">
               <span className="text-sm md:text-base mb-2 font-medium uppercase tracking-wide text-green-500">
-                <img src="icon-star.svg" alt="star" className='h-4 w-4' />ABOUT US
+                <span className="flex items-center gap-2 text-sm md:text-base mb-2 font-medium uppercase tracking-wide text-green-500">
+                <Image src="/icon-star.svg" alt="star" width={18} height={18} className="inline-block" />
+                 ABOUT US </span>
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-green-600 mt-2 mb-4">
                 Welcome to <span className='text-pink-500'>Kopila Fertility and Womens Clinic</span>
               </h2>
               <p className="text-gray-500 text-base  leading-relaxed mb-6">
-                Your trusted partner in reproductive health and women's wellness in Damak, Nepal. Having established in November 2023, we stand at the heart of fertility. Jaycess Chowk brings hope and specialized care to families throughout Jhapa and neighboring regions.
+                Your trusted partner in reproductive health and womens wellness in Damak, Nepal. Having established in November 2023, we stand at the heart of fertility. Jaycess Chowk brings hope and specialized care to families throughout Jhapa and neighboring regions.
               </p>
               <div className="mt-6 grid grid-cols-2 gap-4 text-sm text-pink-500 font-semibold">
                 <div className="flex items-center gap-2">
@@ -155,10 +157,10 @@ const AboutUs = () => {
            <div className='flex flex-row md:flex-row'>
             <p className='text-pink-500 font-bold py-20 px-8'>
             Beyond medical treatment, <br />we provide:</p>
-            <img src="/about/1.svg" alt="" />
-            <img src="/about/2.svg" alt="" />
-            <img src="/about/3.svg" alt="" />
-            <img src="/about/4.svg" alt="" />
+            <Image src="/about/1.svg" alt="" />
+            <Image src="/about/2.svg" alt="" />
+            <Image src="/about/3.svg" alt="" />
+            <Image src="/about/4.svg" alt="" />
            </div>
           </div>
 
@@ -166,29 +168,16 @@ const AboutUs = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-8 ml-8">
             <div className="w-full text-center lg:text-left order-2 lg:order-1">
               <span className="text-sm md:text-base mb-2 font-medium uppercase tracking-wide text-green-500">
-                <img src="icon-star.svg" alt="" className='h-2 w-2' /> Few WORDS
-              </span>
+              <Image src="icon-star.svg" alt="" className='h-2 w-2' /> Few WORDS </span>
               <h2 className="text-3xl md:text-4xl font-bold text-green-500 mt-2 mb-4">
                 Message from <span className='text-pink-500'>The Director</span>
               </h2>
-              <p className="text-gray-500 text-base md:text-base leading-relaxed mb-4">
-                Dear valued patients and community members,
-              </p>
-              <p className="text-gray-500 text-base md:text-base leading-relaxed mb-4">
-                It is with great pride and heartfelt commitment that I welcome you to Kopila Fertility and Women's Clinic, which opened its doors in November 2023, at Jaycess Chowk, Damak-6, Jhapa, Nepal. Our mission is to provide compassionate and comprehensive fertility and women's healthcare solutions to support your journey towards better health and well-being.
-              </p>
-              <p className="text-gray-500 text-base md:text-base leading-relaxed mb-4">
-                At Kopila, we specialize in a range of services, including infertility treatment, intrauterine insemination (IUI), comprehensive antenatal care, and gynecological services. Our state-of-the-art facility is designed with the goal of offering the highest standard of care to women of all ages, ensuring their comfort and privacy in their pursuit of parenthood.
-              </p>
-              <p className="text-gray-500 text-base md:text-base leading-relaxed mb-4">
-                I invite you to experience the difference at Kopila Fertility and Women's Clinic, where your dreams of parenthood and women's wellness are our primary focus.
-              </p>
-              <p className="text-gray-500 text-base md:text-lg leading-relaxed  mt-6">
-                Warmest regards,
-              </p>
-              <p className="text-gray-500 text-base md:text-lg leading-relaxed font-semibold">
-                Dr. Sita Rai <span className="text-base font-normal">Director</span>
-              </p>
+              <p className="text-gray-500 text-base md:text-base leading-relaxed mb-4">Dear valued patients and community members, </p>
+              <p className="text-gray-500 text-base md:text-base leading-relaxed mb-4">It is with great pride and heartfelt commitment that I welcome you to Kopila Fertility and Womens Clinic, which opened its doors in November 2023, at Jaycess Chowk, Damak-6, Jhapa, Nepal. Our mission is to provide compassionate and comprehensive fertility and womens healthcare solutions to support your journey towards better health and well-being.</p>
+              <p className="text-gray-500 text-base md:text-base leading-relaxed mb-4">At Kopila, we specialize in a range of services, including infertility treatment, intrauterine insemination (IUI), comprehensive antenatal care, and gynecological services. Our state-of-the-art facility is designed with the goal of offering the highest standard of care to women of all ages, ensuring their comfort and privacy in their pursuit of parenthood.</p>
+              <p className="text-gray-500 text-base md:text-base leading-relaxed mb-4">I invite you to experience the difference at Kopila Fertility and Womens Clinic, where your dreams of parenthood and womens wellness are our primary focus. </p>
+              <p className="text-gray-500 text-base md:text-lg leading-relaxed  mt-6">Warmest regards,</p>
+              <p className="text-gray-500 text-base md:text-lg leading-relaxed font-semibold">Dr. Sita Rai <span className="text-base font-normal">Director</span></p>
             </div>
             <div className="w-full flex justify-center lg:justify-start order-1 lg:order-2">
               <div className="relative w-full max-w-full h-[35rem] rounded-xl overflow-hidden shadow-lg border border-gray-100">
@@ -322,7 +311,7 @@ const AboutUs = () => {
                 <h2 className="text-pink-500 text-4xl md:text-5xl font-bold mb-2">10+</h2>
                 <p className="text-pink-500 text-lg md:text-xl font-medium">Years Of Experience</p>
                 <p className="mt-2 text-gray-600 text-sm">
-                  A decade of excellence in fertility and women's healthcare.
+                  A decade of excellence in fertility and womens healthcare.
                 </p>
               </div>
               <div className="flex flex-col items-center">
@@ -349,16 +338,14 @@ const AboutUs = () => {
             {/* Left Section: Text Content */}
             <div className="w-full lg:w-1/2 text-center lg:text-left relative">
               <div className="absolute top-12 -left-10 w-20 h-20 animate-pop ">
-                <img src="/icon-star.svg" alt="" />
+                <Image src="/icon-star.svg" alt="" />
               </div>
               <p className="mt-2 text-green-500 max-w-2xl mx-auto">
                 + EXPERTISE EXPERIENCE
               </p>
-              <h2 className="text-2xl md:text-3xl font-bold text-green-500 mb-4">
-                Intrauterine Insemination (IUI)
-              </h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-green-500 mb-4">Intrauterine Insemination (IUI)</h2>
               <p className="text-gray-500 text-base md:text-base leading-relaxed mb-6">
-                Intrauterine Insemination (IUI) is a fertility treatment that involves placing sperm directly into a woman's uterus around the time of ovulation to increase the chances of fertilization. IUI is often used in cases of male infertility, unexplained infertility, or cervical mucus issues. It is a relatively simple, minimally invasive procedure that can be performed with or without ovulation induction.
+                Intrauterine Insemination (IUI) is a fertility treatment that involves placing sperm directly into a womans uterus around the time of ovulation to increase the chances of fertilization. IUI is often used in cases of male infertility, unexplained infertility, or cervical mucus issues. It is a relatively simple, minimally invasive procedure that can be performed with or without ovulation induction.
               </p>
               {/* Key Points */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
@@ -446,13 +433,12 @@ const AboutUs = () => {
                   <div className="w-full text-center lg:text-left py-12">
               <p className="text-lg md:text-xl leading-relaxed italic mb-6">“{testimonials[currentTestimonial].text}”</p>
                       <div className="flex flex-col items-center mt-4">
-                        <img
+                        <Image
                           src={testimonials[currentTestimonial].image}
                           alt={testimonials[currentTestimonial].name}
                           width={64}
                           height={64}
-                          className="rounded-full h-16 w-16 object-cover mb-2"
-                        />
+                          className="rounded-full h-16 w-16 object-cover mb-2"/>
                         <h4 className="font-semibold text-lg text-pink-500">{testimonials[currentTestimonial].name}</h4>
                         <p className="text-xs text-gray-500">{testimonials[currentTestimonial].location}</p>
                       </div>

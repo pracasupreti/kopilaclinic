@@ -1,8 +1,9 @@
 "use client"
 
 
-import { Facebook, Twitter,Instagram, Youtube,  Mail, MapPin, Phone } from "lucide-react"
+import { Facebook, Twitter,Instagram, Youtube } from "lucide-react"
 import Link from "next/link";
+import Image from "next/image";
 
 
 export default function Footer() {
@@ -20,10 +21,10 @@ const socialLinks = [
             <div className="container mx-auto px-4 py-12">
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-2">
                 <div className="space-y-4">
-                  <img src="/icon-star.svg" alt="icon-star"
+                  <Image src="/icon-star.svg" alt="icon-star"
                   className="h-16 w-16 ml-40 -mt-12 opacity-20" />
                   <div className="flex items-center gap-8">
-                    <img src="/footer-logo.svg" alt="Kopila Clinic Logo" width={310} height={90} className=" h-16 w-auto m-2" />
+                    <Image src="/footer-logo.svg" alt="Kopila Clinic Logo" width={310} height={90} className=" h-16 w-auto m-2" />
                   </div>
                   <p className="text-white">
                     Welcome to Kopila Fertility and Womens Clinic,
@@ -43,7 +44,7 @@ const socialLinks = [
             ))}
           </div>
           
-                  <img src="/icon-star.svg" alt="icon-star"
+                  <Image src="/icon-star.svg" alt="icon-star"
                   className="h-16 w-16 ml-70 -mt-30 opacity-20" />
           </div>
 

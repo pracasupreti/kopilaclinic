@@ -4,6 +4,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Head from 'next/head';
 import { useEffect } from 'react';
+import Image from 'next/image';
 
 export default function Services() {
   useEffect(() => {
@@ -90,13 +91,13 @@ export default function Services() {
       </Head>
       <div className="min-h-screen bg-gray-50 py-10 px-6">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 container mx-auto">
-          {services.map((service, index) => (
+          {services.map((service) => (
             <div
               key={service.title}
               data-aos="fade-up"
               className="bg-white rounded-3xl shadow-md p-6 hover:shadow-lg transition duration-300 hover:bg-pink-600 group"
             >
-              <img src="/icon.svg" alt="icon" className="h-12 w-12 mb-3" />
+              <Image src="/icon.svg" alt="icon" className="h-12 w-12 mb-3" />
               <h2 className="text-pink-600 font-semibold text-[16px] mb-[15px] group-hover:text-white">
                 {service.title}
               </h2>

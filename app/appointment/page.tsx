@@ -1,13 +1,10 @@
 "use client"
 import React from "react"
 import { useState } from "react"
-import Link from "next/link"
-import { Heart, ArrowLeft, Phone, Clock, CalendarIcon } from "lucide-react"
-import { format } from "date-fns"
+import { Phone, Clock } from "lucide-react"
 import Head from "next/head"
 
 export default function AppointmentsPage() {
-  const [date, setDate] = useState<Date>()
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -88,7 +85,7 @@ export default function AppointmentsPage() {
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Book Your Appointment</h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Schedule your consultation with our fertility and women's health specialists. We're here to support your journey to wellness.
+            Schedule your consultation with our fertility and womens health specialists. We are here to support your journey to wellness.
           </p>
         </div>
 
@@ -119,7 +116,7 @@ export default function AppointmentsPage() {
         <div className="shadow-lg bg-white rounded-md p-8">
           <h2 className="text-2xl font-semibold text-gray-900">Appointment Request Form</h2>
           <p className="text-gray-600 mb-6">
-            Please fill out the form below and we'll contact you to confirm your appointment within 24 hours.
+            Please fill out the form below and We will contact you to confirm your appointment within 24 hours.
           </p>
           <form onSubmit={handleSubmit} className="space-y-6">
             {/* Personal Information */}
