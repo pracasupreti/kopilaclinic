@@ -97,7 +97,7 @@ export default function Services() {
               data-aos="fade-up"
               className="bg-white rounded-3xl shadow-md p-6 hover:shadow-lg transition duration-300 hover:bg-pink-600 group"
             >
-              <Image src="/icon.svg" alt="icon" className="h-12 w-12 mb-3" />
+              <Image src="/icon.svg" alt="icon" height={16} width={16} className="h-12 w-12 mb-3" />
               <h2 className="text-pink-600 font-semibold text-[16px] mb-[15px] group-hover:text-white">
                 {service.title}
               </h2>

@@ -21,7 +21,7 @@ const socialLinks = [
             <div className="container mx-auto px-4 py-12">
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-2">
                 <div className="space-y-4">
-                  <Image src="/icon-star.svg" alt="icon-star"
+                  <Image src="/icon-star.svg" alt="icon-star" height={16} width={16}
                   className="h-16 w-16 ml-40 -mt-12 opacity-20" />
                   <div className="flex items-center gap-8">
                     <Image src="/footer-logo.svg" alt="Kopila Clinic Logo" width={310} height={90} className=" h-16 w-auto m-2" />
@@ -44,7 +44,7 @@ const socialLinks = [
             ))}
           </div>
           
-                  <Image src="/icon-star.svg" alt="icon-star"
+                  <Image src="/icon-star.svg" alt="icon-star" height={16} width={16}
                   className="h-16 w-16 ml-70 -mt-30 opacity-20" />
           </div>
 

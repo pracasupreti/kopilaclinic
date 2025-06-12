@@ -26,7 +26,7 @@ export default function Header() {
       <nav className="flex items-center justify-between">
         {/* Logo */}
        <Link href="/" className="flex shrink-0">
-              <Image src="logo.svg" alt="Kopila clinic logo" width={310} height={90} className="h-20 w-auto" />
+              <Image src="/logo.svg" alt="Kopila clinic logo" width={310} height={90} className="h-20 w-auto" />
             </Link>
 
         {/* Mobile Menu Toggle */}

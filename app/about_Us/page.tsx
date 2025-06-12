@@ -157,10 +157,10 @@ const AboutUs = () => {
            <div className='flex flex-row md:flex-row'>
             <p className='text-pink-500 font-bold py-20 px-8'>
             Beyond medical treatment, <br />we provide:</p>
-            <Image src="/about/1.svg" alt="" />
-            <Image src="/about/2.svg" alt="" />
-            <Image src="/about/3.svg" alt="" />
-            <Image src="/about/4.svg" alt="" />
+            <Image src="/about/1.svg" alt="" height={16} width={16} />
+            <Image src="/about/2.svg" alt="" height={16} width={16} />
+            <Image src="/about/3.svg" alt="" height={16} width={16} />
+            <Image src="/about/4.svg" alt="" height={16} width={16} />
            </div>
           </div>
 
@@ -168,7 +168,7 @@ const AboutUs = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-8 ml-8">
             <div className="w-full text-center lg:text-left order-2 lg:order-1">
               <span className="text-sm md:text-base mb-2 font-medium uppercase tracking-wide text-green-500">
-              <Image src="icon-star.svg" alt="" className='h-2 w-2' /> Few WORDS </span>
+              <Image src="/icon-star.svg" alt="" height={16} width={16} className='h-2 w-2' /> Few WORDS </span>
               <h2 className="text-3xl md:text-4xl font-bold text-green-500 mt-2 mb-4">
                 Message from <span className='text-pink-500'>The Director</span>
               </h2>
@@ -338,7 +338,7 @@ const AboutUs = () => {
             {/* Left Section: Text Content */}
             <div className="w-full lg:w-1/2 text-center lg:text-left relative">
               <div className="absolute top-12 -left-10 w-20 h-20 animate-pop ">
-                <Image src="/icon-star.svg" alt="" />
+                <Image src="/icon-star.svg" alt="" height={16} width={16} />
               </div>
               <p className="mt-2 text-green-500 max-w-2xl mx-auto">
                 + EXPERTISE EXPERIENCE

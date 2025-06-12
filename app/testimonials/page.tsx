@@ -145,7 +145,7 @@ const Testimonials = () => {
                 custom={idx}
               >
                 <div>
-                  <Image src="testimonials/icon-quote.svg" alt="" />
+                  <Image src="/icon-quote.svg" alt="" height={16} width={16} />
                 </div>
                 <div className="text-yellow-400 text-xl mb-2 font-semibold">★★★★★</div>
                 <p className="text-base text-gray-500 mb-4">“{t.text}”</p>
