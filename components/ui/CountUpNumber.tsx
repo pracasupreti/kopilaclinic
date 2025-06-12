@@ -1,5 +1,5 @@
 // components/CountUpNumber.jsx
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 type CountUpNumberProps = {
   end: number;
@@ -8,8 +8,31 @@ type CountUpNumberProps = {
 
 const CountUpNumber = ({ end, suffix = '+' }: CountUpNumberProps) => {
   const [count, setCount] = useState(0);
+  const [hasAnimated, setHasAnimated] = useState(false);
+  const ref = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !hasAnimated) {
+          setHasAnimated(true);
+        }
+      },
+      { threshold: 0.6 }
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      if (ref.current) observer.unobserve(ref.current);
+    };
+  }, [hasAnimated]);
+
+  useEffect(() => {
+    if (!hasAnimated) return;
+
     let start = 0;
     const duration = 2000;
     const increment = end / (duration / 20);
@@ -25,12 +48,12 @@ const CountUpNumber = ({ end, suffix = '+' }: CountUpNumberProps) => {
     }, 20);
 
     return () => clearInterval(counter);
-  }, [end]);
+  }, [hasAnimated, end]);
 
   const display = end >= 1000 ? `${(count / 1000).toFixed(1)}K` : count;
 
   return (
-    <span>
+    <span ref={ref}>
       {display}
       {suffix}
     </span>
