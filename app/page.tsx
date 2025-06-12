@@ -170,8 +170,8 @@ export default function Page() { // Changed to Page for convention
        <section className="bg-white mb-30 md:mb-32 flex flex-col md:flex-row items-left md:items-center md:justify-between gap-16 px-0 md:px-2 py-32  w-full max-w-full">
      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-24 mt-24">
      {/* Left Image Section */}
-        <div className="relative flex justify-center md:justify-end items-center mb-90 mr-30 md:-top-40">
-          <div className="border-8 border-white rounded-4xl overflow-hidden self-start absolute left-4 w-[680px] md:w-[420px]">
+        <div className="relative flex justify-center  items-left mb-30 mr-30 -top-40 md:-top-40">
+          <div className="border-8 border-white rounded-4xl overflow-hidden self-start absolute left-4 sm:left-0 w-screen md:w-[420px]">
           <Image
             src="/baby1.jpg"
             alt="Baby smiling"
@@ -181,7 +181,7 @@ export default function Page() { // Changed to Page for convention
           />
         </div>
 
-        <div className="border-8 border-white rounded-4xl overflow-hidden self-end absolute top-86 left-120 md:top-36 md:left-6 w-[220px] md:w-[600px]">
+        <div className="border-8 border-white rounded-4xl overflow-hidden self-end absolute top-50 left-50 md:top-36 md:left-6 w-[220px] md:w-[600px]">
           <Image
             src="/baby2.jpg"
             alt="Happy baby"
@@ -192,7 +192,7 @@ export default function Page() { // Changed to Page for convention
         </div>
 
         {/* Experience Badge */}
-      <div className="absolute top-100 left-20 md:left-90 md:top-10 w-26 h-26 md:w-36 md:h-36 rounded-full ">
+      <div className="absolute top-60 left-18 md:left-90 md:top-10 w-26 h-26 md:w-36 md:h-36 rounded-full ">
         <Image
           src="/about-experience-circle.png"
           alt="Experience Circle"
@@ -202,7 +202,7 @@ export default function Page() { // Changed to Page for convention
           priority
         />
       </div>
-      <div className="top-100 left-20 md:left-120 md:top-10">
+      <div className="absolute top-60 left-18 md:left-120 md:top-10 ">
       <Image src="icon-star.svg" alt="star" 
       height={200} width={200} className="h-12 w-12 opacity-30 "/>
       </div>
@@ -220,7 +220,7 @@ export default function Page() { // Changed to Page for convention
             reproductive health and womens wellness in Damak, Nepal.
           </p>
 
-          <div className="mt-6 grid grid-cols-1 sm:grid-cols-1 gap-y-4 gap-x-6 text-sm text-primary font-semibold">
+          <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-6 text-sm text-primary font-semibold">
             <div className="flex md:justify-start text-left md:text-left">
               <FaCheckCircle className="text-secondary text-lg mr-2 flex-shrink-0" />Expert Team
             </div>
@@ -347,31 +347,31 @@ export default function Page() { // Changed to Page for convention
       {/* ... */}
     </div>
   </div>
-    <div className="w-full max-w-6xl mx-auto mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center px-4">
-            <div className="flex flex-col items-center">
+    <div className="w-full max-w-full mx-auto mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-left px-4">
+            <div className="flex flex-col">
               <h2 className="text-primary text-4xl md:text-5xl font-bold mb-2">500+</h2>
-              <p className="text-primary text-lg md:text-xl font-medium">Successful Delivery</p>
+              <p className="text-primary text-lg md:text-xl font-medium font-semibold">Successful Delivery</p>
               <p className="mt-2 text-gray-600 text-sm">
                 Celebrating the joy of motherhood with over 500 successful deliveries.
               </p>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col">
               <h2 className="text-primary text-4xl md:text-5xl font-bold mb-2">10+</h2>
-              <p className="text-primary text-lg md:text-xl font-medium">Years Of Experience</p>
+              <p className="text-primary text-lg md:text-xl font-medium font-semibold">Years Of Experience</p>
               <p className="mt-2 text-gray-600 text-sm">
                 A decade of excellence in fertility and women's healthcare.
               </p>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col">
               <h2 className="text-primary text-4xl md:text-5xl font-bold mb-2">2K+</h2>
-              <p className="text-primary text-lg md:text-xl font-medium">Plus Counselling</p>
+              <p className="text-primary text-lg md:text-xl font-medium font-semibold">Plus Counselling</p>
               <p className="mt-2 text-gray-600 text-sm">
                 Providing personalized guidance through over 2,000 counseling sessions.
               </p>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col">
               <h2 className="text-primary text-4xl md:text-5xl font-bold mb-2">7+</h2>
-              <p className="text-primary text-lg md:text-xl font-medium">Experience Doctors</p>
+              <p className="text-primary text-lg md:text-xl font-medium font-semibold">Experience Doctors</p>
               <p className="mt-2 text-gray-600 text-sm">
                 Trusted care from a team of 7+ highly skilled and experienced doctors.
               </p>

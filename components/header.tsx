@@ -59,7 +59,7 @@ export default function Header() {
           {/* Appointment Button */}
           <div className="mt-4 md:mt-0 md:ml-4">
             <Link href="/appointment" onClick={closeMenu}>
-              <button className="bg-secondary text-white px-5 py-3 rounded-full shadow-md hover:scale-105 hover:bg-primary active:scale-95 transition-all text-sm md:text-base flex items-center group">
+              <button className="bg-secondary text-white font-semibold px-4 py-3 rounded-full shadow-md hover:scale-105 hover:bg-primary active:scale-95 transition-all text-sm md:text-sm flex items-center group">
                 Book An Appointment
                 <ArrowRight className="ml-2 h-7 w-7 bg-white text-blue-600 rounded-full p-1 -rotate-60 transform transition-transform duration-300 group-hover:rotate-5" />
               </button>
