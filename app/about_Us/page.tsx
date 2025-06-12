@@ -1,9 +1,9 @@
 "use client";
-
+import React from "react";
 import Image from "next/legacy/image";
 import { FaCheckCircle, FaPhoneAlt, FaWhatsapp, FaStar, FaArrowLeft, FaArrowRight, FaPlayCircle } from 'react-icons/fa';
 import ServiceCard from "@/components/ServiceCard";
-import React, { useState } from "react";
+import  { useState } from "react";
 import Head from 'next/head';
 
 // Testimonials data for slider
@@ -74,7 +74,7 @@ const testimonials = [
 ];
 
 
-const AboutUsPage = () => {
+const AboutUs = () => {
   const [showPlayButton, setShowPlayButton] = useState(false);
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
@@ -491,4 +491,4 @@ const AboutUsPage = () => {
   );
 };
 
-export default AboutUsPage;
+export default AboutUs;

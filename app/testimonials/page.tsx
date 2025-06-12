@@ -1,5 +1,6 @@
 "use client";
-import React, { useEffect } from "react";
+import React from "react";
+import  { useEffect } from "react";
 import Image from "next/legacy/image";
 
 // Add Framer Motion for animation
