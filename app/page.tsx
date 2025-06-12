@@ -168,9 +168,9 @@ export default function Page() { // Changed to Page for convention
 
       {/* About Section */}
        <section className="bg-white mb-30 md:mb-32 flex flex-col md:flex-row items-left md:items-center md:justify-between gap-16 px-0 md:px-2 py-32  w-full max-w-full">
-     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-24 mt-24">
+     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-24">
      {/* Left Image Section */}
-        <div className="relative flex justify-center  items-left mb-30 mr-30 -top-40 md:-top-40">
+        <div className="relative flex justify-center  items-left mb-30 mr-30 -top-40 md:-top-60">
           <div className="border-8 border-white rounded-4xl overflow-hidden self-start absolute left-4 sm:left-0 w-screen md:w-[420px]">
           <Image
             src="/baby1.jpg"
@@ -351,6 +351,8 @@ export default function Page() { // Changed to Page for convention
             <div className="flex flex-col">
               <h2 className="text-primary text-4xl md:text-5xl font-bold mb-2">500+</h2>
               <p className="text-primary text-lg md:text-xl font-medium font-semibold">Successful Delivery</p>
+              <div className="h-px bg-gray-300 my-4"></div>
+
               <p className="mt-2 text-gray-600 text-sm">
                 Celebrating the joy of motherhood with over 500 successful deliveries.
               </p>
@@ -358,6 +360,7 @@ export default function Page() { // Changed to Page for convention
             <div className="flex flex-col">
               <h2 className="text-primary text-4xl md:text-5xl font-bold mb-2">10+</h2>
               <p className="text-primary text-lg md:text-xl font-medium font-semibold">Years Of Experience</p>
+              <div className="h-px bg-gray-300 my-4"></div>
               <p className="mt-2 text-gray-600 text-sm">
                 A decade of excellence in fertility and women's healthcare.
               </p>
@@ -365,6 +368,7 @@ export default function Page() { // Changed to Page for convention
             <div className="flex flex-col">
               <h2 className="text-primary text-4xl md:text-5xl font-bold mb-2">2K+</h2>
               <p className="text-primary text-lg md:text-xl font-medium font-semibold">Plus Counselling</p>
+              <div className="h-px bg-gray-300 my-4"></div>
               <p className="mt-2 text-gray-600 text-sm">
                 Providing personalized guidance through over 2,000 counseling sessions.
               </p>
@@ -372,6 +376,7 @@ export default function Page() { // Changed to Page for convention
             <div className="flex flex-col">
               <h2 className="text-primary text-4xl md:text-5xl font-bold mb-2">7+</h2>
               <p className="text-primary text-lg md:text-xl font-medium font-semibold">Experience Doctors</p>
+              <div className="h-px bg-gray-300 my-4"></div>
               <p className="mt-2 text-gray-600 text-sm">
                 Trusted care from a team of 7+ highly skilled and experienced doctors.
               </p>

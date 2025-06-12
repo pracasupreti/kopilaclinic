@@ -22,7 +22,7 @@ export default function Header() {
   const closeMenu = () => setIsMenuOpen(false);
 
   return (
-    <header className="bg-green-50 shadow-md border-b border-gray-300 px-4 md:px-12 py-7 sticky top-0 z-50">
+    <header className="bg-green-50 shadow-md border-b border-gray-300 px-4 md:px-12 py-7  top-0 z-50"> {/* sticky */}
       <nav className="flex items-center justify-between">
         {/* Logo */}
        <Link href="/" className="flex shrink-0">
