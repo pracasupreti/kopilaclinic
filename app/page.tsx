@@ -348,12 +348,12 @@ export default function Page() { // Changed to Page for convention
     </div>
   </div>
     <div className="w-full max-w-full mx-auto mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-left px-4">
-            <div className="flex flex-col">
+            <div className="flex flex-col px-4">
               <h2 className="text-primary text-4xl md:text-5xl font-bold mb-2">500+</h2>
               <p className="text-primary text-lg md:text-xl font-medium font-semibold">Successful Delivery</p>
               <div className="h-px bg-gray-300 my-4"></div>
 
-              <p className="mt-2 text-gray-600 text-sm">
+              <p className="mt-2 text-gray-600 text-base">
                 Celebrating the joy of motherhood with over 500 successful deliveries.
               </p>
             </div>
@@ -361,7 +361,7 @@ export default function Page() { // Changed to Page for convention
               <h2 className="text-primary text-4xl md:text-5xl font-bold mb-2">10+</h2>
               <p className="text-primary text-lg md:text-xl font-medium font-semibold">Years Of Experience</p>
               <div className="h-px bg-gray-300 my-4"></div>
-              <p className="mt-2 text-gray-600 text-sm">
+              <p className="mt-2 text-gray-600 text-base">
                 A decade of excellence in fertility and women's healthcare.
               </p>
             </div>
@@ -369,15 +369,15 @@ export default function Page() { // Changed to Page for convention
               <h2 className="text-primary text-4xl md:text-5xl font-bold mb-2">2K+</h2>
               <p className="text-primary text-lg md:text-xl font-medium font-semibold">Plus Counselling</p>
               <div className="h-px bg-gray-300 my-4"></div>
-              <p className="mt-2 text-gray-600 text-sm">
+              <p className="mt-2 text-gray-600 text-base">
                 Providing personalized guidance through over 2,000 counseling sessions.
               </p>
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col px-4">
               <h2 className="text-primary text-4xl md:text-5xl font-bold mb-2">7+</h2>
               <p className="text-primary text-lg md:text-xl font-medium font-semibold">Experience Doctors</p>
               <div className="h-px bg-gray-300 my-4"></div>
-              <p className="mt-2 text-gray-600 text-sm">
+              <p className="mt-2 text-gray-600 text-base">
                 Trusted care from a team of 7+ highly skilled and experienced doctors.
               </p>
             </div>
