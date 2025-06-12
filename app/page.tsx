@@ -10,6 +10,7 @@ import AccordionItem from "@/components/ui/AccordionItem";
 import ServiceCard from "@/components/ServiceCard";
 import Head from "next/head";
 import BlogPostCard from "@/components/BlogPostCard";
+import CountUpNumber from "@/components/ui/CountUpNumber";
 
 
 
@@ -349,7 +350,7 @@ export default function Page() { // Changed to Page for convention
   </div>
     <div className="w-full max-w-full mx-auto mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-left px-4">
             <div className="flex flex-col px-4">
-              <h2 className="text-primary text-4xl md:text-5xl font-bold mb-2">500+</h2>
+              <h2 className="text-primary text-4xl md:text-5xl font-bold mb-2"><CountUpNumber end={500} /></h2>
               <p className="text-primary text-lg md:text-xl font-medium font-semibold">Successful Delivery</p>
               <div className="h-px bg-gray-300 my-4"></div>
 
@@ -358,7 +359,7 @@ export default function Page() { // Changed to Page for convention
               </p>
             </div>
             <div className="flex flex-col">
-              <h2 className="text-primary text-4xl md:text-5xl font-bold mb-2">10+</h2>
+              <h2 className="text-primary text-4xl md:text-5xl font-bold mb-2"><CountUpNumber end={10} /></h2>
               <p className="text-primary text-lg md:text-xl font-medium font-semibold">Years Of Experience</p>
               <div className="h-px bg-gray-300 my-4"></div>
               <p className="mt-2 text-gray-600 text-base">
@@ -366,7 +367,7 @@ export default function Page() { // Changed to Page for convention
               </p>
             </div>
             <div className="flex flex-col">
-              <h2 className="text-primary text-4xl md:text-5xl font-bold mb-2">2K+</h2>
+              <h2 className="text-primary text-4xl md:text-5xl font-bold mb-2"><CountUpNumber end={2000} /></h2>
               <p className="text-primary text-lg md:text-xl font-medium font-semibold">Plus Counselling</p>
               <div className="h-px bg-gray-300 my-4"></div>
               <p className="mt-2 text-gray-600 text-base">
@@ -374,7 +375,7 @@ export default function Page() { // Changed to Page for convention
               </p>
             </div>
             <div className="flex flex-col px-4">
-              <h2 className="text-primary text-4xl md:text-5xl font-bold mb-2">7+</h2>
+              <h2 className="text-primary text-4xl md:text-5xl font-bold mb-2"><CountUpNumber end={7} /></h2>
               <p className="text-primary text-lg md:text-xl font-medium font-semibold">Experience Doctors</p>
               <div className="h-px bg-gray-300 my-4"></div>
               <p className="mt-2 text-gray-600 text-base">
