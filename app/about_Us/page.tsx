@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { FaCheckCircle,  FaWhatsapp,  FaArrowLeft, FaArrowRight, FaPlayCircle } from 'react-icons/fa';
 import ServiceCard from "@/components/ServiceCard";
 import  { useState } from "react";
@@ -111,17 +111,11 @@ const AboutUs = () => {
             <div className="w-full flex justify-center lg:justify-end">
               <div className="relative w-full max-w-full h-96 rounded-xl overflow-hidden shadow-lg border border-gray-100">
                 <Image
-                  src="/about.jpg"
+                  src="/about/about.jpg"
                   alt="Happy Baby"
                   height={600}
                   width={800}
-                  quality={90}
-                  className="rounded-xl"
-                  style={{
-                    objectFit: "cover",
-                    maxWidth: "100%",
-                    height: "auto"
-                  }} />
+                  className="rounded-xl"/>
               </div>
             </div>
             <div className="w-full text-center lg:text-left py-12">
@@ -182,17 +176,12 @@ const AboutUs = () => {
             <div className="w-full flex justify-center lg:justify-start order-1 lg:order-2">
               <div className="relative w-full max-w-full h-[35rem] rounded-xl overflow-hidden shadow-lg border border-gray-100">
                 <Image
-                  src="/doctor.jpg"
+                  src="/about/doctor.jpg"
                   alt="Dr. Sita Rai - Director"
                   quality={90}
                   height={900}
                   width={800}
-                  className="rounded-4xl"
-                  style={{
-                    objectFit: "cover",
-                    maxWidth: "100%",
-                    height: "auto"
-                  }} />
+                  className="rounded-4xl"/>
               </div>
             </div>
           </div>
@@ -367,17 +356,12 @@ const AboutUs = () => {
             <div className="w-full lg:w-1/2 flex justify-center lg:justify-end mt-8 lg:mt-0">
               <div className="relative w-full max-w-full aspect-[8/9] rounded-xl overflow-hidden shadow-xl">
                 <Image
-                  src="/iui.jpg"
+                  src="/about/iui.jpg"
                   alt="Pregnant woman"
                   quality={90}
                   height={800}
                   width={600}
-                  className="rounded-4xl"
-                  style={{
-                    objectFit: "cover",
-                    maxWidth: "100%",
-                    height: "auto"
-                  }} />
+                  className="rounded-4xl" />
               </div>
             </div>
           </div>
