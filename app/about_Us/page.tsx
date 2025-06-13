@@ -212,25 +212,21 @@ const AboutUs = () => {
               {/* Services Grid */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6 justify-items-center">
                 <ServiceCard
-                  iconUrl="/icon.svg"
                   title="Ovulation Induction"
                   description="A fertility treatment that uses medications to stimulate the ovaries to produce and release eggs, increasing the chances of conception."
                   link="/Services"
                 />
                 <ServiceCard
-                  iconUrl="/icon.svg"
                   title="Intrauterine Insemination (IUI)"
                   description="A fertility procedure where specially prepared sperm is directly placed into the uterus to enhance the likelihood of fertilization."
                   link="/Services"
                 />
                 <ServiceCard
-                  iconUrl="/icon.svg"
                   title="In Vitro Fertilisation (IVF)"
                   description="A process where eggs and sperm are combined in a laboratory to create embryos, which are then transferred to the uterus for potential pregnancy."
                   link="/Services"
                 />
                 <ServiceCard
-                  iconUrl="/icon.svg"
                   title="Antenatal Check Up"
                   description="Routine medical care provided during pregnancy to monitor the health of the mother and the developing baby."
                   link="/Services"

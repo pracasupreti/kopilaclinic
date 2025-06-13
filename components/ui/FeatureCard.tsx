@@ -18,26 +18,20 @@ const FeatureCard = ({ title, description, alignment = 'left' } : FeatureCardPro
             alt="Flower Icon"
             width={32}
             height={32}
-            className="flex-shrink-0"
-            style={{
-              maxWidth: "100%",
-              height: "auto"
-            }} />
+            className="flex-shrink-0 h-8 w-8"
+          />
         )}
         <h3 className="text-primary text-lg md:text-xl font-semibold mb-1">
           {title}
         </h3>
         {alignment === 'left' && (
-          <Image
+           <Image
             src="/icon.svg"
             alt="Flower Icon"
             width={32}
             height={32}
-            className="flex-shrink-0"
-            style={{
-              maxWidth: "100%",
-              height: "auto"
-            }} />
+            className="flex-shrink-0 h-8 w-8"
+          />
         )}
       </div>
       <p className="text-gray-500 text-sm mt-1 leading-relaxed">
