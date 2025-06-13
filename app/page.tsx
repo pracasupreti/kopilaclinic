@@ -44,7 +44,7 @@ export default function Page() { // Changed to Page for convention
             <div className="relative h-full lg:text-left mt-0 lg:mt-30 ">
               {/* Decorative elements - Using standard Tailwind for basic animation approximation */}
               <div className="absolute top-8 -left-5 md:top-6 md:-left-10 w-16 h-16 md:w-16 md:h-16 opacity-30"> {/* animate-pulse for approximation */}
-                <Image src="/icon-star.svg" alt="Star Icon" height={36} width={76} objectFit="contain" />
+                <Image src="/icon-star.svg" alt="Star Icon" height={36} width={76} />
               </div>
 
               <div className="absolute space-y-12 justify-center mt-16 slide-down">
@@ -91,27 +91,27 @@ export default function Page() { // Changed to Page for convention
               <div className="relative w-full max-w-full md:max-w-full mx-auto aspect-[7/8] -left-12 fade-in"> {/* Using aspect ratio for better control */}
                 <Image src="/hero-img.png" 
                 alt="Mother and child"
-                 layout="fill"
-                  objectFit="contain" 
-                  className="object-top" /> {/* Adjusted objectFit */}
+                height={800}
+                width={600}
+                  className="object-top" />
 
                 <div className="absolute bottom-1/2 left-12 md:bottom-1/2 md:left-36 w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-lg transform translate-y-1/4 -translate-x-1/2 hover:bg-primary"> {/* Adjusted positioning and animation */}
-                  <Image src="/baby-stroller.svg" alt="Baby Stroller Icon" layout="fill" objectFit="contain" className="p-4" />
+                  <Image src="/baby-stroller.svg" alt="Baby Stroller Icon"  height={120} width={120} className="p-4" />
                 </div>
                 <div className="absolute top-1/4 right-0 md:top-1/4 md:right-7 w-22 h-22 bg-white rounded-full flex items-center justify-center shadow-lg transform -translate-y-1/2 translate-x-1/2 hover:bg-primary"> {/* Adjusted positioning and animation */}
-                  <Image src="/baby.svg" alt="Baby Icon" layout="fill" objectFit="contain" className="p-4"/>
+                  <Image src="/baby.svg" alt="Baby Icon" height={120} width={120} className="p-4"/>
                 </div>
                 <div className="absolute bottom-10 right-4 w-22 h-22 bg-white rounded-full flex items-center justify-center shadow-lg hover:bg-primary">
-                  <Image src="/icon-hero-theeth-3.svg" alt="Tooth Icon" layout="fill" objectFit="contain" className="p-4"/>
+                  <Image src="/icon-hero-theeth-3.svg" alt="Tooth Icon"  height={120} width={120} className="p-4"/>
                 </div>
                 {/* Doctor Profile Card */}
                 <div className="absolute bottom-4 left-4 bg-white shadow-xl rounded-lg flex items-center p-2 space-x-3 w-56 animate-wiggleX"> 
                   <Image
                     src="/DrSita.jpg"
                     alt="Dr. Sita Rai"
-                    width={80} // Explicit width
-                    height={100} // Explicit height
-                    className="rounded-xl object-cover"
+                    width={80} 
+                    height={100} 
+                    className="rounded-xl "
                   />
                   <div>
                     <h3 className="font-semibold text-primary text-lg">Dr. Sita Rai</h3>
@@ -177,7 +177,7 @@ export default function Page() { // Changed to Page for convention
             alt="Baby smiling"
             width={360}
             height={800}
-            className="object-cover w-full h-full scale-120 origin-center"
+            className=" w-full h-full scale-120 origin-center"
           />
         </div>
 
@@ -187,7 +187,7 @@ export default function Page() { // Changed to Page for convention
             alt="Happy baby"
             width={600}
             height={400}
-            className="object-cover w-full h-full"
+            className="w-full h-full"
           />
         </div>
 
@@ -196,10 +196,8 @@ export default function Page() { // Changed to Page for convention
         <Image
           src="/about-experience-circle.png"
           alt="Experience Circle"
-          layout="fill"
+           height={120} width={120}
           className="w-full h-full animate-spinClockwise"
-          objectFit="contain"
-          priority
         />
       </div>
       <div className="absolute top-60 left-18 md:left-120 md:top-10 ">
@@ -426,8 +424,7 @@ export default function Page() { // Changed to Page for convention
                 <Image
                   src="/happbaby.png"
                   alt="Happy Baby"
-                  layout="fill"
-                  objectFit="cover"
+                   height={600} width={600}
                   quality={90}
                   className="rounded-full"
                 />
@@ -464,9 +461,8 @@ export default function Page() { // Changed to Page for convention
             <div className="relative w-full max-w-xl aspect-[4/3] rounded-3xl overflow-hidden shadow-xl">
               <Image
                 src="/how-it-work-img.jpg"
-                alt="Happy Baby"
-                layout="fill"
-                objectFit="cover"
+                alt="Happy Baby" 
+                height={600} width={600}
                 quality={90}
                 className="rounded-3xl"
               /> 

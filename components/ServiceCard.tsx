@@ -18,11 +18,7 @@ const ServiceCard = ({ iconUrl, title, description, link = '#' }: ServiceCardPro
             alt={`${title} Icon`}
             width={46}
             height={46}
-            className="flex-shrink-0"
-            style={{
-              maxWidth: "100%",
-              height: "auto"
-            }} />
+            className="flex-shrink-0" />
         </div>
         <h3 className="text-xl font-bold text-primary mb-4 text-left group-hover:text-white text-left">
           {title}
