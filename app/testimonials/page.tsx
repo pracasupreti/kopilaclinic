@@ -155,7 +155,7 @@ const Testimonials = () => {
                     alt={t.name}
                     width={40}
                     height={40}
-                    className="rounded-full h-16 w-16 object-cover"
+                    className="rounded-full h-16 w-16"
                   />
                   <div>
                     <h4 className="font-semibold text-xl text-pink-500">{t.name}</h4>
