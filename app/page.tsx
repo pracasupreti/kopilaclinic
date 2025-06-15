@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import Link from "next/link";
-import "./globals.css"; // Assuming this contains base styles and potentially global utility classes
+import "./globals.css"; 
 import { ArrowRight, Star, Phone, Clock } from "lucide-react";
 import { FaCheckCircle, FaPlayCircle, FaPhoneAlt, FaWhatsapp, FaUserMd, FaClinicMedical, FaCalendarAlt, FaClock, FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
 import FeatureCard from "@/components/ui/FeatureCard";

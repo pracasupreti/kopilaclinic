@@ -29,7 +29,6 @@ export default function FAQ() {
   ];
 
   const faqs = [
-    // ... (same as before)
     {
       question: "What Is Ovulation Induction?",
       answer:
