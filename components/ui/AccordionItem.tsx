@@ -3,7 +3,11 @@
 import React, { useState } from 'react';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 
-const AccordionItem = ({ icon: Icon, title, description, initiallyOpen = false }) => {
+interface AccordionItemProps{
+  icon: React.ElementType, title: string, description: string, initiallyOpen: boolean 
+}
+
+const AccordionItem = ({ icon: Icon, title, description, initiallyOpen = false }: AccordionItemProps) => {
   const [isOpen, setIsOpen] = useState(initiallyOpen);
 
   return (

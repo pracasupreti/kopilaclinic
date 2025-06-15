@@ -1,6 +1,7 @@
 "use client";
-import React, { useEffect, useRef } from "react";
-import Image from "next/image";
+import React from "react";
+import  { useEffect, useRef } from "react";
+import Image from "next/legacy/image";
 import Head from "next/head";
 
 const teamMembers = [
@@ -99,7 +100,10 @@ const Team = () => {
                     width={320}
                     height={320}
                     className="object-cover"
-                  />
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto"
+                    }} />
                 </div>
                 <h4 className="text-pink-700 font-semibold mt-6 text-lg">{member.name}</h4>
                 <p className="text-base text-gray-600 mt-2 whitespace-pre-line">

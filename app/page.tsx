@@ -3,14 +3,13 @@ import Image from "next/image";
 import React, { useState } from "react";
 import Link from "next/link";
 import "./globals.css"; // Assuming this contains base styles and potentially global utility classes
-import { ArrowRight, Star, Baby, Heart, Stethoscope, Phone, Clock } from "lucide-react";
-import { MdMedicalServices } from "react-icons/md"; // This import is not used in the provided code
-import { FaArrowRight, FaBaby, FaCheckCircle, FaPlayCircle, FaPhoneAlt, FaWhatsapp, FaUserMd, FaClinicMedical, FaCalendarAlt, FaClock, FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
+import { ArrowRight, Star, Phone, Clock } from "lucide-react";
+import { FaCheckCircle, FaPlayCircle, FaPhoneAlt, FaWhatsapp, FaUserMd, FaClinicMedical, FaCalendarAlt, FaClock, FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
 import FeatureCard from "@/components/ui/FeatureCard";
 import AccordionItem from "@/components/ui/AccordionItem";
-import BlogPostCard from '@/components/BlogPOstCard';
 import ServiceCard from "@/components/ServiceCard";
 import Head from "next/head";
+import BlogPostCard from "@/components/BlogPostCard";
 
 
 
@@ -45,12 +44,12 @@ export default function Page() { // Changed to Page for convention
             <div className="relative h-full lg:text-left mt-0 lg:mt-30 ">
               {/* Decorative elements - Using standard Tailwind for basic animation approximation */}
               <div className="absolute top-8 -left-5 md:top-6 md:-left-10 w-16 h-16 md:w-16 md:h-16 opacity-30"> {/* animate-pulse for approximation */}
-                <Image src="/icon-star.svg" alt="Star Icon" layout="fill" objectFit="contain" />
+                <Image src="/icon-star.svg" alt="Star Icon" height={36} width={76} />
               </div>
 
               <div className="absolute space-y-12 justify-center mt-16 slide-down">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-primary mb-4 md:mb-6 leading-relax drop-shadow-lg">
-                Fertility <span className="text-secondary">and</span> <br className="hidden sm:inline" /> <span className="text-primary">Women's Clinic</span>
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-primary mb-4 md:mb-6 leading-relax drop-shadow-lg">
+                Fertility <span className="text-secondary">and</span> <br className="hidden sm:inline" /> <span className="text-primary">Womens Clinic</span>
               </h1>
 
               <p className="text-base md:text-base text-gray-500 mb-6 md:mb-8 max-w-lg mx-auto lg:mx-0">
@@ -86,33 +85,33 @@ export default function Page() { // Changed to Page for convention
             {/* Right Content - Hero Image */}
             <div className="relative flex justify-center items-center lg:mt-0  mt-120">
               <div className="absolute top-0 left-12 md:top-2 md:left-12 w-12 h-12 md:w-20 md:h-20 animate-pop"> {/* animate-pulse for approximation */}
-                <Image src="/icon-star.svg" alt="Star Icon" layout="fill" objectFit="contain" />
+                <Image src="/icon-star.svg" alt="Star Icon" height={36} width={76}  />
               </div>
               {/* Main Hero Image */}
-              <div className="relative w-full max-w-full md:max-w-full mx-auto aspect-[7/8] -top-12 -left-12 fade-in"> {/* Using aspect ratio for better control */}
+              <div className="relative w-full max-w-full md:max-w-full mx-auto aspect-[7/8] -left-12 fade-in"> {/* Using aspect ratio for better control */}
                 <Image src="/hero-img.png" 
                 alt="Mother and child"
-                 layout="fill"
-                  objectFit="contain" 
-                  className="object-top" /> {/* Adjusted objectFit */}
+                height={800}
+                width={600}
+                  className="object-top" />
 
                 <div className="absolute bottom-1/2 left-12 md:bottom-1/2 md:left-36 w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-lg transform translate-y-1/4 -translate-x-1/2 hover:bg-primary"> {/* Adjusted positioning and animation */}
-                  <Image src="/baby-stroller.svg" alt="Baby Stroller Icon" layout="fill" objectFit="contain" className="p-4" />
+                  <Image src="/baby-stroller.svg" alt="Baby Stroller Icon"  height={120} width={120} className="p-4" />
                 </div>
                 <div className="absolute top-1/4 right-0 md:top-1/4 md:right-7 w-22 h-22 bg-white rounded-full flex items-center justify-center shadow-lg transform -translate-y-1/2 translate-x-1/2 hover:bg-primary"> {/* Adjusted positioning and animation */}
-                  <Image src="/baby.svg" alt="Baby Icon" layout="fill" objectFit="contain" className="p-4"/>
+                  <Image src="/baby.svg" alt="Baby Icon" height={120} width={120} className="p-4"/>
                 </div>
                 <div className="absolute bottom-10 right-4 w-22 h-22 bg-white rounded-full flex items-center justify-center shadow-lg hover:bg-primary">
-                  <Image src="/icon-hero-theeth-3.svg" alt="Tooth Icon" layout="fill" objectFit="contain" className="p-4"/>
+                  <Image src="/icon-hero-theeth-3.svg" alt="Tooth Icon"  height={120} width={120} className="p-4"/>
                 </div>
                 {/* Doctor Profile Card */}
                 <div className="absolute bottom-4 left-4 bg-white shadow-xl rounded-lg flex items-center p-2 space-x-3 w-56 animate-wiggleX"> 
                   <Image
                     src="/DrSita.jpg"
                     alt="Dr. Sita Rai"
-                    width={80} // Explicit width
-                    height={100} // Explicit height
-                    className="rounded-xl object-cover"
+                    width={80} 
+                    height={100} 
+                    className="rounded-xl "
                   />
                   <div>
                     <h3 className="font-semibold text-primary text-lg">Dr. Sita Rai</h3>
@@ -168,43 +167,53 @@ export default function Page() { // Changed to Page for convention
 
 
       {/* About Section */}
-       <section className="bg-white mb-30 md:mb-32 flex flex-col md:flex-row items-center justify-between gap-16 px-2 py-32 max-w-12xl mx-auto w-full max-w-full">
+       <section className="bg-white mb-30 md:mb-32 flex flex-col md:flex-row items-left md:items-center md:justify-between gap-16 px-0 md:px-2 py-32  w-full max-w-full">
+     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-24">
      {/* Left Image Section */}
-        <div className="relative w-full md:w-1/2 flex justify-center md:justify-end items-center mb-90 mr-30 md:-top-40">
-          <div className="border-8 border-white rounded-4xl overflow-hidden w-2/3 self-start absolute top-1 left-20">
+        <div className="relative flex justify-center  items-left mb-30 mr-30 -top-40 md:-top-60">
+          <div className="border-8 border-white rounded-4xl overflow-hidden self-start absolute left-4 sm:left-0 w-screen md:w-[420px]">
           <Image
             src="/baby1.jpg"
             alt="Baby smiling"
-            width={600}
-            height={600}
-            className="object-cover w-full h-full"
+            width={360}
+            height={800}
+            className=" w-full h-full scale-120 origin-center"
           />
         </div>
 
-        <div className="border-8 border-white rounded-4xl overflow-hidden w-4/5 self-end absolute top-36 left-24">
+        <div className="border-8 border-white rounded-4xl overflow-hidden self-end absolute top-50 left-50 md:top-36 md:left-6 w-[220px] md:w-[600px]">
           <Image
             src="/baby2.jpg"
             alt="Happy baby"
-            width={700}
-            height={600}
-            className="object-cover w-full h-full"
+            width={600}
+            height={400}
+            className="w-full h-full"
           />
         </div>
 
         {/* Experience Badge */}
-       <div className="absolute top-10 left-70 md:left-120 w-40 h-40 rounded-full ">
-  <img src="about-experience-circle.png" alt="" className="w-full h-full animate-spinClockwise" />
-</div>
+      <div className="absolute top-60 left-18 md:left-90 md:top-10 w-26 h-26 md:w-36 md:h-36 rounded-full ">
+        <Image
+          src="/about-experience-circle.png"
+          alt="Experience Circle"
+           height={120} width={120}
+          className="w-full h-full animate-spinClockwise"
+        />
+      </div>
+      <div className="absolute top-60 left-18 md:left-120 md:top-10 ">
+      <Image src="icon-star.svg" alt="star" 
+      height={200} width={200} className="h-12 w-12 opacity-30 "/>
+      </div>
         </div>
 
         {/* Right Text Section */}
-        <div className="w-full md:w-1/2 text-center md:text-left">
+        <div className="text-center text-left md:text-left sm:px-4 sm:mt-26">
           <p className="text-sm text-secondary font-semibold mb-2 slide-down">+ ABOUT US</p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-snug text-secondary slide-down">
             Fertility Clinic{' '}
             <span className="text-primary">in Damak,<br className="hidden sm:inline" /> Nepal</span>
           </h2>
-          <p className="mt-4 text-gray-500 text-base md:text-lg max-w-xl mx-auto md:mx-0 slide-down">
+          <p className="mt-4 text-gray-500 text-base md:text-lg max-w-xl mx-0 md:mx-0 slide-down">
             Welcome to Kopila Fertility and womens Clinic, your trusted partner in
             reproductive health and womens wellness in Damak, Nepal.
           </p>
@@ -231,42 +240,39 @@ export default function Page() { // Changed to Page for convention
             </button>
           </Link>
         </div>
+        </div>
       </section>
 
       {/* Services Section */}
            <section className="bg-[#f0f8ff] py-2 px-6 ">
       <div className="max-w-7xl mx-auto text-center">
-        <p className="text-sm text-secondary font-semibold mb-2 slide-down">+ OUR SERVICES</p>
+        <p className="text-sm text-secondary font-semibold mb-4 slide-down">+ OUR SERVICES</p>
         <h2 className="text-5xl font-extrabold text-secondary slide-down">
           Fertility & Gyne <span className="text-primary">Services for You.</span>
         </h2>
-        <p className="text-gray-500 mt-2 fade-in">
+        <p className="text-gray-500 mt-8 fade-in">
           Dedication of Providing Professional Healthcare Services.
         </p>
 
-          <div className="relative z-10 container mx-auto mt-12">
+          <div className="relative z-10 container mx-auto mt-12 text-left">
             {/* Services Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6 justify-items-center">
               <ServiceCard
-                iconUrl="/icon.svg"
                 title="Ovulation Induction"
                 description="A fertility treatment that uses medications to stimulate the ovaries to produce and release eggs, increasing the chances of conception."
                 link="/Services"
               />
               <ServiceCard
-                iconUrl="/icon.svg"
                 title="Intrauterine Insemination (IUI)"
                 description="A fertility procedure where specially prepared sperm is directly placed into the uterus to enhance the likelihood of fertilization."
                 link="/Services"
               />
               <ServiceCard
-                iconUrl="/icon.svg"
                 title="In Vitro Fertilisation (IVF)"
                 description="A process where eggs and sperm are combined in a laboratory to create embryos, which are then transferred to the uterus for potential pregnancy."
                 link="/Services"
               />
               <ServiceCard
-                iconUrl="/icon.svg"
                 title="Antenatal Check Up"
                 description="Routine medical care provided during pregnancy to monitor the health of the mother and the developing baby."
                 link="/Services"
@@ -289,64 +295,83 @@ export default function Page() { // Changed to Page for convention
       {/* Visit Us Section */}
       <section className="relative w-full overflow-hidden bg-white min-h-screen py-16 md:py-24 px-2 sm:px-4 md:px-6 lg:px-8 xl:px-0">
         <div className="relative z-10 flex flex-col items-center justify-center px-0 w-full max-w-full">
-          <div className="relative w-full max-w-6xl mx-auto rounded-3xl overflow-hidden shadow-2xl">
-            <div className="absolute inset-0">
-              <Image
-                src="/mother-baby.jpg"
-                alt="Mother and child"
-                layout="fill"
-                objectFit="cover"
-                quality={90}
-                className="brightness-[0.7] contrast-[1.1]"
-              />
-              <div className="absolute inset-0 bg-primary opacity-60"></div>
-            </div>
+        <div className="relative z-10 flex flex-col items-center justify-center px-0 w-full max-w-full">
+    <div
+      className="relative w-full max-w-7xl mx-auto rounded-3xl overflow-hidden shadow-2xl"
+      style={{
+        backgroundImage: 'url(/visitClinic.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed', // This enables parallax effect
+      }}
+    >
+      {/* Overlay with color and brightness */}
+      <div className="absolute inset-0 bg-primary opacity-60"></div>
 
-            <div className="relative z-10 flex flex-col items-center justify-center p-8 md:p-16 text-white text-center min-h-[400px]">
-              <span className="text-sm md:text-base mb-2 font-medium uppercase tracking-wide">
-                + Visit Clinic
-              </span>
-              <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
-                Fertility & Gyne Specialist
-              </h1>
-              <button className="flex items-center px-6 py-3 bg-white text-secondary rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-                onClick={handleToggle}>
-                Watch Video <FaPlayCircle className="ml-4 text-2xl" />
-              </button>
-              {showPlayButton && (
-                <div className="mt-8 w-full max-w-2xl mx-auto">
-                  {/* Changed source to a generic YouTube placeholder for demonstrative purposes */}
-                  <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=0" title="Placeholder Video" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-                </div>
-              )}
-            </div>
+      <div className="relative z-10 flex flex-col items-center justify-center p-8 md:p-16 text-white text-center min-h-[400px]">
+        <span className="text-sm md:text-base mb-2 font-medium uppercase tracking-wide">
+          + Visit Clinic
+        </span>
+        <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
+          Fertility & Gyne Specialist
+        </h1>
+        <button
+          className="flex items-center px-6 py-3 bg-white text-secondary rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+          onClick={handleToggle}
+        >
+          Watch Video <FaPlayCircle className="ml-4 text-2xl" />
+        </button>
+        {showPlayButton && (
+          <div className="mt-8 w-full max-w-2xl mx-auto">
+            
+            <iframe width="681" height="383" src="https://www.youtube.com/embed/8BH7WFmRs-E" 
+            title="Pregnancy: A Month-By-Month Guide | 3D Animation" frameBorder="0"
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+             picture-in-picture; web-share" 
+             referrerPolicy="strict-origin-when-cross-origin" 
+             allowFullScreen></iframe>
           </div>
-          <div className="w-full max-w-6xl mx-auto mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center px-4">
-            <div className="flex flex-col items-center">
+        )}
+      </div>
+    </div>
+
+    {/* Stats section remains unchanged */}
+    <div className="w-full max-w-6xl mx-auto mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center px-4">
+      {/* Your 4 stats blocks */}
+      {/* ... */}
+    </div>
+  </div>
+    <div className="w-full max-w-full mx-auto mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-left px-4">
+            <div className="flex flex-col px-4">
               <h2 className="text-primary text-4xl md:text-5xl font-bold mb-2">500+</h2>
-              <p className="text-primary text-lg md:text-xl font-medium">Successful Delivery</p>
-              <p className="mt-2 text-gray-600 text-sm">
+              <p className="text-primary text-lg md:text-xl font-medium font-semibold">Successful Delivery</p>
+              <div className="h-px bg-gray-300 my-4"></div>
+
+              <p className="mt-2 text-gray-600 text-base">
                 Celebrating the joy of motherhood with over 500 successful deliveries.
               </p>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col">
               <h2 className="text-primary text-4xl md:text-5xl font-bold mb-2">10+</h2>
-              <p className="text-primary text-lg md:text-xl font-medium">Years Of Experience</p>
-              <p className="mt-2 text-gray-600 text-sm">
-                A decade of excellence in fertility and women's healthcare.
+              <p className="text-primary text-lg md:text-xl font-medium font-semibold">Years Of Experience</p>
+              <div className="h-px bg-gray-300 my-4"></div>
+              <p className="mt-2 text-gray-600 text-base">
+                A decade of excellence in fertility and womens healthcare.
               </p>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col">
               <h2 className="text-primary text-4xl md:text-5xl font-bold mb-2">2K+</h2>
-              <p className="text-primary text-lg md:text-xl font-medium">Plus Counselling</p>
-              <p className="mt-2 text-gray-600 text-sm">
+              <p className="text-primary text-lg md:text-xl font-medium font-semibold">Plus Counselling</p>
+              <div className="h-px bg-gray-300 my-4"></div>
+              <p className="mt-2 text-gray-600 text-base">
                 Providing personalized guidance through over 2,000 counseling sessions.
               </p>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col px-4">
               <h2 className="text-primary text-4xl md:text-5xl font-bold mb-2">7+</h2>
-              <p className="text-primary text-lg md:text-xl font-medium">Experience Doctors</p>
-              <p className="mt-2 text-gray-600 text-sm">
+              <p className="text-primary text-lg md:text-xl font-medium font-semibold">Experience Doctors</p>
+              <div className="h-px bg-gray-300 my-4"></div>
+              <p className="mt-2 text-gray-600 text-base">
                 Trusted care from a team of 7+ highly skilled and experienced doctors.
               </p>
             </div>
@@ -395,8 +420,7 @@ export default function Page() { // Changed to Page for convention
                 <Image
                   src="/happbaby.png"
                   alt="Happy Baby"
-                  layout="fill"
-                  objectFit="cover"
+                   height={600} width={600}
                   quality={90}
                   className="rounded-full"
                 />
@@ -433,12 +457,11 @@ export default function Page() { // Changed to Page for convention
             <div className="relative w-full max-w-xl aspect-[4/3] rounded-3xl overflow-hidden shadow-xl">
               <Image
                 src="/how-it-work-img.jpg"
-                alt="Happy Baby"
-                layout="fill"
-                objectFit="cover"
+                alt="Happy Baby" 
+                height={600} width={600}
                 quality={90}
                 className="rounded-3xl"
-              />
+              /> 
             </div>
           </div>
 
@@ -463,15 +486,13 @@ export default function Page() { // Changed to Page for convention
                 initiallyOpen={true}
               />
               <AccordionItem
-                icon={FaClinicMedical}
-                title="Visit Our Clinic"
-                description="Discover our state-of-the-art facilities and meet our expert team for personalized care."
-              />
+                  icon={FaClinicMedical}
+                  title="Visit Our Clinic"
+                  description="Discover our state-of-the-art facilities and meet our expert team for personalized care." initiallyOpen={false}              />
               <AccordionItem
-                icon={FaUserMd}
-                title="Consult With Our Doctors"
-                description="Get expert advice and tailored treatment plans from our highly experienced fertility specialists."
-              />
+                  icon={FaUserMd}
+                  title="Consult With Our Doctors"
+                  description="Get expert advice and tailored treatment plans from our highly experienced fertility specialists." initiallyOpen={false}              />
             </div>
           </div>
         </div>
@@ -524,11 +545,10 @@ export default function Page() { // Changed to Page for convention
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3550.046944062638!2d87.66986517551062!3d26.65757997680072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f592233c873f41%3A0xb3e64848d530863!2sDamak%2C%20Nepal!5e0!3m2!1sen!2snp!4v1701358052445!5m2!1sen!2snp"
                 width="100%"
                 height="100%"
-                style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                className="absolute inset-0"
+                className="absolute inset-0 border-0"
               ></iframe>
               <div className="absolute top-4 left-4 bg-white p-3 rounded-lg shadow-md max-w-[200px] text-sm">
                 <p className="font-semibold text-gray-800">Kopila Fertility & Womens Clinic</p>

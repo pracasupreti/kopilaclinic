@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { ArrowRight } from "lucide-react";
 
@@ -22,18 +22,12 @@ export default function Header() {
   const closeMenu = () => setIsMenuOpen(false);
 
   return (
-    <header className="bg-green-50 shadow-md border-b border-gray-300 px-4 md:px-12 py-3 sticky top-0 z-50">
+    <header className="bg-green-50 shadow-md border-b border-gray-300 px-4 md:px-12 py-7  top-0 z-50"> {/* sticky */}
       <nav className="flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex-shrink-0">
-          <Image
-            src="/logo.svg"
-            alt="Kopila clinic logo"
-            width={180}
-            height={60}
-            className="h-16 w-auto"
-          />
-        </Link>
+       <Link href="/" className="flex shrink-0">
+              <Image src="/logo.svg" alt="Kopila clinic logo" width={310} height={90} className="h-20 w-auto" />
+            </Link>
 
         {/* Mobile Menu Toggle */}
         <div className="md:hidden">
@@ -48,7 +42,7 @@ export default function Header() {
             isMenuOpen ? "flex" : "hidden"
           } flex-col md:flex md:flex-row md:items-center md:space-x-8 absolute md:static top-20 left-0 w-full md:w-auto bg-white md:bg-transparent z-40 shadow-md md:shadow-none p-4 md:p-0`}
         >
-          <ul className="flex flex-col md:flex-row md:space-x-8 space-y-4 md:space-y-0 text-sm md:text-base font-semibold text-primary">
+          <ul className="flex flex-col md:flex-row md:space-x-12 space-y-4 md:space-y-0 text-sm md:text-base font-semibold text-primary">
             {NAV_PAGES.map((page) => (
               <li key={page.name}>
                 <Link
@@ -65,7 +59,7 @@ export default function Header() {
           {/* Appointment Button */}
           <div className="mt-4 md:mt-0 md:ml-4">
             <Link href="/appointment" onClick={closeMenu}>
-              <button className="bg-secondary text-white px-5 py-3 rounded-full shadow-md hover:scale-105 hover:bg-primary active:scale-95 transition-all text-sm md:text-base flex items-center group">
+              <button className="bg-secondary text-white font-semibold px-4 py-3 rounded-full shadow-md hover:scale-105 hover:bg-primary active:scale-95 transition-all text-sm md:text-sm flex items-center group">
                 Book An Appointment
                 <ArrowRight className="ml-2 h-7 w-7 bg-white text-blue-600 rounded-full p-1 -rotate-60 transform transition-transform duration-300 group-hover:rotate-5" />
               </button>
@@ -76,3 +70,5 @@ export default function Header() {
     </header>
   );
 }
+
+

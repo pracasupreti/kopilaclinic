@@ -1,7 +1,6 @@
+import Footer from '@/components/footer';
 import './globals.css'
 import Header from '@/components/header';
-import Footer from '@/components/footer';
-  import { Poppins } from 'next/font/google';
 
 export default function layout({ children }: { children: React.ReactNode }) {
 
@@ -10,7 +9,7 @@ export default function layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
-        <title>Kopila Fertility & Women's Clinic</title>
+        <title>Kopila Fertility & Womens Clinic</title>
         <meta name="description" content="A simple website built with Next.js and Tailwind CSS" />
         <link rel="icon" href="/icon.svg" />
       </head>

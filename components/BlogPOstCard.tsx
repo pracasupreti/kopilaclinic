@@ -1,18 +1,25 @@
 import React from 'react';
-import Image from 'next/image';
+import Image from "next/image";
 import { FaPlayCircle } from 'react-icons/fa'; 
 
-const BlogPostCard = ({ imageUrl, title, description, link = '#' }) => {
+interface BlogPostCardProps {
+  imageUrl:string,title:string,description:string,link:string
+}
+
+const BlogPostCard = ({ imageUrl, title, description, link = '#' } : BlogPostCardProps ) => {
   return (
     <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col h-full">
       <div className="relative w-full aspect-video"> 
         <Image
           src={imageUrl}
           alt={title}
-          layout="fill"
-          objectFit="cover"
           quality={80}
-        />
+          height={800}
+          width={800}
+          sizes="100vw"
+          style={{
+            objectFit: "cover"
+          }} />
       </div>
       <div className="p-6 flex flex-col flex-grow">
         <h3 className="text-xl font-bold text-primary mb-2 line-clamp-2">
