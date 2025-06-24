@@ -78,12 +78,12 @@ const Team = () => {
         `}</style>
 
         {/* Heading Section with slide animation */}
-        <div className="bg-green-50 py-32 px-6 rounded-lg shadow max-w-12xl mx-auto mb-12 slide-down">
+        <div className="bg-green-50 py-32 px-6 rounded-lg max-w-12xl mx-auto mb-12 slide-down">
           <h1 className="text-6xl font-bold text-center">
-            <span className="text-pink-600">Our </span>
-            <span className="text-green-600">Team</span>
+            <span className="text-primary">Our </span>
+            <span className="text-secondary">Team</span>
           </h1>
-          <p className="text-base text-pink-500 mt-2 text-center">Home / Team</p>
+          <p className="text-base text-primary mt-2 text-center">Home / Team</p>
         </div>
 
         {/* Team Members Section */}
