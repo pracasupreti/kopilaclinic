@@ -33,10 +33,10 @@ const FertilityInfoPage: React.FC = () => {
                     <AnimateOnScroll>
                         <section className="text-txt leading-relaxed mb-8 text-base slide-down">
                             <p className="mb-4 py-2">
-                                Endometriosis can significantly affect a woman's fertility and overall well-being. This blog explores the condition, how it causes pain and infertility, and discusses treatment options such as medication, surgery, and fertility treatments to help women manage the condition and increase their chances of pregnancy.
+                                Endometriosis can significantly affect a woman&#39;s fertility and overall well-being. This blog explores the condition, how it causes pain and infertility, and discusses treatment options such as medication, surgery, and fertility treatments to help women manage the condition and increase their chances of pregnancy.
                             </p>
                             <p>
-                                Endometriosis is a chronic condition where tissue similar to the lining of the uterus grows outside the uterus, causing pain and potentially affecting fertility. Its a common condition, yet its impact on a woman's health and ability to conceive can be significant. This blog explores how endometriosis leads to pain and infertility, and discusses the treatment options available to manage the condition and improve chances of pregnancy.
+                                Endometriosis is a chronic condition where tissue similar to the lining of the uterus grows outside the uterus, causing pain and potentially affecting fertility. It&#39;s a common condition, yet its impact on a woman&#39;s health and ability to conceive can be significant. This blog explores how endometriosis leads to pain and infertility, and discusses the treatment options available to manage the condition and improve chances of pregnancy.
                             </p>
                         </section>
                     </AnimateOnScroll>
@@ -44,7 +44,7 @@ const FertilityInfoPage: React.FC = () => {
                         <section className="flex bg-back rounded-4xl p-4 mb-8 shadow-sm slide-down">
                             <Image src="/testimonials/icon-quote.svg" height={40} width={40} alt={"icon-quote"} className="" />
                             <p className="text-primary font-semibold text-xl p-4">
-                                "Endometriosis can pose challenges to fertility, but with the right treatments, the dream of parenthood is still achievable. "
+                                &quot;Endometriosis can pose challenges to fertility, but with the right treatments, the dream of parenthood is still achievable. &quot;
                             </p>
                         </section>
                     </AnimateOnScroll>
@@ -61,7 +61,7 @@ const FertilityInfoPage: React.FC = () => {
                         <AnimateOnScroll>
                             <h2 className="text-4xl text-primary font-bold mb-6 text-center slide-side">Treatment Options for Endometriosis and Fertility</h2>
                             <p className="text-txt leading-relaxed mb-6 slide-down">
-                                While there is currently no cure for endometriosis, various treatments can help manage the symptoms and improve fertility outcomes. The choice of treatment often depends on the severity of the condition, the woman's age, and whether she is trying to conceive.
+                                While there is currently no cure for endometriosis, various treatments can help manage the symptoms and improve fertility outcomes. The choice of treatment often depends on the severity of the condition, the woman&#39;s age, and whether she is trying to conceive.
                             </p>
                         </AnimateOnScroll>
                         {/* Unordered list of key points */}
