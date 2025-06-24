@@ -74,7 +74,7 @@ const FeatureCard = ({  } : FeatureCardProps) => {
         <div className="flex justify-center items-center">
           <div className="rounded-full overflow-hidden h-96 w-96 sm:w-150 sm:h-150 md:w-80 md:h-80 lg:w-96 lg:h-96 flex items-center justify-center">
             {/* Replace with your actual baby image */}
-            <Image src="/happybaby.png" alt="Happy" height={120} width={120}
+            <Image src="/happybaby.png" alt="Happy" height={200} width={200}
             className="object-cover w-full h-full" />
           </div>
         </div>
