@@ -9,7 +9,7 @@ import FeatureCard from "@/components/ui/FeatureCard";
 import AccordionItem from "@/components/ui/AccordionItem";
 import ServiceCard from "@/components/ServiceCard";
 import Head from "next/head";
-import BlogPostCard from "@/components/BlogPostCardi";
+import BlogPostCard from "@/components/BlogPostCard";
 import ClinicSection from "@/components/ui/ClinicSection";
 import { AnimateOnScroll } from "@/components/ui/AnimateOnScroll";
 
