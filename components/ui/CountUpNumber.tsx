@@ -1,4 +1,4 @@
-// components/CountUpNumber.jsx
+"use client";
 import { useEffect, useRef, useState } from 'react';
 
 type CountUpNumberProps = {

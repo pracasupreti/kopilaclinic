@@ -3,6 +3,7 @@ import React from "react";
 import  { useEffect, useRef } from "react";
 import Image from "next/legacy/image";
 import Head from "next/head";
+import { FaWhatsapp } from "react-icons/fa";
 
 const teamMembers = [
   {
@@ -114,6 +115,18 @@ const Team = () => {
           </div>
         </div>
       </div>
+      
+          {/* Floating contact buttons */}
+                  <div className="fixed bottom-8 right-8 z-50 flex flex-col space-y-4 animate-bounce">
+                    <a
+                      href="https://wa.me/9779709055065"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-14 h-14 bg-secondary rounded-full flex items-center justify-center shadow-lg transition-transform duration-200 hover:scale-110"
+                    >
+                      <FaWhatsapp className="w-7 h-7 text-white" />
+                    </a>
+                  </div>
     </>
   );
 };

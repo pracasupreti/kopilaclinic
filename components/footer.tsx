@@ -77,7 +77,7 @@ const socialLinks = [
                 <div>
                   <h3 className="font-semibold text-lg mb-4">Company</h3>
                   <nav className="flex flex-col gap-2">
-                    <Link href="/about_Us" className="text-white hover:text-secondary transition-colors">   
+                    <Link href="/about" className="text-white hover:text-secondary transition-colors">   
                       About Us
                     </Link>
                     <Link href="/contact" className="text-white hover:text-secondary transition-colors"> 

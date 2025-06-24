@@ -6,6 +6,8 @@
   --foreground: #171717;
   --primary:  #e00c5b;
   --secondary: #0f9f16;
+  --txt: #60737e;
+  --back: #EFF8FF;
 }
 
 @theme inline {
@@ -15,6 +17,8 @@
   --font-mono: var(--font-geist-mono);
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
+  --color-txt: var(--txt);
+  --color-back: var(--back);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -86,3 +90,116 @@ body {
               transform: translateY(0);
             }
           }
+
+          @keyframes popup {
+  0% {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+         .slide-up {
+            opacity: 0;
+            transform: translateY(60px);
+            animation: slideUp 0.7s forwards;
+          }
+          @keyframes slideUp {
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+
+          @keyframes popup {
+  0% {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+        .slide-side {
+            opacity: 0;
+            transform: translateX(-60px);
+            animation: slideDown 1.2s forwards;
+          }
+          @keyframes slideDown {
+            to {
+              opacity: 1;
+              transform: translateX(0);
+            }
+          }
+
+          @keyframes popup {
+  0% {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Pop-up utility class */
+.popup-animate {
+  animation: popup 0.4s ease-out forwards;
+}
+
+
+.image-unwrap {
+  animation: unwrap 2.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  transform-origin: left center; 
+}
+
+@keyframes unwrap {
+  0% {
+    transform: scaleX(0); 
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: scaleX(1); 
+    opacity: 1;
+  }
+}
+
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+
+@keyframes scrollXLoop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.333%); /* Shift 3 images at a time */
+  }
+}
+
+.animate-scrollXLoop {
+  animation: scrollXLoop 9s linear infinite; /* Loop every 9 seconds */
+}

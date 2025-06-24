@@ -5,6 +5,7 @@ import 'aos/dist/aos.css';
 import Head from 'next/head';
 import { useEffect } from 'react';
 import Image from 'next/image';
+import { FaWhatsapp } from 'react-icons/fa';
 
 export default function Services() {
   useEffect(() => {
@@ -89,25 +90,60 @@ export default function Services() {
         <meta property="og:image" content="https://kopilaclinic.com.np/images/og.jpg" />
         <meta property="og:image:alt" content="Kopila Fertility & Womens Clinic logo or clinic image" />
       </Head>
-      <div className="min-h-screen bg-gray-50 py-10 px-6">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 container mx-auto">
-          {services.map((service) => (
+      <div className="min-h-screen bg-gray-50">
+        <div className="text-center bg-green-50 mb-12 py-28">
+      <h1 className="text-4xl md:text-5xl font-bold text-primary">
+        Our <span className='text-secondary'> Services</span>
+      </h1>
+      <p className="text-primary mt-4 text-sm md:text-base">
+        Home <span className='text-secondary'> / </span>Our Services
+      </p>
+    </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-12 py-12 pb-30">
+          {services.map((service, idx) => (
             <div
-              key={service.title}
+              key={idx}
+              className="bg-white rounded-4xl shadow-lg transition duration-300 group p-6 flex flex-col h-full relative overflow-hidden"
               data-aos="fade-up"
-              className="bg-white rounded-3xl shadow-md p-6 hover:shadow-lg transition duration-300 hover:bg-pink-600 group"
+              data-aos-delay={idx * 50}
             >
-              <Image src="/icon.svg" alt="icon" height={16} width={16} className="h-12 w-12 mb-3" />
-              <h2 className="text-pink-600 font-semibold text-[16px] mb-[15px] group-hover:text-white">
-                {service.title}
-              </h2>
-              <p className="text-gray-600 text-[14px] font-normal text-left mb-5 group-hover:text-white">
-                {service.desc}
-              </p>
+              <div
+                className="absolute left-0 bottom-0 w-full h-0 group-hover:h-full bg-primary z-0 text-white transition-all duration-700 pointer-events-none"
+                style={{ transitionProperty: 'height,opacity' }}
+              />
+              <div className="relative z-10 font-relaxed py-4"> {/* Content inside the service card */ }
+                <div className="flex items-center mb-4 group-hover:filter group-hover:brightness-200 group-hover:grayscale group-hover:contrast-0">
+                  <Image
+                    src="/icon.svg"
+                    alt="Flower Icon"
+                    width={32}
+                    height={32}
+                    className="flex-shrink-0 h-12 w-12"
+                  />
+                </div>
+                <h3 className="text-xl font-bold text-primary mb-4 text-left group-hover:text-white">
+                  {service.title}
+                </h3>
+                <p className="text-gray-500 text-base mb-6 flex-grow group-hover:text-white text-left leading-relaxed">
+                  {service.desc}
+                </p>
+              </div>
             </div>
           ))}
         </div>
       </div>
+      
+          {/* Floating contact buttons */}
+                  <div className="fixed bottom-8 right-8 z-50 flex flex-col space-y-4 animate-bounce">
+                    <a
+                      href="https://wa.me/9779709055065"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-14 h-14 bg-secondary rounded-full flex items-center justify-center shadow-lg transition-transform duration-200 hover:scale-110"
+                    >
+                      <FaWhatsapp className="w-7 h-7 text-white" />
+                    </a>
+                  </div>
     </>
   );
 }

@@ -3,6 +3,7 @@ import React from "react"
 import { useState } from "react"
 import { Phone, Clock } from "lucide-react"
 import Head from "next/head"
+import { FaWhatsapp } from "react-icons/fa"
 
 export default function AppointmentsPage() {
   const [formData, setFormData] = useState({
@@ -304,6 +305,18 @@ export default function AppointmentsPage() {
         </div>
       </div>
     </div>
+    
+          {/* Floating contact buttons */}
+                  <div className="fixed bottom-8 right-8 z-50 flex flex-col space-y-4 animate-bounce">
+                    <a
+                      href="https://wa.me/9779709055065"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-14 h-14 bg-secondary rounded-full flex items-center justify-center shadow-lg transition-transform duration-200 hover:scale-110"
+                    >
+                      <FaWhatsapp className="w-7 h-7 text-white" />
+                    </a>
+                  </div>
     </>
   )
 }

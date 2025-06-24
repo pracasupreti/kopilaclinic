@@ -4,6 +4,9 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Head from 'next/head';
 import { useEffect, useRef, useState } from "react";
+import { FaCircleArrowRight, FaCircleArrowDown } from 'react-icons/fa6';
+import { ArrowRight } from 'lucide-react';
+import { FaWhatsapp } from 'react-icons/fa';
 
 export default function FAQ() {
   useEffect(() => {
@@ -164,17 +167,25 @@ export default function FAQ() {
         <meta property="og:image:alt" content="Kopila Fertility & Womens Clinic logo or clinic image"/>
     
       </Head>
+      <div className="text-center bg-green-50 mb-8 py-32">
+      <h1 className="text-4xl md:text-5xl font-bold text-primary">
+        Frequently <span className='text-secondary'> Asked Questions</span>
+      </h1>
+      <p className="text-primary mt-4 text-sm md:text-base">
+        Home <span className='text-secondary'> / </span>FAQ
+      </p>
+    </div>
     <main
       id="faq-main"
-      className="bg-white min-h-screen p-10 flex gap-10 mx-auto container relative opacity-0 aos-init"
+      className="bg-white p-2 flex flex-col lg:flex-row gap-10 mx-auto max-w-7xl opacity-0 aos-init"
       data-aos="fade-in"
     >
       {/* Sidebar */}
-      <aside className="bg-blue-50 rounded-2xl p-6 w-72 shadow  h-auto sticky top-10 self-start">
-        <ul className="space-y-6 text-pink-600 font-semibold text-lg">
+      <aside className="bg-blue-50 rounded-2xl p-6 w-90 shadow  h-auto lg:sticky top-10 self-start">
+        <ul className="space-y-6 text-primary text-lg">
           {sidebarLinks.map((link, i) => (
             <li key={i} className="flex justify-between items-center cursor-pointer" onClick={() => handleSidebarClick(i)}>
-              {link} <span className="text-blue-400">↗️</span>
+              {link} <span className="text-blue-600 -rotate-60"><ArrowRight/></span>
             </li>
           ))}
         </ul>
@@ -186,7 +197,7 @@ export default function FAQ() {
             className="flex-1"
             data-aos="fade-up"
           >
-            <h1 className="text-4xl font-bold text-pink-600 mb-6">
+            <h1 className="text-5xl font-bold text-primary mb-6">
               Ovulation Induction
             </h1>
             {faqs.map((faq, index) => (
@@ -197,10 +208,10 @@ export default function FAQ() {
               >
                 <button
                   onClick={() => toggleAccordion(index)}
-                  className="w-full text-left p-4 text-xl font-semibold text-pink-500 flex justify-between items-center"
+                  className="w-full text-left p-4 text-xl font-semibold text-primary flex justify-between items-center"
                 >
                   {faq.question}
-                  <div className="bg-green-500 text-white rounded-full w-8 h-8 text-center">{openIndex === index ? "⬇️" : "➡️"}</div>
+                  <div className="">{openIndex === index ? <FaCircleArrowDown className='text-secondary'/>  :  <FaCircleArrowRight className='text-secondary'/>}</div>
                 </button>
                 {openIndex === index && (
                   <div className="p-4 text-gray-500">{faq.answer}</div>
@@ -213,7 +224,7 @@ export default function FAQ() {
             className="mt-5"
             data-aos="fade-up"
           >
-            <h1 className="text-4xl font-bold text-pink-600 mb-6">
+            <h1 className="text-4xl font-bold text-primary mb-6">
               Intrauterine Insemination (IUI)
             </h1>
             {faqs1.map((faq, index) => (
@@ -224,10 +235,10 @@ export default function FAQ() {
               >
                 <button
                   onClick={() => toggleAccordion(index)}
-                  className="w-full text-left p-4 text-xl font-semibold text-pink-500 flex justify-between items-center"
+                  className="w-full text-left p-4 text-xl font-semibold text-primary flex justify-between items-center"
                 >
                   {faq.question}
-                  <div className="bg-green-500 text-white rounded-full w-8 h-8 text-center">{openIndex === index ? "⬇️" : "➡️"}</div>
+                  <div className="">{openIndex === index ? <FaCircleArrowDown className='text-secondary'/>  :  <FaCircleArrowRight className='text-secondary'/>}</div>
                 </button>
                 {openIndex === index && (
                   <div className="p-4 text-gray-500">{faq.answer}</div>
@@ -240,7 +251,7 @@ export default function FAQ() {
             className="mt-5"
             data-aos="fade-up"
           >
-            <h1 className="text-4xl font-bold text-pink-600 mb-6">
+            <h1 className="text-4xl font-bold text-primary mb-6">
               In Vitro Fertilization (IVF)
             </h1>
             {faqs2.map((faq, index) => (
@@ -251,10 +262,10 @@ export default function FAQ() {
               >
                 <button
                   onClick={() => toggleAccordion(index)}
-                  className="w-full text-left p-4 text-xl font-semibold text-pink-500 flex justify-between items-center"
+                  className="w-full text-left p-4 text-xl font-semibold text-primary flex justify-between items-center"
                 >
                   {faq.question}
-                  <div className="bg-green-500 text-white rounded-full w-8 h-8 text-center">{openIndex === index ? "⬇️" : "➡️"}</div>
+                  <div className="">{openIndex === index ? <FaCircleArrowDown className='text-secondary'/>  :  <FaCircleArrowRight className='text-secondary'/>}</div>
                 </button>
                 {openIndex === index && (
                   <div className="p-4 text-gray-500">{faq.answer}</div>
@@ -267,7 +278,7 @@ export default function FAQ() {
             className="mt-5"
             data-aos="fade-up"
           >
-            <h1 className="text-4xl font-bold text-pink-600 mb-6">
+            <h1 className="text-4xl font-bold text-primary mb-6">
               Antenatal check-Up
             </h1>
             {faqs3.map((faq, index) => (
@@ -278,10 +289,10 @@ export default function FAQ() {
               >
                 <button
                   onClick={() => toggleAccordion(index)}
-                  className="w-full text-left p-4 text-xl font-semibold text-pink-500 flex justify-between items-center"
+                  className="w-full text-left p-4 text-xl font-semibold text-primary flex justify-between items-center"
                 >
                   {faq.question}
-                  <div className="bg-green-500 text-white rounded-full w-8 h-8 text-center">{openIndex === index ? "⬇️" : "➡️"}</div>
+                  <div className="">{openIndex === index ? <FaCircleArrowDown className='text-secondary'/>  :  <FaCircleArrowRight className='text-secondary'/>}</div>
                 </button>
                 {openIndex === index && (
                   <div className="p-4 text-gray-500">{faq.answer}</div>
@@ -292,6 +303,18 @@ export default function FAQ() {
         </div>
       </div>
     </main>
+    
+          {/* Floating contact buttons */}
+                  <div className="fixed bottom-8 right-8 z-50 flex flex-col space-y-4 animate-bounce">
+                    <a
+                      href="https://wa.me/9779709055065"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-14 h-14 bg-secondary rounded-full flex items-center justify-center shadow-lg transition-transform duration-200 hover:scale-110"
+                    >
+                      <FaWhatsapp className="w-7 h-7 text-white" />
+                    </a>
+                  </div>
     </>
   );
 }
