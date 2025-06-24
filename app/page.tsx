@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import "./globals.css";
 import { ArrowRight, Star, Phone, Clock } from "lucide-react";
-import { FaCheckCircle, FaPlayCircle, FaPhoneAlt, FaWhatsapp, FaUserMd, FaClinicMedical, FaCalendarAlt, FaClock, FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
+import { FaCheckCircle, FaPhoneAlt, FaWhatsapp, FaClock, FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
 import FeatureCard from "@/components/ui/FeatureCard";
 import AccordionItem from "@/components/ui/AccordionItem";
 import ServiceCard from "@/components/ServiceCard";
@@ -17,10 +17,7 @@ import { AnimateOnScroll } from "@/components/ui/AnimateOnScroll";
 
 export default function Page() { // Changed to Page for convention
 
-  const [showPlayButton, setShowPlayButton] = useState(false);
-  const handleToggle = () => {
-    setShowPlayButton((prev) => !prev);
-  };
+  const [] = useState(false);
 
   return (
     <><Head>
