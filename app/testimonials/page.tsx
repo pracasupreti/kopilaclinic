@@ -3,10 +3,10 @@ import React from "react";
 import  { useEffect } from "react";
 import Image from "next/image";
 
-// Add Framer Motion for animation
-import { motion, useAnimation, useInView } from "framer-motion";
+import { motion, useAnimation, useInView, easeOut } from "framer-motion";
 import { useRef } from "react";
 import Head from "next/head";
+import { FaWhatsapp } from "react-icons/fa";
 
 const testimonials = [
   {
@@ -82,7 +82,7 @@ const fadeInUp = {
     transition: {
       delay: i * 0.15,
       duration: 0.6,
-      ease: "easeOut",
+      ease: easeOut,
     },
   }),
 };
@@ -130,9 +130,9 @@ const Testimonials = () => {
         </motion.div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 px-12">
           {testimonials.map((t, idx) => {
-            // eslint-disable-next-line react-hooks/rules-of-hooks
+            
             const ref = useRef(null);
-            // eslint-disable-next-line react-hooks/rules-of-hooks
+            
             const inView = useInView(ref, { once: true, margin: "-100px" });
             return (
               <motion.div
@@ -168,6 +168,18 @@ const Testimonials = () => {
         </div>
       </div>
     </motion.div>
+    
+          {/* Floating contact buttons */}
+                  <div className="fixed bottom-8 right-8 z-50 flex flex-col space-y-4 animate-bounce">
+                    <a
+                      href="https://wa.me/9779709055065"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-14 h-14 bg-secondary rounded-full flex items-center justify-center shadow-lg transition-transform duration-200 hover:scale-110"
+                    >
+                      <FaWhatsapp className="w-7 h-7 text-white" />
+                    </a>
+                  </div>
     </>
   );
 };
