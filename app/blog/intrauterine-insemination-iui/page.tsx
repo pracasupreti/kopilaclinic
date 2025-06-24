@@ -35,7 +35,7 @@ const FertilityInfoPage: React.FC = () => {
                 Intrauterine insemination (IUI) is a popular and minimally invasive fertility treatment that helps improve the chances of pregnancy. This blog discusses the IUI procedure, its success rates, and how it can be the right solution for couples facing mild infertility challenges.
               </p>
               <p>
-                Intrauterine insemination (IUI) is a widely-used fertility treatment designed to increase the chances of pregnancy for couples experiencing infertility. This procedure is relatively simple, minimally invasive, and can be an effective solution for couples facing mild to moderate infertility challenges. In this blog, we'll explore the IUI process, its success rates, and how it may be the right choice for many couples trying to conceive.
+                Intrauterine insemination (IUI) is a widely-used fertility treatment designed to increase the chances of pregnancy for couples experiencing infertility. This procedure is relatively simple, minimally invasive, and can be an effective solution for couples facing mild to moderate infertility challenges. In this blog, we&apos;ll explore the IUI process, its success rates, and how it may be the right choice for many couples trying to conceive.
               </p>
             </section>
           </AnimateOnScroll>
@@ -43,14 +43,14 @@ const FertilityInfoPage: React.FC = () => {
             <section className="flex bg-back rounded-4xl p-4 mb-8 shadow-sm slide-down">
               <Image src="/testimonials/icon-quote.svg" height={40} width={40} alt={"icon-quote"} className="" />
               <p className="text-primary font-semibold text-xl p-4">
-                "Success rates for IUI can vary depending on several factors, including the woman's age, the cause of infertility, and whether fertility medications are used. On average, IUI success rates range from 10-20% per cycle."
+                &quot;Success rates for IUI can vary depending on several factors, including the woman&apos;s age, the cause of infertility, and whether fertility medications are used. On average, IUI success rates range from 10-20% per cycle.&quot;
               </p>
             </section>
           </AnimateOnScroll>
           <AnimateOnScroll>
             <section className="text-txt leading-relaxed mb-8 slide-down">
               <p>
-                Success rates for IUI can vary depending on several factors, including the woman's age, the cause of infertility, and whether fertility medications are used. On average, IUI success rates range from 10-20% per cycle. Younger women tend to have higher success rates compared to older women, and those with unexplained infertility often respond well to IUI. Using fertility drugs to stimulate ovulation can also improve the success rates, though it may increase the risk of multiple pregnancies (twins, triplets, etc.).
+                Success rates for IUI can vary depending on several factors, including the woman&apos;s age, the cause of infertility, and whether fertility medications are used. On average, IUI success rates range from 10-20% per cycle. Younger women tend to have higher success rates compared to older women, and those with unexplained infertility often respond well to IUI. Using fertility drugs to stimulate ovulation can also improve the success rates, though it may increase the risk of multiple pregnancies (twins, triplets, etc.).
               </p>
             </section>
           </AnimateOnScroll>
@@ -74,7 +74,7 @@ const FertilityInfoPage: React.FC = () => {
             </AnimateOnScroll>
             <AnimateOnScroll>
               <p className="text-txt leading-relaxed mb-4 slide-down">
-                In conclusion,Intrauterine insemination is a simple, effective, and minimally invasive fertility treatment that can be a great option for couples facing mild to moderate infertility challenges. With a good understanding of the procedure, success rates, and potential risks, couples can make an informed decision about whether IUI is the right choice for them. If you're struggling to conceive, speak with your fertility specialist to explore your options and determine if IUI could help you on your journey to parenthood.
+                In conclusion,Intrauterine insemination is a simple, effective, and minimally invasive fertility treatment that can be a great option for couples facing mild to moderate infertility challenges. With a good understanding of the procedure, success rates, and potential risks, couples can make an informed decision about whether IUI is the right choice for them. If you&apos;re struggling to conceive, speak with your fertility specialist to explore your options and determine if IUI could help you on your journey to parenthood.
               </p>
             </AnimateOnScroll>
             <div className="h-px bg-gray-300 my-4"></div>

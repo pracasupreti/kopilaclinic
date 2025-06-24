@@ -43,7 +43,7 @@ const FertilityInfoPage: React.FC = () => {
                         <section className="flex bg-back rounded-4xl p-4 mb-8 shadow-sm slide-down">
                             <Image src="/testimonials/icon-quote.svg" height={40} width={40} alt={"icon-quote"} className="" />
                             <p className="text-primary font-semibold text-xl p-4">
-                                "While PCOD cannot be cured, it can be managed effectively through various treatment options."
+                                &quot;While PCOD cannot be cured, it can be managed effectively through various treatment options.&quot;
                             </p>
                         </section>
                     </AnimateOnScroll>
@@ -60,7 +60,7 @@ const FertilityInfoPage: React.FC = () => {
                         <AnimateOnScroll>
                             <h2 className="text-4xl text-primary font-bold mb-6 text-center slide-side">Causes of PCOD</h2>
                             <p className="text-txt leading-relaxed mb-6 slide-down">
-                                The exact cause of Polycystic Ovary Syndrome (PCOD) is unclear, but factors like hormonal imbalance, insulin resistance, genetics, and lifestyle play a role. High levels of androgens (male hormones) prevent egg maturation and ovulation. Insulin resistance, where the body’s cells don't respond well to insulin, can worsen hormonal imbalances, leading to weight gain and irregular periods. Genetic factors also contribute, as PCOD tends to run in families. Poor diet, lack of exercise, and obesity can make symptoms worse and increase the risk of conditions like diabetes and heart disease.
+                                The exact cause of Polycystic Ovary Syndrome (PCOD) is unclear, but factors like hormonal imbalance, insulin resistance, genetics, and lifestyle play a role. High levels of androgens (male hormones) prevent egg maturation and ovulation. Insulin resistance, where the body&#39;s cells don&#39;t respond well to insulin, can worsen hormonal imbalances, leading to weight gain and irregular periods. Genetic factors also contribute, as PCOD tends to run in families. Poor diet, lack of exercise, and obesity can make symptoms worse and increase the risk of conditions like diabetes and heart disease.
                             </p>
                         </AnimateOnScroll>
                         <AnimateOnScroll>

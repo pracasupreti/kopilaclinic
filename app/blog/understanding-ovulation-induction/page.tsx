@@ -35,20 +35,20 @@ const FertilityInfoPage: React.FC = () => {
               Ovulation induction is an essential treatment for women struggling with infertility due to irregular or absent ovulation. This blog explores how ovulation induction works, the medications involved, and how it can increase the chances of conception. Learn how this treatment can bring hope to those wishing to start or expand their families.
             </p>
             <p>
-              Ovulation induction is a medical procedure designed to stimulate the ovaries to release eggs, enabling conception for women with ovulatory disorders. This process often involves the use of medications such as Clomiphene Citrate or injectable gonadotropins to regulate or enhance ovulation. Monitoring through ultrasound and blood tests ensures the treatment is tailored to the individual's needs.
+              Ovulation induction is a medical procedure designed to stimulate the ovaries to release eggs, enabling conception for women with ovulatory disorders. This process often involves the use of medications such as Clomiphene Citrate or injectable gonadotropins to regulate or enhance ovulation. Monitoring through ultrasound and blood tests ensures the treatment is tailored to the individual&#39;s needs.
             </p>
           </section></AnimateOnScroll>
           <AnimateOnScroll>
             <section className="flex bg-back rounded-4xl p-4 mb-8 shadow-sm slide-down">
               <Image src="/testimonials/icon-quote.svg" height={40} width={40} alt={"icon-quote"} className="" />
               <p className="text-primary font-semibold text-xl p-4">
-                "Ovulation induction can be a beacon of hope for couples facing infertility. It bridges the gap between aspiration and reality, bringing the dream of parenthood closer."
+                &quot;Ovulation induction can be a beacon of hope for couples facing infertility. It bridges the gap between aspiration and reality, bringing the dream of parenthood closer.&quot;
               </p>
             </section></AnimateOnScroll>
           <AnimateOnScroll>
             <section className="text-txt leading-relaxed mb-8 slide-down">
               <p>
-                Success rates for ovulation induction vary depending on the underlying cause of infertility and the individual's response to treatment. However, many women have achieved successful pregnancies through this approach, making it a cornerstone in fertility treatments. While it is often used in conjunction with other procedures like intrauterine insemination (IUI), it can also be effective as a standalone treatment.
+                Success rates for ovulation induction vary depending on the underlying cause of infertility and the individual&#39;s response to treatment. However, many women have achieved successful pregnancies through this approach, making it a cornerstone in fertility treatments. While it is often used in conjunction with other procedures like intrauterine insemination (IUI), it can also be effective as a standalone treatment.
               </p>
             </section></AnimateOnScroll>
 
@@ -77,7 +77,7 @@ const FertilityInfoPage: React.FC = () => {
               </p></AnimateOnScroll>
             <AnimateOnScroll>
               <p className="text-txt leading-relaxed slide-down">
-                Ovulation induction is a medical procedure designed to stimulate the ovaries to release eggs, enabling conception for women with ovulatory disorders. This process often involves the use of medications such as Clomiphene Citrate or injectable gonadotropins to regulate or enhance ovulation. Monitoring through ultrasound and blood tests ensures the treatment is tailored to the individual's needs.
+                Ovulation induction is a medical procedure designed to stimulate the ovaries to release eggs, enabling conception for women with ovulatory disorders. This process often involves the use of medications such as Clomiphene Citrate or injectable gonadotropins to regulate or enhance ovulation. Monitoring through ultrasound and blood tests ensures the treatment is tailored to the individual&#39;s needs.
               </p>
             </AnimateOnScroll>
           </section>
@@ -85,12 +85,12 @@ const FertilityInfoPage: React.FC = () => {
             <section className="flex bg-back rounded-4xl p-4 mb-8 shadow-sm slide-down">
               <Image src="/testimonials/icon-quote.svg" height={40} width={40} alt={"icon-quote"} className="" />
               <p className="text-primary font-semibold text-xl p-4">
-                "Ovulation induction can be a beacon of hope for couples facing infertility. It bridges the gap between aspiration and reality, bringing the dream of parenthood closer."
+                &quot;Ovulation induction can be a beacon of hope for couples facing infertility. It bridges the gap between aspiration and reality, bringing the dream of parenthood closer.&quot;
               </p>
             </section></AnimateOnScroll>
           <section className="text-txt leading-relaxed mb-8 slide-down">
             <AnimateOnScroll><p>
-              Success rates for ovulation induction vary depending on the underlying cause of infertility and the individual's response to treatment. However, many women have achieved successful pregnancies through this approach, making it a cornerstone in fertility treatments. While it is often used in conjunction with other procedures like intrauterine insemination (IUI), it can also be effective as a standalone treatment.
+              Success rates for ovulation induction vary depending on the underlying cause of infertility and the individual&#39;s response to treatment. However, many women have achieved successful pregnancies through this approach, making it a cornerstone in fertility treatments. While it is often used in conjunction with other procedures like intrauterine insemination (IUI), it can also be effective as a standalone treatment.
             </p></AnimateOnScroll>
           </section>
 

@@ -43,14 +43,14 @@ const FertilityInfoPage: React.FC = () => {
                         <section className="flex bg-back rounded-4xl p-4 mb-8 shadow-sm slide-down">
                             <Image src="/testimonials/icon-quote.svg" height={40} width={40} alt={"icon-quote"} className="" />
                             <p className="text-primary font-semibold text-xl p-4">
-                                "Dealing with male infertility, ovulation disorders, or other issues, IVF offers a pathway to parenthood when other treatments have not worked."
+                                &quot;Dealing with male infertility, ovulation disorders, or other issues, IVF offers a pathway to parenthood when other treatments have not worked.&quot;
                             </p>
                         </section>
                     </AnimateOnScroll>
                     <AnimateOnScroll>
                         <section className="text-txt leading-relaxed mb-8 slide-down">
                             <p>
-                                The success rates of IVF vary depending on several factors, such as the woman's age, egg and sperm quality, and underlying infertility issues. On average, women under 35 have a 40-45% success rate per cycle, while rates decrease with age, dropping to around 10-15% for women aged 41-42 and 5% or lower for women over 42. Younger women generally produce higher-quality eggs, which improves chances of success, while age-related declines in egg quality can lower outcomes. Other factors like sperm quality and the clinic’s expertise also play a role in IVF success.
+                                The success rates of IVF vary depending on several factors, such as the woman&apos;s age, egg and sperm quality, and underlying infertility issues. On average, women under 35 have a 40-45% success rate per cycle, while rates decrease with age, dropping to around 10-15% for women aged 41-42 and 5% or lower for women over 42. Younger women generally produce higher-quality eggs, which improves chances of success, while age-related declines in egg quality can lower outcomes. Other factors like sperm quality and the clinic&apos;s expertise also play a role in IVF success.
                             </p>
                         </section>
                     </AnimateOnScroll>
@@ -60,7 +60,7 @@ const FertilityInfoPage: React.FC = () => {
                         <AnimateOnScroll>
                             <h2 className="text-4xl text-primary font-bold text-gray-800 mb-6 text-center slide-side">Understanding the Medications</h2>
                             <p className="text-txt leading-relaxed mb-6 slide-down">
-                                IVF can be an emotional rollercoaster, and the process can take a physical toll on the body due to hormone treatments, procedures, and the uncertainty of the outcome. Couples may experience stress, anxiety, and emotional fatigue. It's essential to have a strong support system, whether that be a partner, family, friends, or a therapist, to navigate the ups and downs of the IVF process.IVF is often considered the most effective treatment for various infertility issues, including:
+                                IVF can be an emotional rollercoaster, and the process can take a physical toll on the body due to hormone treatments, procedures, and the uncertainty of the outcome. Couples may experience stress, anxiety, and emotional fatigue. It&apos;s essential to have a strong support system, whether that be a partner, family, friends, or a therapist, to navigate the ups and downs of the IVF process.IVF is often considered the most effective treatment for various infertility issues, including:
                             </p>
                         </AnimateOnScroll>
                         {/* Unordered list of key points */}
@@ -75,7 +75,7 @@ const FertilityInfoPage: React.FC = () => {
                         </AnimateOnScroll>
                         <AnimateOnScroll>
                             <p className="text-txt leading-relaxed mb-4 slide-down">
-                                In conclusion,Intrauterine insemination is a simple, effective, and minimally invasive fertility treatment that can be a great option for couples facing mild to moderate infertility challenges. With a good understanding of the procedure, success rates, and potential risks, couples can make an informed decision about whether IUI is the right choice for them. If you're struggling to conceive, speak with your fertility specialist to explore your options and determine if IUI could help you on your journey to parenthood.
+                                In conclusion,Intrauterine insemination is a simple, effective, and minimally invasive fertility treatment that can be a great option for couples facing mild to moderate infertility challenges. With a good understanding of the procedure, success rates, and potential risks, couples can make an informed decision about whether IUI is the right choice for them. If you&apos;re struggling to conceive, speak with your fertility specialist to explore your options and determine if IUI could help you on your journey to parenthood.
                             </p>
                         </AnimateOnScroll>
                         <AnimateOnScroll>

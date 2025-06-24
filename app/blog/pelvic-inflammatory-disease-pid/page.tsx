@@ -44,7 +44,7 @@ const FertilityInfoPage: React.FC = () => {
                         <section className="flex bg-back rounded-4xl p-4 mb-8 shadow-sm slide-down">
                             <Image src="/testimonials/icon-quote.svg" height={40} width={40} alt={"icon-quote"} className="" />
                             <p className="text-primary font-semibold text-xl p-4">
-                                "Early intervention restores health, preserves fertility, and brings the hope of parenthood within reach."
+                                &quot;Early intervention restores health, preserves fertility, and brings the hope of parenthood within reach.&quot;
                             </p>
                         </section>
                     </AnimateOnScroll>
