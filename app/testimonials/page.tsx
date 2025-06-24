@@ -125,8 +125,8 @@ const Testimonials = () => {
             visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
           }}
         >
-          <h1 className="text-6xl font-bold text-green-500 mb-2">Testimonials</h1>
-          <p className="text-sm text-pink-500 font-semibold">Home / Testimonials</p>
+          <h1 className="text-6xl font-bold text-secondary mb-2">Testimonials</h1>
+          <p className="text-sm text-primary font-semibold">Home / Testimonials</p>
         </motion.div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 px-12">
           {testimonials.map((t, idx) => {
@@ -147,20 +147,20 @@ const Testimonials = () => {
                 custom={idx}
               >
                 <div>
-                  <Image src="/testimonials/icon-quote.svg" alt="" height={16} width={16} />
+                  <Image src="/testimonials/icon-quote.svg" alt="" height={32} width={32} />
                 </div>
-                <div className="text-yellow-400 text-xl mb-2 font-semibold">★★★★★</div>
-                <p className="text-base text-gray-500 mb-4">“{t.text}”</p>
+                <div className="text-yellow-400 text-xl mb-2 py-4 font-bold">★ ★ ★ ★ ★</div>
+                <p className="text-base text-gray-500 mb-4 leading-relaxed">“{t.text}”</p>
                 <div className="flex items-center gap-3">
                   <Image
                     src={t.image}
                     alt={t.name}
-                    width={40}
+                    width={80}
                     height={40}
                     className="rounded-full h-16 w-16"
                   />
                   <div>
-                    <h4 className="font-semibold text-xl text-pink-500">{t.name}</h4>
+                    <h4 className="font-semibold text-xl text-primary">{t.name}</h4>
                     <p className="text-xs text-gray-500">{t.location}</p>
                   </div>
                 </div>
