@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import React from 'react';
 import { FaWhatsapp } from 'react-icons/fa';
+import Image from 'next/image';
 
 // Define a type for the blog post
 type BlogPost = {
@@ -105,16 +106,17 @@ const App: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {blogPosts.map((post) => (
             <div key={post.id} className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-200">
-              {/* Blog Post Image */}
-              <img
-                src={post.image}
+              <Image
+                src={post.image.startsWith('/') ? post.image : `/${post.image}`}
                 alt={post.alt}
+                width={400}
+                height={224}
                 className="w-full h-56 object-cover transform hover:scale-105 transition-transform duration-500 rounded-t-xl"
-                // Fallback for image loading errors
                 onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
-                  e.currentTarget.onerror = null; // prevents infinite loop
                   e.currentTarget.src = `https://placehold.co/400x250/F3E8FF/5B21B6?text=Image+Not+Found`;
                 }}
+                priority={post.id <= 3}
+                unoptimized={post.image.startsWith('http')}
               />
               <div className="p-6">
                 {/* Blog Post Title */}

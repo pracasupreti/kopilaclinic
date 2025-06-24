@@ -9,7 +9,7 @@ type FeatureCardProps = {
   alignment?: 'left' | 'right';
 };
 
-const FeatureCard = ({ title, description, alignment = 'left' } : FeatureCardProps) => {
+const FeatureCard = ({  } : FeatureCardProps) => {
   return (
     <section className="bg-green-50 py-20 px-4 md:px-8 lg:px-16 flex flex-col items-center">
       <div className="text-center mb-16"> <AnimateOnScroll>
@@ -35,7 +35,8 @@ const FeatureCard = ({ title, description, alignment = 'left' } : FeatureCardPro
               </p>
             </div>
             {/* Replace with your actual icon component or image */}
-            <img src="/icon.svg" alt="Flower Icon" className="w-12 h-12 flex-shrink-0 mt-8" />
+            <Image src="/icon.svg" alt="Flower Icon" height={120} width={120}
+            className="w-12 h-12 flex-shrink-0 mt-8" />
           </div> </AnimateOnScroll>
 
           {/* Proven Track Record */}
@@ -48,13 +49,15 @@ const FeatureCard = ({ title, description, alignment = 'left' } : FeatureCardPro
               </p>
             </div>
             {/* Replace with your actual icon component or image */}
-            <img src="/icon.svg" alt="Flower Icon" className="w-12 h-12 flex-shrink-0 mt-8" />
+            <Image src="/icon.svg" alt="Flower Icon" height={120} width={120}
+            className="w-12 h-12 flex-shrink-0 mt-8" />
           </div> </AnimateOnScroll>
 
           {/* Decade Of Dedication */}
           <AnimateOnScroll>
           <div className="flex items-start text:left lg:text-right">
-            <img src="/icon.svg" alt="Flower Icon" className="w-12 h-12 flex-shrink-0 mt-8 mr-2 md:hidden" />
+            <Image src="/icon.svg" alt="Flower Icon" height={120} width={120}
+            className="w-12 h-12 flex-shrink-0 mt-8 mr-2 md:hidden" />
             <div className="mr-4">
               <h2 className="text-primary text-xl font-semibold mb-2">Decade Of Dedication:</h2>
               <p className="text-gray-500 text-base">
@@ -62,7 +65,8 @@ const FeatureCard = ({ title, description, alignment = 'left' } : FeatureCardPro
               </p>
             </div>
             {/* Replace with your actual icon component or image */}
-            <img src="/icon.svg" alt="Flower Icon" className="w-12 h-12 flex-shrink-0 mt-8" />
+            <Image src="/icon.svg" alt="Flower Icon" height={120} width={120}
+            className="w-12 h-12 flex-shrink-0 mt-8" />
           </div> </AnimateOnScroll>
         </div> 
 
@@ -70,7 +74,8 @@ const FeatureCard = ({ title, description, alignment = 'left' } : FeatureCardPro
         <div className="flex justify-center items-center">
           <div className="rounded-full overflow-hidden h-96 w-96 sm:w-150 sm:h-150 md:w-80 md:h-80 lg:w-96 lg:h-96 flex items-center justify-center">
             {/* Replace with your actual baby image */}
-            <img src="/happybaby.png" alt="Happy Baby" className="object-cover w-full h-full" />
+            <Image src="/happybaby.png" alt="Happy" height={120} width={120}
+            className="object-cover w-full h-full" />
           </div>
         </div>
 
@@ -80,7 +85,8 @@ const FeatureCard = ({ title, description, alignment = 'left' } : FeatureCardPro
           <AnimateOnScroll>
           <div className="flex items-start text-left">
             {/* Replace with your actual icon component or image */}
-            <img src="/icon.svg" alt="Flower Icon" className="w-12 h-12 flex-shrink-0 mr-4 mt-8" />
+            <Image src="/icon.svg" alt="Flower Icon" height={120} width={120}
+            className="w-12 h-12 flex-shrink-0 mr-4 mt-8" />
             <div>
               <h2 className="text-primary text-xl font-semibold mb-2">Comprehensive Support:</h2>
               <p className="text-gray-500 text-base">
@@ -93,7 +99,8 @@ const FeatureCard = ({ title, description, alignment = 'left' } : FeatureCardPro
           <AnimateOnScroll>
           <div className="flex items-start text-left">
             {/* Replace with your actual icon component or image */}
-            <img src="/icon.svg" alt="Flower Icon" className="w-12 h-12 flex-shrink-0 mr-4 mt-8" />
+            <Image src="/icon.svg" alt="Flower Icon" height={120} width={120}
+            className="w-12 h-12 flex-shrink-0 mr-4 mt-8" />
             <div>
               <h2 className="text-primary text-xl font-semibold mb-2">State-Of-The-Art Facilities:</h2>
               <p className="text-gray-500 text-base">
@@ -106,7 +113,8 @@ const FeatureCard = ({ title, description, alignment = 'left' } : FeatureCardPro
           <AnimateOnScroll>
           <div className="flex items-start text-left">
             {/* Replace with your actual icon component or image */}
-            <img src="/icon.svg" alt="Flower Icon" className="w-12 h-12 flex-shrink-0 mr-4 mt-8" />
+            <Image src="/icon.svg" alt="Flower Icon" height={120} width={120}
+            className="w-12 h-12 flex-shrink-0 mr-4 mt-8" />
             <div>
               <h2 className="text-primary text-xl font-semibold mb-2">Patient-Centered Approach:</h2>
               <p className="text-gray-500 text-base">

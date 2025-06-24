@@ -43,14 +43,14 @@ const FertilityInfoPage: React.FC = () => {
                         <section className="flex bg-back rounded-4xl p-4 mb-8 shadow-sm slide-down">
                             <Image src="/testimonials/icon-quote.svg" height={40} width={40} alt={"icon-quote"} className="" />
                             <p className="text-primary font-semibold text-xl p-4">
-                                ""Regular antenatal check-ups are the key to a healthy pregnancy, protecting both mother and baby, and paving the way for a safe and joyful journey to parenthood"
+                                &quot;Regular antenatal check-ups are the key to a healthy pregnancy, protecting both mother and baby, and paving the way for a safe and joyful journey to parenthood&quot;
                             </p>
                         </section>
                     </AnimateOnScroll>
                     <AnimateOnScroll>
                         <section className="text-txt leading-relaxed mb-8 slide-down">
                             <p>
-                                The success rate of antenatal care itself isn't typically quantified in the same way as fertility treatments like IVF, as it primarily focuses on the ongoing health monitoring and management of a pregnancy. However, regular antenatal care significantly reduces the risks of complications during pregnancy and childbirth. For example, studies show that consistent antenatal care can decrease the likelihood of maternal mortality, preterm births, low birth weight, and stillbirths, improving overall outcomes for both mother and baby. The success of antenatal care lies in its ability to prevent, identify, and manage complications early, leading to healthier pregnancies and safer deliveries.
+                                The success rate of antenatal care itself isn&apos;t typically quantified in the same way as fertility treatments like IVF, as it primarily focuses on the ongoing health monitoring and management of a pregnancy. However, regular antenatal care significantly reduces the risks of complications during pregnancy and childbirth. For example, studies show that consistent antenatal care can decrease the likelihood of maternal mortality, preterm births, low birth weight, and stillbirths, improving overall outcomes for both mother and baby. The success of antenatal care lies in its ability to prevent, identify, and manage complications early, leading to healthier pregnancies and safer deliveries.
                             </p>
                         </section>
                     </AnimateOnScroll>
@@ -66,9 +66,9 @@ const FertilityInfoPage: React.FC = () => {
                         {/* Unordered list of key points */}
                         <AnimateOnScroll>
                             <ul className="list-disc pl-5 text-primary space-y-2 mb-8 text-base font-semibold slide-down">
-                                <li>Regular Check-ups: Frequent visits monitor the mother's and baby's health, checking blood pressure, weight, and fetal heartbeat.</li>
+                                <li>Regular Check-ups: Frequent visits monitor the mother&#39;s and baby&#39;s health, checking blood pressure, weight, and fetal heartbeat.</li>
                                 <li>Blood and Urine Tests: Detect conditions like anemia, infections, and gestational diabetes, and check for complications like preeclampsia.</li>
-                                <li>Ultrasound Scans: Track baby's growth, position, and development, and check for issues like abnormalities or fluid levels.</li>
+                                <li>Ultrasound Scans: Track baby&#39;s growth, position, and development, and check for issues like abnormalities or fluid levels.</li>
                                 <li>Screening for Genetic Conditions: Identify risks for genetic disorders such as Down syndrome.</li>
                                 <li>Monitoring Fetal Movements: Track baby’s movements to ensure fetal well-being starting at 28 weeks.</li>
                             </ul>

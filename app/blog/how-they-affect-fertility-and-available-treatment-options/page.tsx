@@ -37,7 +37,7 @@ const FertilityInfoPage: React.FC = () => {
                                 Uterine fibroids are non-cancerous growths that can lead to heavy bleeding and infertility. This blog outlines the different types of fibroids, how they impact fertility, and the various treatment options, including medication, surgery, and uterine fibroid embolization, to improve reproductive health.
                             </p>
                             <p>
-                                Uterine fibroids are common non-cancerous tumors that develop within or on the walls of the uterus. Though they often don't cause symptoms, they can sometimes lead to significant health issues, including heavy menstrual bleeding, pelvic pain, and infertility. Understanding how fibroids impact fertility and exploring available treatment options can help women manage their reproductive health more effectively.
+                                Uterine fibroids are common non-cancerous tumors that develop within or on the walls of the uterus. Though they often don&rsquo;t cause symptoms, they can sometimes lead to significant health issues, including heavy menstrual bleeding, pelvic pain, and infertility. Understanding how fibroids impact fertility and exploring available treatment options can help women manage their reproductive health more effectively.
                             </p>
                         </section>
                     </AnimateOnScroll>
@@ -45,7 +45,7 @@ const FertilityInfoPage: React.FC = () => {
                         <section className="flex bg-back rounded-4xl p-4 mb-8 shadow-sm slide-down">
                             <Image src="/testimonials/icon-quote.svg" height={40} width={40} alt={"icon-quote"} className="" />
                             <p className="text-primary font-semibold text-xl p-4">
-                                "Uterine Fibroid Treatment: Restoring Fertility, Renewing Hope, Bringing Parenthood Within Reach."
+                                &quot;Uterine Fibroid Treatment: Restoring Fertility, Renewing Hope, Bringing Parenthood Within Reach.&quot;
                             </p>
                         </section>
                     </AnimateOnScroll>

@@ -44,7 +44,7 @@ const FertilityInfoPage: React.FC = () => {
                         <section className="flex bg-back rounded-4xl p-4 mb-8 shadow-sm slide-down">
                             <Image src="/testimonials/icon-quote.svg" height={40} width={40} alt={"icon-quote"} className="" />
                             <p className="text-primary font-semibold text-xl p-4">
-                                "Understand the symptoms of adenomyosis, its effects on fertility, and the treatment options available to manage the condition effectively."
+                                &quot;Understand the symptoms of adenomyosis, its effects on fertility, and the treatment options available to manage the condition effectively.&quot;
                             </p>
                         </section>
                     </AnimateOnScroll>
@@ -77,7 +77,7 @@ const FertilityInfoPage: React.FC = () => {
                         <AnimateOnScroll>
                             <h2 className="text-4xl text-primary font-bold mb-6 text-center slide-side">Treatment Options for Adenomyosis</h2>
                             <p className="text-txt leading-relaxed mb-6 slide-down">
-                                Treatment for adenomyosis depends on the severity of symptoms, the woman's age, and whether she is planning to have children in the future. Options include medication, non-invasive procedures, and surgery.
+                                Treatment for adenomyosis depends on the severity of symptoms, the woman&#39;s age, and whether she is planning to have children in the future. Options include medication, non-invasive procedures, and surgery.
                             </p>
                         </AnimateOnScroll>
                         {/* Unordered list of key points */}
@@ -106,7 +106,7 @@ const FertilityInfoPage: React.FC = () => {
                             <div className="flex gap-4">
                                 <button className="bg-secondary text-white font-semibold p-3 rounded-lg text-base hover:bg-primary">Adenomyosis</button>
                                 <button className="bg-secondary text-white font-semibold p-3 rounded-lg text-base hover:bg-primary">Fertility</button>
-                                <button className="bg-secondary text-white font-semibold p-3 rounded-lg text-base hover:bg-primary">Women's Health</button>
+                                <button className="bg-secondary text-white font-semibold p-3 rounded-lg text-base hover:bg-primary">Women&#39;s Health</button>
                                 <button className="bg-secondary text-white font-semibold p-3 rounded-lg text-base hover:bg-primary">Uterine Health</button>
                             </div>
                             <div className="flex gap-2">

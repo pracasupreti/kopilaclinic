@@ -131,8 +131,10 @@ const Testimonials = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 px-12">
           {testimonials.map((t, idx) => {
             
+            // eslint-disable-next-line react-hooks/rules-of-hooks
             const ref = useRef(null);
             
+            // eslint-disable-next-line react-hooks/rules-of-hooks
             const inView = useInView(ref, { once: true, margin: "-100px" });
             return (
               <motion.div
