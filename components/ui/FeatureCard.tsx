@@ -9,7 +9,7 @@ type FeatureCardProps = {
   alignment?: 'left' | 'right';
 };
 
-const FeatureCard = ({ title, description, alignment = 'left' } : FeatureCardProps) => {
+const FeatureCard = () => {
   return (
     <section className="bg-green-50 py-20 px-4 md:px-8 lg:px-16 flex flex-col items-center">
       <div className="text-center mb-16"> <AnimateOnScroll>

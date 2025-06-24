@@ -3,7 +3,6 @@ import React from "react";
 import Image from "next/image";
 import { FaCheckCircle, FaWhatsapp } from 'react-icons/fa';
 import ServiceCard from "@/components/ServiceCard";
-import { useState } from "react";
 import Head from 'next/head';
 import ClinicSection from "@/components/ui/ClinicSection";
 import Testimonial from "@/components/ui/Testimonial";
