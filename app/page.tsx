@@ -363,7 +363,7 @@ export default function Page() { // Changed to Page for convention
                   imageUrl="/blog1.jpg"
                   title="Understanding Ovulation Induction: A Key To Overcoming Infertility"
                   description="Ovulation induction is an essential treatment for women struggling with infertility due to irregular or absent ovulation."
-                  link="/blog/ovulation-induction"
+                  link="/blog/understanding-ovulation-induction"
                 />
                 <BlogPostCard
                   imageUrl="/blog2.jpg"

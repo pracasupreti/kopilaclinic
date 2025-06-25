@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Image from "next/image";
-import { FaArrowRight } from 'react-icons/fa'; 
+import { FaArrowCircleRight } from 'react-icons/fa'; 
 
 interface BlogPostCardProps {
   imageUrl:string,title:string,description:string,link:string
@@ -33,9 +33,9 @@ const BlogPostCard = ({ imageUrl, title, description, link = '#' } : BlogPostCar
         </p>
         <a
           href={link}
-          className="inline-flex items-center text-secondary font-semibold group-hover:text-primary"
+          className="inline-flex items-center text-secondary font-semibold hover:text-primary"
         >
-          Read More <FaArrowRight className="ml-2 text-base" />
+          Read More <FaArrowCircleRight className="ml-2 text-base" />
         </a>
       </div>
     </div>
