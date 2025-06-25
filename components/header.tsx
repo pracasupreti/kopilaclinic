@@ -30,7 +30,7 @@ export default function Header() {
   }, [isMenuOpen]);
 
   return (
-    <header className="bg-green-50 shadow-md border-b border-gray-300 px-4 md:px-12 py-5 top-0 z-50"> {/* sticky */}
+    <header className="bg-green-50 shadow-md border-b border-gray-300 px-4 md:px-12 py-8 top-0 z-50"> {/* sticky */}
       <nav className="max-w-screen-xl mx-auto flex items-center justify-between relative">
         {/* Logo */} {/* Logo */}
         <Link href="/" className="flex shrink-0">

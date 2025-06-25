@@ -41,7 +41,7 @@ export default function Page() { // Changed to Page for convention
               {/* Left Content */}
               <div className="relative h-full lg:text-left mt-0 md:mt-120 lg:mt-120 p-4 md:p-0">
                 {/* Decorative elements - Using standard Tailwind for basic animation approximation */}
-                <div className="absolute top-8 -left-5 md:top-6 md:-left-10 w-16 h-16 md:w-16 md:h-16 opacity-30"> {/* animate-pulse for approximation */}
+                <div className="absolute -top-2 -left-5 md:-top-20 md:-left-10 w-16 h-16 md:w-16 md:h-16 opacity-10"> {/* animate-pulse for approximation */}
                   <Image src="/icon-star.svg" alt="Star Icon" height={36} width={76} />
                 </div>
 
@@ -81,6 +81,9 @@ export default function Page() { // Changed to Page for convention
 
                       </div>
                       <span className="text-primary text-sm">Based On Public Reviews</span>
+                      <div className="absolute -right-12 bottom-2 w-12 h-12 md:w-12 md:h-12 opacity-10"> {/* animate-pulse for approximation */}
+                  <Image src="/icon-star.svg" alt="Star Icon" height={36} width={76} />
+                </div>
                     </div>
                   </AnimateOnScroll>
                 </div>
