@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Image from "next/image";
-import { FaPlayCircle } from 'react-icons/fa'; 
+import { FaArrowRight } from 'react-icons/fa'; 
 
 interface BlogPostCardProps {
   imageUrl:string,title:string,description:string,link:string
@@ -10,7 +10,7 @@ interface BlogPostCardProps {
 
 const BlogPostCard = ({ imageUrl, title, description, link = '#' } : BlogPostCardProps ) => {
   return (
-    <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col h-full">
+    <div className="transition-shadow duration-300 overflow-hidden flex flex-col h-full">
       <div className="relative w-full aspect-video"> 
         <Image
           src={imageUrl}
@@ -21,9 +21,10 @@ const BlogPostCard = ({ imageUrl, title, description, link = '#' } : BlogPostCar
           sizes="100vw"
           style={{
             objectFit: "cover"
-          }} />
+          }} 
+          className='rounded-4xl h-100'/>
       </div>
-      <div className="p-6 flex flex-col flex-grow">
+      <div className="p-2 py-6 flex flex-col flex-grow">
         <h3 className="text-xl font-bold text-primary mb-2 line-clamp-2">
           {title}
         </h3>
@@ -32,9 +33,9 @@ const BlogPostCard = ({ imageUrl, title, description, link = '#' } : BlogPostCar
         </p>
         <a
           href={link}
-          className="inline-flex items-center text-secondary font-semibold hover:underline"
+          className="inline-flex items-center text-secondary font-semibold group-hover:text-primary"
         >
-          Read More <FaPlayCircle className="ml-2 text-base" />
+          Read More <FaArrowRight className="ml-2 text-base" />
         </a>
       </div>
     </div>

@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import Link from "next/link";
 import "./globals.css";
-import { ArrowRight, Star, Phone, Clock } from "lucide-react";
+import { ArrowRight, Star } from "lucide-react";
 import { FaCheckCircle, FaPhoneAlt, FaWhatsapp, FaClock, FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
 import FeatureCard from "@/components/ui/FeatureCard";
 import AccordionItem from "@/components/ui/AccordionItem";
@@ -139,7 +139,7 @@ export default function Page() { // Changed to Page for convention
                 {/* Consult A Doctor */}
                 <div className="flex items-center space-x-4">
                   <div className=" bg-opacity-20 rounded-full p-3">
-                    <Phone className="h-8 w-8 text-white" />
+                    <Image src="/icon-cta-phone.svg" alt="Phone Icon" width={24} height={24} className="hidden md:block h-10 w-10" />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold">Consult A Doctor</h3>
@@ -150,7 +150,7 @@ export default function Page() { // Changed to Page for convention
                 {/* Opening Hours */}
                 <div className="flex items-center space-x-4">
                   <div className="bg-opacity-20 rounded-full p-3">
-                    <Clock className="h-12 w-12 text-white" />
+                    <Image src="/icon-cta-time.svg" alt="Clock Icon" width={24} height={24} className="hidden md:block h-10 w-10" />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold">Opening Hours</h3>
@@ -180,7 +180,7 @@ export default function Page() { // Changed to Page for convention
           {/* Left Image Section */}
           <div className="relative flex flex-col justify-center items-center w-full min-h-[320px] sm:min-h-[400px] lg:min-h-[500px]">
             {/* Main Baby Image */}
-            <div className="absolute rounded-auto z-0 left-2 top-4 rounded-3xl overflow-hidden border-4 border-white shadow-lg image-unwrap">
+            <div className="absolute rounded-auto z-0 left-2 top-4 rounded-3xl overflow-hidden border-4 border-white image-unwrap">
               <Image
                 src="/baby1.jpg"
                 alt="Baby smiling"
@@ -190,7 +190,7 @@ export default function Page() { // Changed to Page for convention
               />
             </div>
             {/* Second Baby Image */}
-            <div className="absolute z-10 left-44 top-50 sm:left-104 sm:top-90 lg:left-2 lg:top-50  rounded-3xl border-4 border-white shadow-md image-unwrap">
+            <div className="absolute z-10 left-44 top-50 sm:left-104 sm:top-90 lg:left-2 lg:top-50  rounded-3xl border-4 border-white image-unwrap">
               <Image
                 src="/baby2.jpg"
                 alt="Happy baby"
@@ -211,7 +211,7 @@ export default function Page() { // Changed to Page for convention
             {/* Star Icon */}
             <div className="absolute top-70 left-4 sm:top-120 sm:left-60 lg:left-120 lg:top-10 ">
               <Image src="icon-star.svg" alt="star"
-                height={200} width={200} className="h-12 w-12 lg:opacity-30 " />
+                height={200} width={200} className="h-12 w-12 lg:opacity-10 " />
             </div>
           </div>
 
@@ -358,7 +358,7 @@ export default function Page() { // Changed to Page for convention
 
             {/* Blog Post Grid */}
             <AnimateOnScroll>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 justify-items-center">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-8 justify-items-center">
                 <BlogPostCard
                   imageUrl="/blog1.jpg"
                   title="Understanding Ovulation Induction: A Key To Overcoming Infertility"
