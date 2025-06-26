@@ -96,7 +96,7 @@ const ClinicSection: React.FC = () => {
           <p className="text-primary text-lg md:text-xl font-medium font-semibold">Years Of Experience</p>
           <div className="h-px bg-gray-300 my-4"></div>
           <p className="mt-2 text-gray-600 text-base">
-            A decade of excellence in fertility and women&apos;s healthcare.
+            A decade of excellence in fertility and womens healthcare.
           </p>
         </div>
         <div className="flex flex-col px-0 lg:px-4">

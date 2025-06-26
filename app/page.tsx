@@ -180,25 +180,36 @@ export default function Page() { // Changed to Page for convention
           {/* Left Image Section */}
           <div className="relative flex flex-col justify-center items-center w-full min-h-[320px] sm:min-h-[400px] lg:min-h-[500px]">
             {/* Main Baby Image */}
-            <div className="absolute rounded-auto z-0 left-2 top-4 rounded-3xl overflow-hidden border-4 border-white image-unwrap">
-              <Image
-                src="/baby1.jpg"
-                alt="Baby smiling"
-                height={600}
-                width={360}
-                className="object-cover scale-130  w-[960px] md:w-[320px] lg:w-[380px]"
-              />
-            </div>
-            {/* Second Baby Image */}
-            <div className="absolute z-10 left-44 top-50 sm:left-104 sm:top-90 lg:left-2 lg:top-50  rounded-3xl border-4 border-white image-unwrap">
-              <Image
-                src="/baby2.jpg"
-                alt="Happy baby"
-                height={400}
-                width={600}
-                className="object-cover rounded-3xl w-[260px] md:w-[120px] lg:w-[560px]"
-              />
-            </div>
+            {/* Main Baby Image (baby1.jpg) */}
+<div className="absolute z-0 left-2 top-4 rounded-3xl overflow-hidden border-4 border-white group">
+  <Image
+    src="/baby1.jpg"
+    alt="Baby smiling"
+    height={600}
+    width={360}
+    className="image-unwrap object-cover w-[960px] md:w-[320px] lg:w-[380px] transition-transform duration-700 ease-in-out group-hover:scale-110"
+  />
+  {/* White Diagonal Overlay */}
+  <div className="absolute inset-0 z-10 pointer-events-none">
+    <div className="w-[160%] h-[160%] bg-white rotate-[25deg] opacity-0 scale-0 group-hover:scale-100 group-hover:opacity-60 transition-all duration-700 ease-in-out absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+  </div>
+</div>
+
+{/* Second Baby Image (baby2.jpg) */}
+<div className="absolute z-10 left-44 top-45 sm:left-104 sm:top-90 lg:left-2 lg:top-45 rounded-3xl overflow-hidden border-4 border-white group">
+  <Image
+    src="/baby2.jpg"
+    alt="Happy baby"
+    height={400}
+    width={600}
+    className="image-unwrap object-cover rounded-3xl w-[260px] md:w-[120px] lg:w-[560px] transition-transform duration-700 ease-in-out group-hover:scale-110"
+  />
+  {/* White Diagonal Overlay */}
+  <div className="absolute inset-0 z-10 pointer-events-none">
+    <div className="w-[160%] h-[160%] bg-white rotate-[25deg] opacity-0 scale-0 group-hover:scale-100 group-hover:opacity-60 transition-all duration-700 ease-in-out absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+  </div>
+</div>
+
             {/* Experience Badge */}
             <div className="absolute top-60 left-24 sm:top-98 sm:left-90 z-20 md:left-90 md:top-10 w-26 h-26 md:w-36 md:h-36 rounded-full ">
               <Image
@@ -307,13 +318,13 @@ export default function Page() { // Changed to Page for convention
           <div className="relative z-10 container mx-auto px-0 sm:px-4 lg:px-8 flex flex-col lg:flex-row items-center lg:items-start gap-12 w-full">
             {/* Left Section: Image */}
             <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
-              <div className="relative w-full h-screen max-w-xl aspect-[4/3] rounded-3xl overflow-hidden shadow-xl">
+              <div className="relative w-full h-160 max-w-xl aspect-[4/3] rounded-3xl overflow-hidden shadow-xl">
                 <Image
                   src="/how-it-work-img.jpg"
                   alt="Happy Baby"
                   height={600} width={600}
                   quality={90}
-                  className="rounded-3xl h-screen w-full object-cover"
+                  className="rounded-3xl h-160 w-full object-cover"
                 />
               </div>
             </div>

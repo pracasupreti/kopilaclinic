@@ -1,17 +1,32 @@
 "use client";
 
-import React from 'react';
+import React from "react";
 import Image from "next/image";
-import { FaArrowCircleRight } from 'react-icons/fa'; 
+import { FaArrowCircleRight } from "react-icons/fa";
 
 interface BlogPostCardProps {
-  imageUrl:string,title:string,description:string,link:string
+  imageUrl: string;
+  title: string;
+  description: string;
+  link: string;
 }
 
-const BlogPostCard = ({ imageUrl, title, description, link = '#' } : BlogPostCardProps ) => {
+const BlogPostCard = ({
+  imageUrl,
+  title,
+  description,
+  link = "#",
+}: BlogPostCardProps) => {
+  const [hovered, setHovered] = React.useState(false);
+
   return (
-    <div className="transition-shadow duration-300 overflow-hidden flex flex-col h-full">
-      <div className="relative w-full aspect-video"> 
+    <div
+      className="transition-shadow duration-300 overflow-hidden flex flex-col h-full group"
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+    >
+      <div className="relative h-100 w-150 aspect-video overflow-hidden rounded-4xl">
+        {/* Zoom Image */}
         <Image
           src={imageUrl}
           alt={title}
@@ -19,11 +34,23 @@ const BlogPostCard = ({ imageUrl, title, description, link = '#' } : BlogPostCar
           height={800}
           width={800}
           sizes="100vw"
-          style={{
-            objectFit: "cover"
-          }} 
-          className='rounded-4xl h-100'/>
+          style={{ objectFit: "cover" }}
+          className={`w-full h-full object-cover transition-transform duration-700 ease-in-out ${
+            hovered ? "scale-110" : "scale-100"
+          }`}
+        />
+
+        {/* Diagonal Overlay with animation */}
+        {hovered && (
+          <div className="absolute inset-0 z-10 pointer-events-none">
+            <div
+              className="w-[160%] h-[160%] bg-white rotate-[25deg] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+              style={{ animation: "overlayExpandFade 0.7s ease-in-out forwards" }}
+            />
+          </div>
+        )}
       </div>
+
       <div className="p-2 py-6 flex flex-col flex-grow">
         <h3 className="text-xl font-bold text-primary mb-2 line-clamp-2">
           {title}
