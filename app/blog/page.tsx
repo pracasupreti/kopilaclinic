@@ -22,7 +22,7 @@ const blogPosts: BlogPost[] = [
     image: '/blog/ovulation-induction.jpg',
     alt: 'Understanding Ovulation Induction: A Key To Overcoming Infertility',
     title: 'Understanding Ovulation Induction: A Key To Overcoming Infertility',
-    description: 'Ovulation Induction is a medical treatment for women struggling with infertility due to irregular or absent ovulation. This blog explores how ovulation induction works, the medications involved, and how it can increase the chances of conception. Learn how this treatment can bring hope to those wishing to start or expand their families.',
+    description: 'Ovulation induction is an essential treatment for women struggling with infertility due to irregular or absent ovulation. This blog explores how ovulation induction works, the medications involved, and how it can increase the chances of conception. Learn how this treatment can bring hope to those wishing to start or expand their families.',
     readMoreLink: '/blog/understanding-ovulation-induction',
   },
   {
@@ -96,35 +96,35 @@ const App: React.FC = () => {
   return (
     <div className="font-inter antialiased bg-gray-50 min-h-screen">
       {/* Header Section */}
-      <header className="bg-green-50 py-12 md:py-12 lg:py-30 text-center shadow-md">
+      <header className="bg-green-50 py-12 md:py-12 lg:py-30 text-center">
         <h1 className="text-5xl font-extrabold text-primary mb-4 tracking-tight">Our <span className='text-secondary'> Blog </span></h1>
         <p className="font-semibold text-primary">Home <span className='text-secondary'>/</span> Blog</p>
       </header>
 
       {/* Blog Posts Grid Section */}
-      <main className="container mx-auto px-2 py-12">
+      <main className="container mx-auto px-2 py-28">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {blogPosts.map((post) => (
-            <div key={post.id} className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-200">
+            <div key={post.id} className="">
               <Image
                 src={post.image.startsWith('/') ? post.image : `/${post.image}`}
                 alt={post.alt}
                 width={400}
                 height={224}
-                className="w-full h-56 object-cover transform hover:scale-105 transition-transform duration-500 rounded-t-xl"
+                className="w-full h-66 rounded-4xl object-cover transform hover:scale-105 transition-transform duration-500 rounded-t-xl"
                 onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
                   e.currentTarget.src = `https://placehold.co/400x250/F3E8FF/5B21B6?text=Image+Not+Found`;
                 }}
                 priority={post.id <= 3}
                 unoptimized={post.image.startsWith('http')}
               />
-              <div className="p-6">
+              <div className="px-2 py-6">
                 {/* Blog Post Title */}
                 <h2 className="text-xl font-bold text-primary mb-3 leading-tight">
                   {post.title}
                 </h2>
                 {/* Blog Post Description */}
-                <p className="text-gray-500 text-base mb-4 line-clamp-4">
+                <p className="text-txt text-base mb-4">
                   {post.description}
                 </p>
                 {/* Read More Button */}
