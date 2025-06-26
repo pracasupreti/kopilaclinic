@@ -41,22 +41,22 @@ export default function FAQ() {
     {
       question: "Who Is A Candidate For Ovulation Induction?",
       answer:
-        "Women who do not ovulate regularly or at all, often due to conditions like PCOS, may be good candidates.",
+        "Ovulation induction is suitable for women with irregular or absent ovulation due to conditions like PCOS, hypothalamic amenorrhea, or unexplained infertility.",
     },
     {
       question: "What Medications Are Used For Ovulation Induction?",
       answer:
-        "Common medications include Clomiphene Citrate and Letrozole, which stimulate egg production.",
+        "Common medications include Clomiphene Citrate, Letrozole, and injectable gonadotropins such as FSH or HCG to stimulate egg development and release.",
     },
     {
       question: "What Are The Risks Of Ovulation Induction?",
       answer:
-        "Risks may include multiple pregnancies, ovarian hyperstimulation syndrome (OHSS), and side effects from medications.",
+        "Risks include multiple pregnancies, ovarian hyperstimulation syndrome (OHSS), and rare complications like ovarian torsion or cyst formation.",
     },
     {
       question: "How Is Ovulation Monitored During Treatment?",
       answer:
-        "Monitoring is done through ultrasound and blood tests to track follicle development and hormone levels.",
+        "Ovulation is monitored using blood tests to check hormone levels and ultrasounds to track follicle development and confirm ovulation timing.",
     },
   ];
   const faqs1 = [
@@ -177,7 +177,7 @@ export default function FAQ() {
     </div>
     <main
       id="faq-main"
-      className="bg-white p-2 flex flex-col lg:flex-row gap-10 mx-auto max-w-7xl opacity-0 aos-init"
+      className="bg-white p-2 py-16 mb-8 flex flex-col lg:flex-row gap-10 mx-auto max-w-7xl opacity-0 aos-init"
       data-aos="fade-in"
     >
       {/* Sidebar */}
