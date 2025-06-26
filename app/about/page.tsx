@@ -55,11 +55,11 @@ const AboutUs = () => {
 
             <div className="w-full flex flex-col justify-center items-start text-left space-y-4 sm:mt-40 mt-0 lg:mt-18">
               <AnimateOnScroll>
-                <span className="flex items-center gap-2 text-sm md:text-base mb-2 font-medium uppercase tracking-wide text-green-500">
+                <span className="flex items-center gap-2 text-sm md:text-base mb-2 font-medium uppercase tracking-wide text-secondary">
                   <Image src="/icon-star.svg" alt="star" width={18} height={18} className="inline-block" />
                   ABOUT US </span>
               </AnimateOnScroll>
-              <h2 className="text-3xl md:text-4xl font-bold text-secondary mt-2 mb-4 max-w-lg">
+              <h2 className="text-4xl md:text-4xl font-bold text-secondary mt-2 mb-4 max-w-lg">
                 Welcome to <span className='text-primary'>Kopila Fertility and Womens Clinic</span>
               </h2> <AnimateOnScroll>
                 <p className="mt-2 text-gray-500 text-base md:text-lg max-w-xl">
@@ -96,10 +96,10 @@ const AboutUs = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-secondary mt-2 mb-4">
               Message from <span className='text-primary'>The Director</span>
             </h2> <AnimateOnScroll>
-              <p className="text-gray-500 text-base md:text-base leading-relaxed mb-4">Dear valued patients and community members, </p>
-              <p className="text-gray-500 text-base md:text-base leading-relaxed mb-4">It is with great pride and heartfelt commitment that I welcome you to Kopila Fertility and Womens Clinic, which opened its doors in November 2023, at Jaycess Chowk, Damak-6, Jhapa, Nepal. Our mission is to provide compassionate and comprehensive fertility and womens healthcare solutions to support your journey towards better health and well-being.</p>
-              <p className="text-gray-500 text-base md:text-base leading-relaxed mb-4">At Kopila, we specialize in a range of services, including infertility treatment, intrauterine insemination (IUI), comprehensive antenatal care, and gynecological services. Our state-of-the-art facility is designed with the goal of offering the highest standard of care to women of all ages, ensuring their comfort and privacy in their pursuit of parenthood.</p>
-              <p className="text-gray-500 text-base md:text-base leading-relaxed mb-4">I invite you to experience the difference at Kopila Fertility and Womens Clinic, where your dreams of parenthood and womens wellness are our primary focus. </p>
+              <p className="text-gray-500 text-base md:text-base leading-relaxed mb-4">Dear Valued Patients and Community Members, </p>
+              <p className="text-gray-500 text-base md:text-base leading-relaxed mb-4">It is with great pride and heartfelt commitment that I welcome you to Kopila Fertility and Womens Clinic, which opened its doors on November 24, 2024, at Jaycees Chowk, Damak-6, Jhapa, Nepal. Our mission is to provide compassionate, professional, and personalized healthcare solutions to support your journey toward better health and well-being.</p>
+              <p className="text-gray-500 text-base md:text-base leading-relaxed mb-4">At Kopila, we specialize in a range of services, including infertility treatments, intrauterine insemination (IUI), comprehensive antenatal care, and gynecological services. Our state-of-the-art facility is designed with the goal of offering the highest standard of care for women of all ages and supporting families in their pursuit of parenthood.</p>
+              <p className="text-gray-500 text-base md:text-base leading-relaxed mb-4">I invite you to experience the difference at Kopila Fertility and Womens Clinic, where your dreams of parenthood and Womens wellness are our primary focus. </p>
               <p className="text-gray-500 text-base md:text-lg leading-relaxed  mt-6">Warmest regards,</p>
               <p className="text-gray-500 text-base md:text-lg leading-relaxed font-semibold">Dr. Sita Rai <span className="text-base font-normal">Director</span></p>
             </AnimateOnScroll> </div>
