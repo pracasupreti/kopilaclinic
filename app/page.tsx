@@ -17,7 +17,7 @@ import ServicesSection from "@/components/ui/services";
 
 export default function Page() { // Changed to Page for convention
 
-  const [] = useState(false);
+  const [hovered, setHovered] = useState(false);
 
   return (
     <><Head>
@@ -196,7 +196,11 @@ export default function Page() { // Changed to Page for convention
 </div>
 
 {/* Second Baby Image (baby2.jpg) */}
-<div className="absolute z-10 left-44 top-45 sm:left-104 sm:top-90 lg:left-2 lg:top-45 rounded-3xl overflow-hidden border-4 border-white group">
+<div
+  className="absolute z-10 left-44 top-45 sm:left-104 sm:top-90 lg:left-2 lg:top-45 rounded-3xl overflow-hidden border-4 border-white group"
+  onMouseEnter={() => setHovered(true)}
+  onMouseLeave={() => setHovered(false)}
+>
   <Image
     src="/baby2.jpg"
     alt="Happy baby"
@@ -205,9 +209,14 @@ export default function Page() { // Changed to Page for convention
     className="image-unwrap object-cover rounded-3xl w-[260px] md:w-[120px] lg:w-[560px] transition-transform duration-700 ease-in-out group-hover:scale-110"
   />
   {/* White Diagonal Overlay */}
-  <div className="absolute inset-0 z-10 pointer-events-none">
-    <div className="w-[160%] h-[160%] bg-white rotate-[25deg] opacity-0 scale-0 group-hover:scale-100 group-hover:opacity-60 transition-all duration-700 ease-in-out absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
-  </div>
+  {hovered && (
+    <div className="absolute inset-0 z-10 pointer-events-none">
+      <div
+        className="w-[160%] h-[160%] bg-white rotate-[25deg] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+        style={{ animation: "overlayExpandFade 0.7s ease-in-out forwards" }}
+      />
+    </div>
+  )}
 </div>
 
             {/* Experience Badge */}
