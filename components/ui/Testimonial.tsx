@@ -112,8 +112,10 @@ const Testimonial: React.FC = () => {
                 />
                 {/* Rating Box */}
                 <div className="absolute -bottom-10 md:-bottom-8 left-1/2 md:left-auto md:right-0 bg-secondary text-white p-4 pr-8 rounded-4xl shadow-md flex flex-col items-start border-5 border-white"> 
-                 <AnimateOnScroll> <span className="text-4xl font-bold mb-1">4.7/5</span>
-                  <p className="text-sm leading-tight mb-1 text-left">This rate is given by user after visiting our location</p>
+                 <AnimateOnScroll> <div className='flex flex-row gap-4 mb-4'><span className="text-4xl font-bold mb-1">4.7/5</span>
+                  <p className="text-sm leading-tight mb-1 text-left">This rate is given by user <br /> after visiting our location</p>
+                  </div>
+                  <div className='flex flex-row gap-4'>
                   <div className="flex text-yellow-400 text-lg mb-1">
                     {Array.from({ length: 5 }).map((_, i) => (
                       <span key={i} className={`${i < currentTestimonialData.stars ? 'text-yellow-400' : 'text-gray-300'}`}>
@@ -121,7 +123,9 @@ const Testimonial: React.FC = () => {
                       </span>
                     ))}
                   </div>
-                  <p className="text-xs font-bold uppercase">For Excellence Services</p> </AnimateOnScroll>
+                  <p className="text-xs font-bold uppercase">For Excellence Services</p> 
+                  </div>
+                  </AnimateOnScroll>
                 </div>
               </div>
 

@@ -2,12 +2,12 @@
 import React from "react";
 import Image from "next/image";
 import { FaCheckCircle, FaWhatsapp } from 'react-icons/fa';
-import ServiceCard from "@/components/ServiceCard";
 import Head from 'next/head';
 import ClinicSection from "@/components/ui/ClinicSection";
 import Testimonial from "@/components/ui/Testimonial";
 import CareSection from "@/components/ui/beyond";
 import { AnimateOnScroll } from "@/components/ui/AnimateOnScroll";
+import ServicesSection from "@/components/ui/services";
 
 
 const AboutUs = () => {
@@ -63,8 +63,8 @@ const AboutUs = () => {
                 Welcome to <span className='text-primary'>Kopila Fertility and Womens Clinic</span>
               </h2> <AnimateOnScroll>
                 <p className="mt-2 text-gray-500 text-base md:text-lg max-w-xl">
-                  Your trusted partner in reproductive health and womens wellness in Damak, Nepal. Having established in November 2023, we stand at the heart of fertility. Jaycess Chowk brings hope and specialized care to families throughout Jhapa and neighboring regions.
-                </p> </AnimateOnScroll>
+                  Your trusted partner in reproductive health and Womens wellness in Damak, Nepal. Newly established in November 2024, our state-of-the-art facility in Jaycees Chowk brings hope and specialized care to families throughout Jhapa and neighboring regions.
+                  </p> </AnimateOnScroll>
               <AnimateOnScroll>
                 <div className="mt-4 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-12 text-sm text-primary font-semibold">
                   <div className="flex items-center gap-2">
@@ -116,56 +116,7 @@ const AboutUs = () => {
           </div>
         </div>
         {/* Services Section */}
-        <section className="bg-[#f0f8ff] py-32 px-6 ">
-          <div className="max-w-7xl mx-auto text-center"> <AnimateOnScroll>
-            <p className="text-sm text-[#1ec28b] font-semibold mb-2"><Image src="/icon-star.svg" alt="star" width={18} height={18} className="inline-block" />
-              OUR SERVICES</p> </AnimateOnScroll>
-            <h2 className="text-5xl font-extrabold text-secondary">
-              Fertility & Gyne <span className="text-primary">Services for You.</span>
-            </h2> <AnimateOnScroll>
-              <p className="text-gray-500 mt-4">
-                Dedication of Providing Professional Healthcare Services.
-              </p> </AnimateOnScroll>
-            <div className="relative z-10 container mx-auto px-4 py-12">
-              {/* Services Grid */}
-              <AnimateOnScroll>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6 justify-items-center">
-                  <ServiceCard
-                    title="Ovulation Induction"
-                    description="A fertility treatment that uses medications to stimulate the ovaries to produce and release eggs, increasing the chances of conception."
-                    link="/Services"
-                  />
-                  <ServiceCard
-                    title="Intrauterine Insemination (IUI)"
-                    description="A fertility procedure where specially prepared sperm is directly placed into the uterus to enhance the likelihood of fertilization."
-                    link="/Services"
-                  />
-                  <ServiceCard
-                    title="In Vitro Fertilisation (IVF)"
-                    description="A process where eggs and sperm are combined in a laboratory to create embryos, which are then transferred to the uterus for potential pregnancy."
-                    link="/Services"
-                  />
-                  <ServiceCard
-                    title="Antenatal Check Up"
-                    description="Routine medical care provided during pregnancy to monitor the health of the mother and the developing baby."
-                    link="/Services"
-                  />
-                </div>
-              </AnimateOnScroll>
-            </div> <AnimateOnScroll>
-              <p className="mt-12 text-sm text-gray-600 max-w-2xl mx-auto">
-                We believe in using the latest technology and techniques to <br /> ensure the best outcomes for our patients.
-              </p> </AnimateOnScroll>
-            <AnimateOnScroll>
-              <a href="/Services">
-                <button className="max-w-2xl mx-auto mt-6 px-4 py-3 bg-secondary text-white font-bold rounded-full flex items-center gap-2 bg-gradient-to-r from-primary to-primary bg-[length:0%_100%] bg-left bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_100%]">
-                  View All Services
-                  <span className="text-xl bg-white text-blue-500 rounded-full px-2">↗</span>
-                </button>
-              </a> </AnimateOnScroll>
-          </div>
-        </section>
-
+        <ServicesSection />
         {/* Visit Us Section */}
         <ClinicSection />
 
@@ -184,8 +135,8 @@ const AboutUs = () => {
               <h2 className="text-2xl md:text-5xl font-bold text-secondary mb-4">Intrauterine Insemination (IUI)</h2>
               <AnimateOnScroll>
                 <p className="text-gray-500 text-base font-semiboldmd:text-base leading-relaxed mb-6">
-                  Intrauterine Insemination (IUI) is a fertility treatment that involves placing sperm directly into a womans uterus around the time of ovulation to increase the chances of fertilization. IUI is often used in cases of male infertility, unexplained infertility, or cervical mucus issues. It is a relatively simple, minimally invasive procedure that can be performed with or without ovulation induction.
-                </p> </AnimateOnScroll>
+                  Intrauterine Insemination (IUI) is a fertility treatment that involves placing sperm directly into a woman’s uterus around the time of ovulation to increase the chances of fertilization. IUI is often used in cases of male infertility, unexplained infertility, or cervical mucus issues. It is a relatively simple, minimally invasive procedure that can be performed with or without ovulation induction.
+                  </p> </AnimateOnScroll>
               {/* Key Points */}
               <AnimateOnScroll>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left font-semibold">
