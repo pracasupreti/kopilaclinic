@@ -11,7 +11,7 @@ const ServicesSection: React.FC = () => (
           <div className="max-w-7xl mx-auto text-center"><AnimateOnScroll>
             <p className="text-sm text-secondary font-semibold mb-4 slide-up"><Image src="/icon-star.svg" alt="star" width={18} height={18} className="inline-block" />
               OUR SERVICES</p> </AnimateOnScroll>
-            <h2 className="text-5xl font-extrabold text-secondary slide-side">
+            <h2 className="text-2xl lg:text-5xl font-extrabold text-secondary slide-side">
               Fertility & Gyne <span className="text-primary">Services for You.</span>
             </h2> <AnimateOnScroll>
               <p className="text-gray-500 mt-8 slide-up">

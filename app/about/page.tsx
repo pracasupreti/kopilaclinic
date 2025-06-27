@@ -43,7 +43,7 @@ const AboutUs = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-24 px-8 w-full max-w-7xl mx-auto">
             <div className="w-full flex justify-center lg:justify-end">
-              <div className="relative -top-20 h-96 rounded-2xl w-full overflow-hidden border border-white">
+              <div className="absolute lg:relative right-6 lg:-right-0 top-50 lg:-top-20 h-70 lg:h-96 rounded-2xl w-60 lg:w-full overflow-hidden border border-white">
                 <Image
                   src="/about/about.jpg"
                   alt="Happy Baby"
@@ -59,7 +59,7 @@ const AboutUs = () => {
                   <Image src="/icon-star.svg" alt="star" width={18} height={18} className="inline-block" />
                   ABOUT US </span>
               </AnimateOnScroll>
-              <h2 className="text-4xl md:text-4xl font-bold text-secondary mt-2 mb-4 max-w-lg">
+              <h2 className="text-xl lg:text-4xl md:text-4xl font-bold text-secondary mt-2 mb-4 max-w-lg">
                 Welcome to <span className='text-primary'>Kopila Fertility and Womens Clinic</span>
               </h2> <AnimateOnScroll>
                 <p className="mt-2 text-gray-500 text-base md:text-lg max-w-xl">
@@ -89,8 +89,8 @@ const AboutUs = () => {
 
         {/* Message from The Director Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center px-4 sm:px-6 md:px-4 max-w-7xl mx-auto w-full">
-          <div className="w-full text-center lg:text-left order-2 lg:order-1"> <AnimateOnScroll>
-            <span className="text-sm md:text-base mb-2 font-medium uppercase tracking-wide text-secondary flex items-center justify-center lg:justify-start">
+          <div className="w-full text-left lg:text-left order-1 lg:order-1"> <AnimateOnScroll>
+            <span className="text-sm md:text-base mb-2 font-medium uppercase tracking-wide text-secondary flex lg:justify-start">
               <Image src="/icon-star.svg" alt="star" width={18} height={18} className="inline-block mr-2" /> Few WORDS
             </span> </AnimateOnScroll>
             <h2 className="text-3xl md:text-4xl font-bold text-secondary mt-2 mb-4">
@@ -104,7 +104,7 @@ const AboutUs = () => {
               <p className="text-gray-500 text-base md:text-lg leading-relaxed font-semibold">Dr. Sita Rai <span className="text-base font-normal">Director</span></p>
             </AnimateOnScroll> </div>
           <div className="w-full flex justify-center lg:justify-start order-1 lg:order-2 py-8 md:py-16 lg:py-24">
-            <div className="relative w-64 sm:w-80 md:w-96 lg:w-[32rem] h-80 sm:h-96 md:h-[32rem] rounded-xl overflow-hidden shadow-lg border border-gray-100 image-unwrap">
+            <div className="relative w-264 sm:w-80 md:w-96 lg:w-[32rem] h-80 sm:h-96 md:h-[32rem] rounded-xl overflow-hidden shadow-lg border border-gray-100 image-unwrap">
               <Image
                 src="/about/doctor.jpg"
                 alt="Dr. Sita Rai - Director"
@@ -121,10 +121,10 @@ const AboutUs = () => {
         <ClinicSection />
 
         {/* Expertise Section */}
-        <section className="relative w-full bg-green-50 py-16 md:py-24 overflow-hidden mx-auto max-w-7xl px-2">
+        <section className="relative w-full bg-green-50 lg:py-16 md:py-24 overflow-hidden mx-auto max-w-7xl px-2">
           <div className="relative z-10 container mx-auto px-2 flex flex-col lg:flex-row items-center lg:items-start gap-12">
             {/* Left Section: Text Content */}
-            <div className="w-full lg:w-1/2 text-center lg:text-left relative mt-20">
+            <div className="w-full lg:w-1/2 text-left lg:text-left relative mt-20">
               <div className="absolute top-12 -left-10 w-20 h-20 animate-pop ">
                 <Image src="/icon-star.svg" alt="" height={16} width={16} />
               </div> <AnimateOnScroll>
