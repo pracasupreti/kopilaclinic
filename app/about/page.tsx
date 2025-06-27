@@ -41,7 +41,7 @@ const AboutUs = () => {
               </p> </AnimateOnScroll>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-24 px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-24 px-8 w-full max-w-7xl mx-auto">
             <div className="w-full flex justify-center lg:justify-end">
               <div className="relative -top-20 h-96 rounded-2xl w-full overflow-hidden border border-white">
                 <Image
