@@ -283,7 +283,7 @@ export default function Page() { // Changed to Page for convention
                   alt="Happy Baby"
                   height={600} width={600}
                   quality={90}
-                  className="rounded-3xl h-160 w-full object-cover"
+                  className="rounded-3xl h-16 w-full object-cover"
                 />
               </div>
             </div>
