@@ -28,7 +28,7 @@ const FertilityInfoPage: React.FC = () => {
                     width={800}
                     className="min-h-full min-w-full rounded-4xl my-4 image-unwrap"
                 />
-                <div className=" px-20">
+                <div className="px-20">
                     <AnimateOnScroll>
                         <section className="text-txt leading-relaxed mb-8 text-base slide-down">
                             <p className="mb-4 py-2">
@@ -93,10 +93,10 @@ const FertilityInfoPage: React.FC = () => {
 
 
                 <AnimateOnScroll>
-                    <section className="flex text-center justify-center slide-down">
+                    <section className="flex lg:flex-row flex-col md:flex-col gap-4 text-center justify-center slide-down">
                         <p className="text-primary font-semibold text-xl mr-6">Tags : </p>
-                        <div className="flex gap-80">
-                            <div className="flex gap-4">
+                        <div className="flex lg:flex-row flex-col md:flex-col gap-8 lg:gap-80">
+                            <div className="flex lg:flex-row flex-col md:flex-row gap-4">
                                 <button className="bg-secondary text-white font-semibold p-3 rounded-lg text-base hover:bg-primary">VitroFertilization</button>
                                 <button className="bg-secondary text-white font-semibold p-3 rounded-lg text-base hover:bg-primary">Ovulation</button>
                                 <button className="bg-secondary text-white font-semibold p-3 rounded-lg text-base hover:bg-primary">Fertility</button>
