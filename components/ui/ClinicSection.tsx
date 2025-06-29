@@ -17,7 +17,7 @@ const ClinicSection: React.FC = () => {
   return (
     <section
       className="relative w-full overflow-hidden bg-white mx-auto max-w-7xl py-0 mt-12
-                 px-4 sm:px-6 md:px-8 lg:px-4 xl:px-0 2xl:px-20"
+                 px-2 sm:px-6 md:px-8 lg:px-0 xl:px-0 2xl:px-2"
     >
       <div className="relative z-10 flex flex-col items-center justify-center w-full max-w-full">
         <div

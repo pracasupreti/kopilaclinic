@@ -90,7 +90,7 @@ export default function Services() {
         <meta property="og:image" content="https://kopilaclinic.com.np/images/og.jpg" />
         <meta property="og:image:alt" content="Kopila Fertility & Womens Clinic logo or clinic image" />
       </Head>
-      <div className="min-h-screen bg-gray-50">
+      <div className="min-h-screen bg-gray-50 max-w-7xl mx-auto">
         <div className="text-center bg-green-50 mb-12 py-28">
       <h1 className="text-4xl md:text-5xl font-bold text-primary">
         Our <span className='text-secondary'> Services</span>

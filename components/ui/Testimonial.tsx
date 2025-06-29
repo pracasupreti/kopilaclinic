@@ -111,7 +111,7 @@ const Testimonial: React.FC = () => {
                   className="rounded-4xl"
                 />
                 {/* Rating Box */}
-                <div className="absolute w-full -bottom-10 md:-bottom-8 left-1/2 md:left-auto md:right-0 bg-secondary text-white p-4 pr-8 rounded-4xl flex flex-col items-start border-5 border-white"> 
+                <div className="absolute w-90 lg:w-90 xl:w-100 -bottom-10 md:-bottom-8 left-4 xl:left-30 lg:left-1/2 bg-secondary text-white p-4 pr-8 rounded-4xl flex flex-col items-start border-5 border-white"> 
                  <AnimateOnScroll> <div className='flex flex-row gap-4 mb-4'><span className="text-4xl font-bold mb-1">4.7/5</span>
                   <p className="text-sm leading-tight mb-1 text-left">This rate is given by user <br /> after visiting our location</p>
                   </div>
@@ -135,7 +135,7 @@ const Testimonial: React.FC = () => {
                 <p className="text-8xl text-gray-300 font-serif -mb-10 -ml-4 transform scale-x-[-1] leading-none">“</p> {/* Added large quote mark */}
 
                 {/* Testimonial Text */} <AnimateOnScroll>
-                <p className="text-primary text-xl font-semibold leading-relaxed mb-6 mt-4">
+                <p className="text-primary text-base xl:text-xl font-semibold leading-relaxed mb-6 mt-4">
                   {currentTestimonialData.text}
                 </p> </AnimateOnScroll>
 

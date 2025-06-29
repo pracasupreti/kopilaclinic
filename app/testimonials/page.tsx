@@ -117,7 +117,7 @@ const Testimonials = () => {
     >
       <div className="max-w-12xl mx-auto text-center">
         <motion.div
-          className="text-center bg-green-50 py-32 px-4"
+          className="text-center bg-green-50 py-20 lg:py-32 px-4"
           initial="hidden"
           animate={headerControls}
           variants={{
@@ -125,10 +125,10 @@ const Testimonials = () => {
             visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
           }}
         >
-          <h1 className="text-6xl font-bold text-secondary mb-2">Testimonials</h1>
+          <h1 className="text-4xl lg:text-6xl font-bold text-secondary mb-2">Testimonials</h1>
           <p className="text-sm text-primary font-semibold">Home / Testimonials</p>
         </motion.div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 px-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 px-4 lg:px-8">
           {testimonials.map((t, idx) => {
             
             // eslint-disable-next-line react-hooks/rules-of-hooks
