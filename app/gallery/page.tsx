@@ -69,7 +69,7 @@ const Gallery = () => {
 
 
             <div
-            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5 mt-12 py-20"
+            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5 mt-12 py-20 px-4 lg:px-0"
           >
             {images.map((src, idx) => (
               <div
@@ -101,7 +101,7 @@ const Gallery = () => {
           <div className="fixed inset-0 z-50 flex items-center justify-center  bg-opacity-80">
             <div className="relative max-w-3xl w-full flex flex-col items-center">
               <button
-                className="absolute top-8 -right-68 text-txt text-3xl font-semibold"
+                className="absolute -top-70 lg:top-2 right-2 lg:-right-68 text-txt text-3xl font-semibold"
                 onClick={() => setOpenIdx(null)}
                 aria-label="Close"
               >
