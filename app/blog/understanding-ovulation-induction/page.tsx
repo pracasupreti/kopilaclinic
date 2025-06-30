@@ -7,8 +7,8 @@ import { AnimateOnScroll } from "@/components/ui/AnimateOnScroll";
 const FertilityInfoPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50">
-      <header className="bg-green-50 py-12 md:py-12 lg:py-30 text-center slide-side">
-        <h1 className="text-xl md:text-3xl font-bold text-primary">Understanding Ovulation Induction: A Key to Overcoming Infertility</h1>
+            <header className="bg-green-50 py-8 md:py-12 lg:py-30 text-center slide-side px-2 sm:px-4">
+                <h1 className="text-lg sm:text-xl md:text-3xl font-bold text-primary leading-tight sm:leading-snug">Understanding Ovulation Induction: A Key to Overcoming Infertility</h1>
         {/* Author and Date Information */}
 
         <AnimateOnScroll>
@@ -29,7 +29,7 @@ const FertilityInfoPage: React.FC = () => {
           width={800}
           className="min-h-full min-w-full rounded-4xl my-4 image-unwrap"
         />
-        <div className=" px-20"><AnimateOnScroll>
+        <div className="px-0 sm:px-2 md:px-10 lg:px-20"><AnimateOnScroll>
           <section className="text-txt leading-relaxed mb-8 text-base slide-down">
             <p className="mb-4 py-2">
               Ovulation induction is an essential treatment for women struggling with infertility due to irregular or absent ovulation. This blog explores how ovulation induction works, the medications involved, and how it can increase the chances of conception. Learn how this treatment can bring hope to those wishing to start or expand their families.
@@ -39,9 +39,9 @@ const FertilityInfoPage: React.FC = () => {
             </p>
           </section></AnimateOnScroll>
           <AnimateOnScroll>
-            <section className="flex bg-back rounded-4xl p-4 mb-8 shadow-sm slide-down">
+            <section className="flex flex-col sm:flex-row bg-back rounded-2xl sm:rounded-4xl p-3 sm:p-4 mb-8 shadow-sm slide-down items-center">
               <Image src="/testimonials/icon-quote.svg" height={40} width={40} alt={"icon-quote"} className="" />
-              <p className="text-primary font-semibold text-xl p-4">
+              <p className="text-primary font-semibold text-base sm:text-xl p-2 sm:p-4 text-center sm:text-left">
                 &quot;Ovulation induction can be a beacon of hope for couples facing infertility. It bridges the gap between aspiration and reality, bringing the dream of parenthood closer.&quot;
               </p>
             </section></AnimateOnScroll>
@@ -82,9 +82,9 @@ const FertilityInfoPage: React.FC = () => {
             </AnimateOnScroll>
           </section>
           <AnimateOnScroll>
-            <section className="flex bg-back rounded-4xl p-4 mb-8 shadow-sm slide-down">
+            <section className="flex flex-col sm:flex-row bg-back rounded-2xl sm:rounded-4xl p-3 sm:p-4 mb-8 shadow-sm slide-down items-center">
               <Image src="/testimonials/icon-quote.svg" height={40} width={40} alt={"icon-quote"} className="" />
-              <p className="text-primary font-semibold text-xl p-4">
+              <p className="text-primary font-semibold text-base sm:text-xl p-2 sm:p-4 text-center sm:text-left">
                 &quot;Ovulation induction can be a beacon of hope for couples facing infertility. It bridges the gap between aspiration and reality, bringing the dream of parenthood closer.&quot;
               </p>
             </section></AnimateOnScroll>
@@ -119,16 +119,16 @@ const FertilityInfoPage: React.FC = () => {
         </div>
 
         <AnimateOnScroll>
-          <section className="flex text-center justify-center slide-down">
-            <p className="text-primary font-semibold text-xl mr-6">Tags : </p>
-            <div className="flex gap-80">
-              <div className="flex gap-4">
+            <section className="flex flex-col sm:flex-row flex-wrap gap-4 text-center justify-center slide-down mt-4">
+                        <p className="text-primary font-semibold text-base sm:text-xl mr-0 sm:mr-6">Tags : </p>
+                        <div className="flex flex-wrap gap-2 sm:gap-8 justify-center">
+                            <div className="flex flex-wrap gap-2 sm:gap-4 justify-center">
                 <button className="bg-secondary text-white font-semibold p-3 rounded-lg text-base hover:bg-primary">Ovulation</button>
                 <button className="bg-secondary text-white font-semibold p-3 rounded-lg text-base hover:bg-primary">Fertility</button>
                 <button className="bg-secondary text-white font-semibold p-3 rounded-lg text-base hover:bg-primary">Infertility</button>
                 <button className="bg-secondary text-white font-semibold p-3 rounded-lg text-base hover:bg-primary">Parenthood</button>
               </div>
-              <div className="flex gap-2">
+              <div className="flex gap-2 sm:gap-2 justify-center">
                 <button className="bg-secondary text-white p-3 rounded-lg text-sm hover:bg-primary"><Facebook /></button>
                 <button className="bg-secondary text-white p-3 rounded-lg text-sm hover:bg-primary"><Youtube /></button>
                 <button className="bg-secondary text-white p-3 rounded-lg text-sm hover:bg-primary"><Instagram /></button>
