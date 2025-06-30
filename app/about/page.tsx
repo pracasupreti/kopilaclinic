@@ -43,7 +43,7 @@ const AboutUs = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-24 px-8 w-full max-w-7xl mx-auto">
             <div className="w-full flex justify-center lg:justify-end">
-              <div className="absolute lg:relative right-6 lg:-right-0 top-50 lg:-top-20 h-70 lg:h-96 rounded-2xl w-60 lg:w-full overflow-hidden border border-white">
+              <div className="absolute lg:relative right-6 lg:-right-0 top-50 lg:top-8 h-70 lg:h-96 rounded-2xl w-60 lg:w-full overflow-hidden border border-white">
                 <Image
                   src="/about/about.jpg"
                   alt="Happy Baby"
