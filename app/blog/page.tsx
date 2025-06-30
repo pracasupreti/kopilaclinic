@@ -124,7 +124,7 @@ const App: React.FC = () => {
                   {post.title}
                 </h2>
                 {/* Blog Post Description */}
-                <p className="text-txt text-base mb-4">
+                <p className="text-txt text-base mb-4 line-clamp-3">
                   {post.description}
                 </p>
                 {/* Read More Button */}
