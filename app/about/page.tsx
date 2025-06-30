@@ -104,7 +104,7 @@ const AboutUs = () => {
               <p className="text-gray-500 text-base md:text-lg leading-relaxed font-semibold">Dr. Sita Rai <span className="text-base font-normal">Director</span></p>
             </AnimateOnScroll> </div>
           <div className="w-full flex justify-center lg:justify-start order-1 lg:order-2 py-8 md:py-16 lg:py-24">
-            <div className="relative w-264 sm:w-80 md:w-96 lg:w-[32rem] h-80 sm:h-96 md:h-[32rem] rounded-xl overflow-hidden shadow-lg border border-gray-100 image-unwrap">
+            <div className="relative w-264 sm:w-80 md:w-96 lg:w-[32rem] h-80 sm:h-96 md:h-[32rem] rounded-4xl overflow-hidden border border-gray-100 image-unwrap">
               <Image
                 src="/about/doctor.jpg"
                 alt="Dr. Sita Rai - Director"
