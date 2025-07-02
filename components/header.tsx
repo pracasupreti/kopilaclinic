@@ -49,7 +49,7 @@ export default function Header() {
           <button
             onClick={toggleMenu}
             aria-label="Toggle menu"
-            className="text-pink-600 focus:outline-none"
+            className="bg-primary text-white p-2 rounded-lg focus:outline-none"
           >
             {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
           </button>

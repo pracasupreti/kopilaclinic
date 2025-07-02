@@ -14,7 +14,7 @@ const CareSection = () => {
 
           {/* Scrolling Images: 3 visible at a time */}
           <div className="relative w-[216px] md:w-[288px] lg:w-[360px] xl:w-[732px] 2xl:w-[504px] overflow-hidden">
-            <div className="flex animate-scrollXLoop gap-4 w-max">
+            <div className="flex animate-scrollXLoop gap-4 w-max mt-4 md:mt-8 px-4 md:px-8">
               {/* Image Set (repeated for seamless looping) */}
               {[1, 2, 3, 4, 1, 2, 3, 4].map((img, idx) => (
                 <Image
